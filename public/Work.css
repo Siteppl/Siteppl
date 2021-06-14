@@ -553,7 +553,7 @@ body {
   position: relative;
   color: #ffffff;
   font-weight: 700;
-  font-size: 6em;
+  font-size: 3em;
   outline: none;
   width: 100%;
   line-height: 0.9em;
@@ -572,14 +572,17 @@ body {
   -8px 8px #cacaca;
   
 }
-
+#textA:hover {
+  margin-left: -20px;
+  transition: .5s;
+}
 
 #textB
 {
   position: relative;
   color: #ffffff;
   font-weight: 700;
-  font-size: 6em;
+  font-size: 3em;
   outline: none;
   width: 100%;
   line-height: 0.9em;
@@ -596,6 +599,10 @@ body {
   -6px 6px #cacaca,
   -7px 7px #cacaca,
   -8px 8px #cacaca;
+}
+#textB:hover {
+  margin-left: -20px;
+  transition: .5s;
 }
 
 

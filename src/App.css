@@ -773,7 +773,7 @@ div.screen {
 	justify-content: center;
   	align-items: center;
 	margin-right: 1rem;
-	margin-top: 6rem;
+	
 	transform: skewY(-3deg);
 }
 .containerabout2 .cardabout2
@@ -840,8 +840,17 @@ div.screen {
 	font-family: 'Newspaper';
     
     color: white;
-    text-shadow: 0 3px 3px rgba(0,0,0,.2),
-                0 -1px 1px rgba(255,255,255,1);
+    text-shadow: -1px 1px 1px #cacaca,
+        -1px 2px 1px #cacaca,
+        -1px 3px 1px #cacaca,
+        -1px 4px 1px #cacaca,
+        -1px 5px 1px #cacaca,
+        -1px 6px 1px #cacaca,
+       
+    1px 8px 6px rgba(16, 16, 16, 0.089),
+    1px 14px 10px rgba(16, 16, 16, 0.068);
+   
+    
 }
 .containerabout2 .contentabout
 {
@@ -906,14 +915,14 @@ div.screen {
 }
 .containerabouts
 {
-	position: relative;
+	
 	width: 50%;
 	display: flex;
 	margin-right: 2rem;
 	margin-left: 3rem;
 	
 	flex-direction: column;
-	justify-content: center;
+	
   align-items: center;
 	transform: skewY(-3deg);
 }
@@ -981,15 +990,22 @@ div.screen {
 	font-family: 'Newspaper';
     
     color: white;
-    text-shadow: 0 3px 3px rgba(0,0,0,.2),
-                0 -1px 1px rgba(255,255,255,1);
+    text-shadow: -1px 1px 1px #cacaca,
+        -1px 2px 1px #cacaca,
+        -1px 3px 1px #cacaca,
+        -1px 4px 1px #cacaca,
+        -1px 5px 1px #cacaca,
+        -1px 6px 1px #cacaca,
+       
+    1px 8px 6px rgba(16, 16, 16, 0.089),
+    1px 14px 10px rgba(16, 16, 16, 0.068);
 }
 .containerabouts .contentabout
 {
 	position: relative;
 	width: 100%;
 	height: 200px;
-	padding: 30px;
+	
 	
 	color: rgb(148, 148, 148);
 	text-align: center;
@@ -1083,6 +1099,7 @@ div.screen {
 	height: 100%;
 	background: #f7f7f7;
 	transition: 0.5s;
+	
 }
 .containerdev .icondev .contentdev:before
 {
@@ -1102,17 +1119,18 @@ div.screen {
 .containerdev .icondev:hover .contentdev:before
 {
 	transform: translateY(40px) skewX(45deg);
-	filter: blur(25px);
+	filter: blur(30px);
 	opacity: 0.9;
 }
-.containerdev .icondev .contentdev a i
+.containerdev .icondev .contentdev a 
 {
 	position: relative;
 	display: inline-block;
-	color: white;
-	text-shadow: 0 2px 2px rgba(0,0,0,.3),
+	color: rgb(236, 236, 236);
+	text-shadow: 0 1px 1px rgba(0,0,0,.5),
                 0 -1px 1px rgba(255,255,255,1);
 	font-size: 2em;
+
 	width: 100%;
 	height: 100%;
 	display: flex;
@@ -1120,16 +1138,16 @@ div.screen {
 	align-items: center;
 	text-decoration: none;
 	transition: 0.5s;
-	font-family: 'Newsreader', serif;
+	font-family: 'Source Code Pro', serif;
 }
-.containerdev .icondev .contentdev a:hover i
+.containerdev .icondev .contentdev a:hover 
 {
 	color: white;
-	font-family: 'Newsreader', serif;
+	font-family: 'Source Code Pro', serif;
 }
 .containerdev .icondev:hover .contentdev a
 {
-	color: lightgray;
+	
 	text-decoration: none;
 }
 

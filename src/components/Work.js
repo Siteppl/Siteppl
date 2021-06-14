@@ -187,8 +187,7 @@ export default class Work extends Component {
             </div>
           </div>
           
-          <div className="arrow2 arrow-first"></div>
-          <div className="arrow2 arrow-second"></div>
+          
         </div>
         
       </div>
@@ -199,8 +198,8 @@ export default class Work extends Component {
         <div className="contentsnap">
           <div  id="textC" data-text="Our apps">Our apps</div>
           <div  id="textunder" data-text="Created + Launched + managed + updated by site ppl.">Created + Launched + managed + updated by site ppl.</div>
-          <div id="textA" data-text="Project A"><a href='#'>Project A</a></div>
-          <div id="textB" data-text="Project B"><a href='#'>Project B</a></div>
+          <div id="textA" data-text="Ordering app"><a href='#'>Ordering app</a></div>
+          <div id="textB" data-text="Appointment system"><a href='#'>Appointment system</a></div>
           
         </div>
         

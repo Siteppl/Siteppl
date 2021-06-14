@@ -112,7 +112,7 @@ export default class Home extends Component {
         
           <div className="imgbx">
             {/* <img src="Images\top.png" alt="Creator Image"/> */}
-            <h3>A Digital Agency</h3>
+            <h3><span data-sal="slide-down" data-sal-duration="1000">A</span> <span data-sal="slide-down" data-sal-duration="1500" data-sal-delay="500">Digital</span> <span data-sal="slide-down" data-sal-delay="1000" data-sal-duration="2000">Agency</span></h3>
           </div>
           
           <div data-sal="slide-down"
@@ -197,21 +197,21 @@ export default class Home extends Component {
                  className="containerdev">
           <div className="icondev" >
             <div className="contentdev">
-              <a><i>Websites</i></a>
+              <a>Websites</a>
             </div>
            
           </div>
           
           <div className="icondev" >
             <div className="contentdev">
-              <a><i className="">Security</i></a>
+              <a>Security</a>
             </div>
             
           </div>
          
           <div  className="icondev" >
             <div  className="contentdev">
-              <a ><i  className="">Apps</i></a>
+              <a >Apps</a>
             </div>
             
           </div>
@@ -258,7 +258,7 @@ export default class Home extends Component {
           
           
           <div className="contentabout">
-            <p >As designers, we strive to build frameworks that can be easily transferred into real applications. We focus on making design clean, sleek, and intuitive to help firms differentiate from there competitors.</p>
+            <p >SEO has evolved into a complex strategy made of many moving parts that must work together as a unified brand experience. Brands also need to optimize for new features like voice search and featured snippets and ensure that everything is set up properly on the technical side.</p>
           </div>
           
         
