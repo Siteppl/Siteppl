@@ -16,7 +16,7 @@ export default class Home extends Component {
 
   componentDidMount() {
     sal({
-      threshold: 1,
+      threshold: .5,
       once: false,
     })
     
@@ -71,7 +71,10 @@ export default class Home extends Component {
       
       
       <div className="col2">
-        <h1   className="mainbanner">site ppl</h1>
+        <h1  data-sal="fade-down"
+                data-sal-duration="2000"
+                data-sal-delay="500"
+                data-sal-easing="easeInBounce" className="mainbanner">site ppl</h1>
         
         <div className="center-con">
           <div className="round">
@@ -106,14 +109,31 @@ export default class Home extends Component {
 
   
       <div className="containerabout">
-        <div className="cardabout">
+        
           <div className="imgbx">
-            <img src="Images\top.png" alt="Creator Image"/>
+            {/* <img src="Images\top.png" alt="Creator Image"/> */}
             <h3>A Digital Agency</h3>
           </div>
           
-          <div className="contentabout">
-            <p >We are builders of digital assets, including website, apps, libraries, and more. Get a quote on any design or development service, built for your needs.</p>
+          <div data-sal="slide-down"
+                data-sal-duration="2000"
+                data-sal-delay="500"
+                data-sal-easing="easeInBounce"className="contentabout">
+                  
+            <p >We are builders of digital assets, including websites, apps, libraries, and more. Get a quote on any design or development service, built for your needs.</p>
+          </div>
+          <div data-sal="slide-left"
+                data-sal-duration="1000"
+                data-sal-delay="1000"
+                data-sal-easing="easeInBounce" className="contentabout2">
+                  <img id="logo"src="Images/splogo.png"/>
+            <p >We are builders of digital assets, including websites, apps, libraries, and more. Get a quote on any design or development service, built for your needs.</p>
+          </div>
+          <div data-sal="slide-up"
+                data-sal-duration="2000"
+                data-sal-delay="1000"
+                data-sal-easing="easeInBounce"className="contentabout3">
+            <p >We are builders of digital assets, including websites, apps, libraries, and more. Get a quote on any design or development service, built for your needs.</p>
           </div>
           
         </div>
@@ -121,34 +141,43 @@ export default class Home extends Component {
         
       </div>
       
-    </div>
+  
     
-    <ul className='mid'>
+    {/* <ul className='mid'>
     <hr  id='line1'/>
     <h2 id="textf">Creating, growing, and maintaining digital assets</h2>
     <hr  id='line1'/>
 
 
 
-    </ul>
+    </ul> */}
 
     <div className='body2'>
       <div  className="containerabout2">
         
             <h3 data-sal="fade"
-                data-sal-duration="1000"
-                data-sal-delay="300"
-                data-sal-easing="ease-out-back">Designers</h3>
-            <img  src="Images\drip.svg" alt="Designer Image"/>
+                data-sal-duration="2000"
+                data-sal-delay="500"
+                data-sal-easing="easeInBounce">Designers</h3>
+            <img  data-sal="fade"
+                data-sal-duration="2000"
+                data-sal-delay="500"
+                data-sal-easing="easeInBounce" src="Images\drip.svg" alt="Designer Image"/>
           
           
           <div className="contentabout">
-            <p >As designers, we strive to build frameworks that can be easily transferred into real applications. We focus on making design clean, sleek, and intuitive to help firms differentiate from there competitors.</p>
+            <p data-sal="fade"
+                data-sal-duration="2000"
+                data-sal-delay="1000"
+                data-sal-easing="easeInBounce">As designers, we strive to build frameworks that can be easily transferred into real applications. We focus on making design clean, sleek, and intuitive to help firms differentiate from there competitors.</p>
           </div>
           
         
           </div>
-        <div className="containerdesign">
+        <div data-sal="fade-down"
+                data-sal-duration="2000"
+                data-sal-delay="500"
+                data-sal-easing="easeInCirc"className="containerdesign">
           <a id='ux' data-text='UX & UX'>UI & UX</a>
                       
         </div>
@@ -161,8 +190,11 @@ export default class Home extends Component {
 
     
     <div className='bodys'>
-      
-        <div  className="containerdev">
+    
+        <div data-sal="fade"
+                data-sal-duration="1000"
+                data-sal-delay="200"
+                 className="containerdev">
           <div className="icondev" >
             <div className="contentdev">
               <a><i>Websites</i></a>
@@ -177,9 +209,9 @@ export default class Home extends Component {
             
           </div>
          
-          <div className="icondev" >
-            <div className="contentdev">
-              <a><i className="">Apps</i></a>
+          <div  className="icondev" >
+            <div  className="contentdev">
+              <a ><i  className="">Apps</i></a>
             </div>
             
           </div>
@@ -189,12 +221,21 @@ export default class Home extends Component {
         
         <div className="containerabouts" >
             
-            <h3>Developers</h3>
-            <img src="../Images/box.svg" alt="Developer Image"/>
+            <h3 data-sal="fade"
+                data-sal-duration="2000"
+                data-sal-delay="500"
+                data-sal-easing="easeInBounce">Developers</h3>
+            <img data-sal="fade"
+                data-sal-duration="2000"
+                data-sal-delay="500"
+                data-sal-easing="easeInBounce" src="../Images/box.svg" alt="Developer Image"/>
           
          
-          <div className="contentabout">
-            <p > As programmers, we are dedicated to creating applications that are fast and efficient. Our Integrations are unique and easy to adapt to. Let us handle the complex programming process for full stack apps </p>
+          <div  data-sal="fade"
+                data-sal-duration="2000"
+                data-sal-delay="500"
+                data-sal-easing="easeInBounce" className="contentabout">
+            <p  > As programmers, we are dedicated to creating applications that are fast and efficient. Our Integrations are unique and easy to adapt to. Let us handle the complex programming process for full stack apps </p>
           </div>
           
         
@@ -207,10 +248,13 @@ export default class Home extends Component {
 
 
     <div className='body2'>
-      <div className="containerabout2">
+      <div data-sal="slide-right"
+                data-sal-duration="2000"
+                data-sal-delay="500"
+                data-sal-easing="easeInBounce" className="containerabout2">
         
-            <h3>Search Engine Optimization</h3>
-            <img  src="Images\drip.svg" alt="Designer Image"/>
+            <h3>SEO</h3>
+            <img  src="Images\seo.png" alt="Designer Image"/>
           
           
           <div className="contentabout">
@@ -219,46 +263,15 @@ export default class Home extends Component {
           
         
           </div>
-        <div className="containerdesign">
-          <a id='ux' data-text='SEO'>SEO</a>
-                      
-        </div>
-        
-        
-        </div>
-    
+          <h2  class="plussign">+</h2>
 
-        <div className='bodys'>
-      
-      <div  className="containerdev">
-        <div className="icondev" >
-          <div className="contentdev">
-            <a><i>Websites</i></a>
-          </div>
-         
-        </div>
-        
-        <div className="icondev" >
-          <div className="contentdev">
-            <a><i className="">Security</i></a>
-          </div>
-          
-        </div>
-       
-        <div className="icondev" >
-          <div className="contentdev">
-            <a><i className="">Apps</i></a>
-          </div>
-          
-        </div>
-        
-        <h2 id='socialsdev'> + all digital services </h2>
-      </div>
-      
-      <div className="containerabouts" >
+          <div data-sal="slide-left"
+                data-sal-duration="2000"
+                data-sal-delay="500"
+                data-sal-easing="easeInBounce" className="containerabouts" >
           
           <h3>Marketing</h3>
-          <img src="../Images/box.svg" alt="Developer Image"/>
+          <img src="Images/market.png" alt="Developer Image"/>
         
        
         <div className="contentabout">
@@ -268,7 +281,11 @@ export default class Home extends Component {
       
     
   </div>
-  </div>
+        
+        
+        </div>
+    
+
 
         
 

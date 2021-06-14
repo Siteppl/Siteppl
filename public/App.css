@@ -647,7 +647,8 @@ div.screen {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 50vh;
+	
+	height: 80vh;
 	background: #f3f3f3;
 	max-width: 100% ;
 	width: 98%;
@@ -788,7 +789,7 @@ div.screen {
 	display: flex;
 	justify-content: space-around;
 	align-items: bottom;
-	min-height: 60vh;
+	min-height: 80vh;
 	background: #f3f3f3;
 	max-width: 100% ;
 	width: 100%;
@@ -1801,7 +1802,7 @@ section .wave.wave4
 	line-height: 0.9em;
 	letter-spacing: 2px;
 	text-align: center;
-	transform: skewX(3deg);
+	transform: rotate(-5deg) skewY(-10deg);
 	text-shadow: -1px 1px #cacaca,
 				-2px 2px #cacaca,
 				-3px 3px #cacaca,

@@ -426,12 +426,14 @@ div.screen {
 }
 .containerabout
 {
-	position: relative;
-	width: 100%;
+	
+	
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	transform: skewY(-3deg);
+	align-items: center;
+	flex-direction: column;
+	
 }
 .containerabout .cardabout
 {
@@ -473,65 +475,175 @@ div.screen {
 	transition: 0.5s;
 }
 
-.containerabout .cardabout .imgbx
+.containerabout  .imgbx
 {
 	position: relative;
 	width: 100%;
 	height: 200px;
-	background: lightblue;
+	
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 }
-.containerabout .cardabout .imgbx img
+.containerabout  .imgbx img
 {
 	max-width: 200px;
 }
-.containerabout .cardabout .imgbx h3
+.containerabout .imgbx h3
 {
 	
-    font-size: 2em;
-    font-weight: 400;
-	font-family: 'Bree Serif';
+    font-size: 6em;
+    font-weight: 500;
+	font-family: 'Source Code Pro', monospace;
     
-    color: white;
-    text-shadow: 0 3px 3px rgba(124, 120, 120, 0.3),
-                0 -1px 1px rgba(255,255,255,1);
+    color: #f5f5f5;
+    
+	text-shadow: 1px 1px 1px #cacaca,
+        1px 2px 1px #cacaca,
+        1px 3px 1px #cacaca,
+        1px 4px 1px #cacaca,
+        1px 5px 1px #cacaca,
+        1px 6px 1px #cacaca,
+        1px 7px 1px #cacaca,
+        1px 8px 1px #cacaca,
+        1px 9px 1px #cacaca,
+        1px 10px 1px #cacaca,
+    1px 18px 6px rgba(16, 16, 16, 0.164),
+    1px 22px 10px rgba(16, 16, 16, 0.068),
+    1px 25px 35px rgba(16, 16, 16, 0.13);
+    
 }
-.containerabout .cardabout .contentabout
-{
-	position: relative;
-	width: 100%;
-	height: 200px;
-	padding: 20px;
-	background: #fff;
+.plussign
+{	
 	
+	font-family: 'Source Code Pro', monospace;
+	
+	color: #fff;
+	font-size: 5em;
+	margin-top: 10rem;
+	margin-right: 5rem;
+	transform: rotate(-2deg) skewX(10deg);
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	outline: none;
+	
+	user-select: none;
+	
+	text-shadow: -1px 1px #cacaca,
+				-2px 2px #cacaca,
+				-3px 3px #cacaca,
+				-4px 4px #cacaca,
+				-5px 5px #cacaca;
+				
+				
+				;
+	transition: 2.5s;
+}
+.containerabout .contentabout
+{
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 150px;
+	padding: 20px;
+	margin-top: 1rem;
+	border-radius: 25px;
+	background: rgba(255, 255, 255, 0.602);
+	
+  box-shadow: -15px -15px 15px rgba(255,255,255,0),
+              15px 15px 15px rgba(0,0,0,0),
+              inset 4px 4px 5px rgba(255,255,255,0.8),
+              inset -4px -4px 5px rgba(0,0,0,0.05),
+              8px 50px 40px rgba(0,0,0,0.05);
 	text-align: center;
 	
 }
-.containerabout .cardabout .contentabout p
+.containerabout .contentabout2
 {
-	color: lightblue;
-	font-family: 'Quattrocento Sans';
-	margin: 2rem;
-	font-size: 20px;
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 150px;
+	padding: 20px;
+	margin-top: -1.5rem;
+	margin-left: 3rem;
+	border-radius: 25px;
+	background: rgb(255, 255, 255);
+	
+  box-shadow: -15px -15px 15px rgba(255,255,255,0),
+              15px 15px 15px rgba(0,0,0,0),
+              inset 4px 4px 5px rgba(255,255,255,0.8),
+              inset -4px -4px 5px rgba(0,0,0,0.05),
+              8px 50px 40px rgba(0,0,0,0.05);
+	text-align: center;
+	
 }
-.containerabout .cardabout .contentabout:before
+.containerabout .contentabout3
 {
-	content: '';
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	height: 130px;
-	background: linear-gradient(transparent,rgba(0,0,0,.1));
-	transform-origin: bottom;
-	transform: skewX(45deg);
-	transition: 0.5s;
-	pointer-events: none;
-	z-index: -1;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	height: 150px;
+	padding: 25px;
+	margin-top: -1rem;
+	border-radius: 25px;
+	background: rgb(255, 255, 255);
+	
+  box-shadow: -15px -15px 15px rgba(255,255,255,0),
+              15px 15px 15px rgba(0,0,0,0),
+              inset 4px 4px 5px rgba(255,255,255,0.8),
+              inset -4px -4px 5px rgba(0,0,0,0.05),
+              8px 50px 40px rgba(0,0,0,0.05);
+	text-align: center;
+	
 }
+.containerabout .contentabout p
+{
+	color: rgb(148, 148, 148);
+	font-family: 'Poppins', monospace;
+	
+	font-size: 1em;
+	text-shadow: 1px 1px 1px #dbdbdb,
+        1px 2px 1px #dbdbdb;
+        
+    
+}
+.containerabout .contentabout2 p
+{
+	color: rgb(148, 148, 148);
+	font-family: 'Poppins', monospace;
+	
+	font-size: 1em;
+	text-shadow: 1px 1px 1px #dbdbdb,
+        1px 2px 1px #dbdbdb;
+        
+    
+}
+
+#logo {
+	max-width: 100px;
+}
+.containerabout .contentabout3 p
+{
+	color: rgb(148, 148, 148);
+	font-family: 'Poppins', monospace;
+	
+	font-size: 1em;
+	text-shadow: 1px 1px 1px #dbdbdb,
+        1px 2px 1px #dbdbdb;
+        
+    
+}
+
 .containerabout .cardabout:hover .contentabout:before
 {
 	transform: translateY(40px) skewX(45deg);
@@ -647,10 +759,10 @@ div.screen {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 50vh;
+	min-height: 80vh;
 	background: #f3f3f3;
 	max-width: 100% ;
-	width: 98%;
+	width: 90%;
 }
 .containerabout2
 {
@@ -659,9 +771,8 @@ div.screen {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-  align-items: center;
-	margin-right: 3rem;
-	margin-left: 1rem;
+  	align-items: center;
+	margin-right: 1rem;
 	margin-top: 6rem;
 	transform: skewY(-3deg);
 }
@@ -735,11 +846,11 @@ div.screen {
 .containerabout2 .contentabout
 {
 	position: relative;
-	width: 80%;
+	width: 60%;
 	height: 200px;
 	padding: 30px;
 	
-	color: rgb(192, 200, 207);
+	color: rgb(148, 148, 148);
 	text-align: center;
 }
 .containerabout2 .contentabout p
@@ -776,7 +887,7 @@ div.screen {
 	
 	justify-content: center;
 	align-items: center;
-	transform: skewY(-5deg);
+	transform: skewY(-3deg);
 }
 
 
@@ -788,7 +899,7 @@ div.screen {
 	display: flex;
 	justify-content: space-around;
 	align-items: bottom;
-	min-height: 60vh;
+	min-height: 40vh;
 	background: #f3f3f3;
 	max-width: 100% ;
 	width: 100%;
@@ -796,9 +907,9 @@ div.screen {
 .containerabouts
 {
 	position: relative;
-	width: 40%;
+	width: 50%;
 	display: flex;
-	margin-right: 3rem;
+	margin-right: 2rem;
 	margin-left: 3rem;
 	
 	flex-direction: column;
@@ -880,7 +991,7 @@ div.screen {
 	height: 200px;
 	padding: 30px;
 	
-	color: rgb(192, 200, 207);
+	color: rgb(148, 148, 148);
 	text-align: center;
 	
 }
@@ -1653,12 +1764,12 @@ section .wave.wave4
 {
 	margin-top: 5rem;
   margin-bottom: 5rem;
-    margin-left: 4rem;
-    font-size: 3em;
-    font-weight: 400;
+    margin-left: 3rem;
+    font-size: 2.5em;
+    font-weight: 800;
 	font-family: 'Bree Serif';
-  
-    color: rgb(197, 238, 251);
+	font-family: 'Source Code Pro', monospace;
+    color: rgb(192, 232, 245);
     transform:  skewX(5deg);
   text-shadow: -1px 1px #cacaca,
   -2px 2px #cacaca,
@@ -1667,8 +1778,8 @@ section .wave.wave4
 
 #line1 {
 	
-	margin-left: 5rem;
-	margin-top: 4rem;
+	margin-left: 2rem;
+	margin-top: 1rem;
 	border-width: .2rem;
   
 	border-color: white;
@@ -1800,7 +1911,7 @@ section .wave.wave4
 	line-height: 0.9em;
 	letter-spacing: 2px;
 	text-align: center;
-	transform: skewX(3deg);
+	
 	text-shadow: -1px 1px #cacaca,
 				-2px 2px #cacaca,
 				-3px 3px #cacaca,

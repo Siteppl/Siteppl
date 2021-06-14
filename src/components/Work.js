@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import {Helmet} from 'react-helmet';
 import sal from 'sal.js'
+import { motion } from "framer-motion";
+import Example from './Example'
+
 
 
 export default class Work extends Component {
@@ -100,10 +103,15 @@ export default class Work extends Component {
       
       <div className="sectionsnap">
         <div className="contentsnap">
-          <div id="text" data-text="Projects">Projects</div>
+          <div id="text" data-text="Projects" data-sal="fade"
+                  data-sal-duration="1000"
+                  >Projects</div>
+                  <div className="example-container">
+                    
+                  </div>
           <div className="containerpro">
             <div className="cardspro"
-            
+            data-sal="slide-right" 
             >
               <div className="layerpro"></div>
               <div className="layerpro"></div>
@@ -162,16 +170,16 @@ export default class Work extends Component {
                 <div className="contentpro3">
                   <h2>Our Services</h2>
                   <p data-sal="slide-down"
-                  
+                  data-sal-duration="2000"
                   data-sal-easing="easeInQuint">Designing and Building</p>
                   <p data-sal="slide-left"
-                  
+                  data-sal-duration="2000"
                   data-sal-easing="easeInQuint">Front-end / back-end development</p>
                   <p data-sal="slide-right"
-                 
+                 data-sal-duration="2000"
                   data-sal-easing="easeInQuint">Mobile app development</p>
                   <p data-sal="slide-up"
-                  
+                  data-sal-duration="2000"
                   data-sal-easing="easeInQuint"> Marketing + Branding</p>
                   
                 </div>

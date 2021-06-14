@@ -521,6 +521,14 @@ body {
   letter-spacing: 2px;
   text-align: center;
   transform: rotate(-22deg) skew(25deg);
+  text-shadow: -1px 1px #cacaca,
+  -2px 2px #cacaca,
+  -3px 3px #cacaca,
+  -4px 4px #cacaca,
+  -5px 5px #cacaca,
+  -6px 6px #cacaca,
+  -7px 7px #cacaca,
+  -8px 8px #cacaca;
   margin-top: 10rem;
   margin-right: 40rem;
   
@@ -532,8 +540,8 @@ body {
   position: absolute;
   top: 32px;
   left: -30px;
-  color: rgba(0,0,0,.2);
-  filter: blur(5px);
+  color: rgba(0,0,0,.1);
+  filter: blur(3px);
   outline: none;
   width: 100%;
   text-align: center;
@@ -554,21 +562,18 @@ body {
   margin-top: 8rem;
   text-align: center;
   transform: rotate(-25deg) skew(25deg);
+  text-shadow: -1px 1px #cacaca,
+  -2px 2px #cacaca,
+  -3px 3px #cacaca,
+  -4px 4px #cacaca,
+  -5px 5px #cacaca,
+  -6px 6px #cacaca,
+  -7px 7px #cacaca,
+  -8px 8px #cacaca;
+  
 }
 
-#textA:before
-{
-  content: attr(data-text);
-  position: absolute;
-  top: 32px;
-  left: -30px;
-  color: rgba(0,0,0,.2);
-  filter: blur(10px);
-  outline: none;
-  width: 100%;
-  text-align: center;
-  z-index: -1;
-}
+
 #textB
 {
   position: relative;
@@ -583,20 +588,33 @@ body {
   margin-top: 8rem;
   text-align: center;
   transform: rotate(-25deg) skew(25deg);
+  text-shadow: -1px 1px #cacaca,
+  -2px 2px #cacaca,
+  -3px 3px #cacaca,
+  -4px 4px #cacaca,
+  -5px 5px #cacaca,
+  -6px 6px #cacaca,
+  -7px 7px #cacaca,
+  -8px 8px #cacaca;
 }
-#textB:before
-{
-  content: attr(data-text);
-  position: absolute;
-  top: 32px;
-  left: -30px;
-  color: rgba(0,0,0,.2);
-  filter: blur(10px);
-  outline: none;
-  width: 100%;
-  text-align: center;
-  z-index: -1;
-}
+
+
+.example-container div {
+	background: white;
+	border-radius: 50px;
+	width: 50px;
+	height: 20px;
+	z-index: 100000;
+  transform:  skew(25deg);
+  box-shadow: -1px 1px #cacaca,
+  -2px 2px #cacaca,
+  -3px 3px #cacaca,
+  -4px 4px #cacaca,
+  -5px 5px #cacaca;
+ 
+  
+  }
+
 #textC
 {
   position: relative;
@@ -611,21 +629,16 @@ body {
   margin-top: 3rem;
   text-align: left;
   transform: rotate(0deg) skew(5deg);
+  text-shadow: -1px 1px #cacaca,
+  -2px 2px #cacaca,
+  -3px 3px #cacaca,
+  -4px 4px #cacaca,
+  -5px 5px #cacaca,
+  -6px 6px #cacaca,
+  -7px 7px #cacaca,
+  -8px 8px #cacaca;
 }
-#textC:before
-{
-  content: attr(data-text);
-  position: absolute;
-  top: 32px;
-  left: -30px;
-  color: rgba(0,0,0,.1);
-  filter: blur(10px);
-  outline: none;
-  
-  width: 100%;
-  text-align: left;
-  z-index: -1;
-}
+
 #textD
 {
   position: relative;
