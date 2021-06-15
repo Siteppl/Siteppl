@@ -63,7 +63,8 @@ export default class Contact extends Component {
                 <div class="col2"> 
                 <h1  class="mainbanner">contact</h1>
                 
-                <form name="contact" netlify>
+                <form name="contact" netlify netlify-honeypot="bot-field" >
+                <input type="hidden" name="form-name" value="contact" />
                     <div class="containerform">
                     <div class="row100">
                         <div class="col">
