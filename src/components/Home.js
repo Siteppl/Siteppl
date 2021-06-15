@@ -144,13 +144,13 @@ export default class Home extends Component {
                 data-sal-delay="1000"
                 data-sal-easing="easeInBounce" className="contentabout2">
                   <img id="logo"src="Images/logotry.png"/>
-            <p >We are builders of digital assets, including websites, apps, libraries, and more. Get a quote on any design or development service, built for your needs.</p>
+            <p ></p>
           </div>
           <div data-sal="slide-up"
                 data-sal-duration="2000"
                 data-sal-delay="1000"
                 data-sal-easing="easeInBounce"className="contentabout3">
-            <p >We are builders of digital assets, including websites, apps, libraries, and more. Get a quote on any design or development service, built for your needs.</p>
+            <p >Get a free quote, or contact us</p>
           </div>
           
         </div>

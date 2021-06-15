@@ -449,8 +449,8 @@ div.screen {
 {
 	background-color: #b3b5f2 ;
 	background-size: cover;
-	height: 150vh;
-  margin-bottom: 20rem;
+	height: 105vh;
+  margin-bottom: 10rem;
   
 }
 .sectionsnap:nth-child(3)
@@ -465,13 +465,13 @@ div.screen {
   .sectionsnap:nth-child(2)
 {
 	
-  margin-bottom: 55rem;
+  margin-bottom: 10rem;
   
 }
 .sectionsnap:nth-child(3)
 {
 	
-  margin-top: 25rem;
+  margin-top: 10rem;
 }
 }
 
@@ -760,6 +760,19 @@ a:hover {
      margin-top: 5rem;
      margin-left: 15rem;
    }
+   #text:before
+{
+  content: none;
+  position: absolute;
+  top: 32px;
+  left: -30px;
+  color: rgba(0,0,0,.1);
+  filter: blur(3px);
+  outline: none;
+  width: 100%;
+  text-align: center;
+  z-index: -1;
+}
    
 }
 @media (max-width:968px) {
