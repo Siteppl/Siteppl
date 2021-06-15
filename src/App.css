@@ -60,7 +60,7 @@ body {
   .topleft li span
 {
 	position: relative;
-	display: block;
+	display: flex;
 	color: transparent;
 	-webkit-text-stroke: 1px #fff;
 	font-size : 3em;
@@ -394,12 +394,27 @@ div.screen {
 	}
   }
 
-  @media (max-width: 768px) {
-	  .mainbanner {
-		  font-size: 8em;
-		  margin-top: 8rem;
-	  }
-  }
+  
+
+  @media (max-width: 1068px) {
+	.mainbanner {
+		font-size: 8em;
+		margin-top: 8rem;
+	}
+	.body .containerabout .imgbx h3 {
+	  font-size: 5.25em;
+	}
+}
+
+@media (max-width: 768px) {
+	.mainbanner {
+		font-size: 8em;
+		margin-top: 8rem;
+	}
+	.body .containerabout .imgbx h3 {
+	  font-size: 3em;
+	}
+}
   
 
 
@@ -495,13 +510,14 @@ div.screen {
 {
 	position: absolute;
 	left: 8rem;
-	top:70rem;
+	top:130vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	width: 10rem;
 	height: 20rem;
 }
+
 .containerabout  .imgbx .images
 {
 	max-width: 200px;
@@ -749,6 +765,27 @@ svg {
 	text-align: center;
 	
 }
+.containerabout .contentabout p
+{
+	color: rgb(148, 148, 148);
+	font-family: 'Poppins', monospace;
+	
+	font-size: .75em;
+	text-shadow: 1px 1px 1px #dbdbdb,
+        1px 2px 1px #dbdbdb;
+        
+    
+}
+.containerabout  .imgwrapper 
+{
+	left: 5rem;
+	top:70rem;
+}
+
+.containerabout  .imgwrapper svg
+{
+	width: 2rem;
+}
 
 }
 
@@ -796,6 +833,25 @@ svg {
 	font-size: 16px;
 }
 
+.containerabout  .imgwrapper 
+{
+	left: 2rem;
+	top:65rem;
+}
+
+.body .containerabout .imgbx h3 {
+	font-size: 2.25em;
+	text-shadow: 1px 1px 1px #cacaca,
+        1px 2px 1px #cacaca,
+        1px 3px 1px #cacaca,
+        1px 4px 1px #cacaca,
+        1px 5px 1px #cacaca,
+        1px 6px 1px #cacaca,
+       
+    1px 18px 6px rgba(16, 16, 16, 0.123);
+   
+  }
+
 }
 
 /* Card2 // Designer section */
@@ -806,15 +862,16 @@ svg {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 80vh;
+	min-height: 50vh;
 	background: #f3f3f3;
 	max-width: 100% ;
 	width: 90%;
+	
 }
 .containerabout2
 {
 	position: relative;
-	width: 100%;
+	width: 60%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -955,15 +1012,16 @@ svg {
 	display: flex;
 	justify-content: space-around;
 	align-items: bottom;
-	min-height: 40vh;
+	min-height: 50vh;
 	background: #f3f3f3;
-	max-width: 100% ;
-	width: 100%;
+	max-width: 90vw ;
+	width: 90vw;
+	
 }
 .containerabouts
 {
 	
-	width: 50%;
+	width: 60%;
 	display: flex;
 	margin-right: 2rem;
 	margin-left: 3rem;
@@ -1086,12 +1144,12 @@ svg {
 /* icons for developing  */
 .containerdev
 {
-	width: 60%;
+	width: 80%;
 	display: flex;
 	transform: skewY(-3deg);
 	justify-content: center;
 	align-items: center;
-	
+	overflow: hidden;
 }
 .containerdev .icondev
 {
@@ -1263,39 +1321,46 @@ svg {
 
 /* design section  */
 
-.containerabout2 .cardabout2
-{
-	position: relative;
-	width: 27rem;
-	height: 15rem;
-	background: #fff;
-	transition: 0.5s;
-	margin-right: 3rem;
-}
-.containerabout2 .cardabout2:after
-{
-	content: '';
-	position: absolute;
-	top: -15px;
-	left: -15px;
-	width: 15px;
-	height: 162%;
-	background: rgb(192, 200, 207);
-	border-bottom: 200px solid #d9d9d9;
-	transform-origin: left;
-	transform: skewY(45deg);
-	transition: 0.5s;
+.containerabout2 {
+	transform: skewY(0deg);
 }
 
+.containerabouts {
+	transform: skewY(0deg);
+}
 
+.containerabout2 .contentabout p
+{
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size: 14px;
+}
 
+.containerabout2 .contentabout 
+{
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size: 14px;
+	width: 100%;
+}
+
+.containerabouts .contentabout p
+{
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size: 14px;
+}
+
+.containerabouts .contentabout 
+{
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size: 14px;
+	width: 100%;
+}
 /* developer section */
 .containerabouts .cardabouts
 {
 	position: relative;
 	width: 27.5rem;
 	height: 15rem;
-	background: #fff;
+	
 	transition: 0.5s;
 	margin-top: 10rem;
 }
@@ -1313,13 +1378,73 @@ svg {
 	transform: skewY(45deg);
 	transition: 0.5s;
 }
-.containerabouts .cardabouts .contentabout 
+.containerabouts .contentabout 
 {
 	
-	padding: 30px;
+	
 	
 }
 
+}
+
+/* SEO and marketing section fit  */
+@media (max-width: 1348px) {
+
+	.containerabout2 .contentabout p
+	{
+		font-family: 'Quattrocento Sans', sans-serif;
+		font-size: 16px;
+	}
+	
+	.containerabout2 .contentabout 
+	{
+		
+		
+		width: 100%;
+	}
+	
+	.containerabouts .contentabout p
+	{
+		font-family: 'Quattrocento Sans', sans-serif;
+		font-size: 17px;
+	}
+	
+	.containerabouts .contentabout 
+	{
+		
+		
+		width: 100%;
+	}
+}
+
+
+@media (max-width: 1100px) {
+
+	.containerabout2 .contentabout p
+	{
+		font-family: 'Quattrocento Sans', sans-serif;
+		font-size: 16px;
+	}
+	
+	.containerabout2 .contentabout 
+	{
+		
+		
+		width: 90%;
+	}
+	
+	.containerabouts .contentabout p
+	{
+		font-family: 'Quattrocento Sans', sans-serif;
+		font-size: 15px;
+	}
+	
+	.containerabouts .contentabout 
+	{
+		
+		
+		width: 120%;
+	}
 }
 
 /* Phone screens for bottom 2 cards*/
@@ -1330,7 +1455,7 @@ svg {
 	position: relative;
 	width: 15.5rem;
 	height: 15rem;
-	background: #fff;
+	
 	transition: 0.5s;
 }
 .containerabout2 .cardabout2:after
@@ -1341,25 +1466,25 @@ svg {
 	left: -15px;
 	width: 15px;
 	height: 24.25rem;
-	background: rgb(192, 200, 207);
+	
 	border-bottom: 200px solid #d9d9d9;
 	transform-origin: left;
 	transform: skewY(45deg);
 	transition: 0.5s;
 }
-.containerabout2 .cardabout2 .contentabout
+.containerabout2 .contentabout
 {
 	position: relative;
-	width: 100%;
+	width: 150%;
 	height: 200px;
-	padding: 10px;
-	background: #fff;
+	
+	
 	
 	text-align: center;
 	
 }
 
-.containerabout2 .cardabout2 .contentabout p
+.containerabout2 .contentabout p
 {
 	font-family: 'Quattrocento Sans', sans-serif;
 	padding: 8px;
@@ -1374,7 +1499,7 @@ svg {
 	position: relative;
 	width: 15.5rem;
 	height: 15rem;
-	background: #fff;
+	
 	transition: 0.5s;
 }
 .containerabouts .cardabouts:after
@@ -1391,19 +1516,19 @@ svg {
 	transform: skewY(45deg);
 	transition: 0.5s;
 }
-.containerabouts .cardabouts .contentabout
+.containerabouts .contentabout
 {
 	position: relative;
 	width: 100%;
 	height: 200px;
 	padding: 8px;
-	background: #fff;
+	
 	
 	text-align: center;
 	
 }
 
-.containerabouts .cardabouts .contentabout p
+.containerabouts .contentabout p
 {
 	font-family: 'Quattrocento Sans', sans-serif;
 	padding: 6px;
@@ -1421,6 +1546,7 @@ svg {
  }
 .bodys {
 	justify-content: center;
+	min-height: 50vh;
 }
 .containerabouts {
 	justify-content:center;
@@ -1431,10 +1557,7 @@ svg {
 .containerdesign {
 	display: none;
 }
-.containerabout2 {
-	margin-left: 6rem;
-	justify-content:center ;
-}
+
 }
 
 @media (max-width: 1300px) {
@@ -1673,6 +1796,23 @@ svg {
 	width: 100%;
 	height: 75px;
 	background: linear-gradient(transparent,transparent,rgba(0,0,0,.1));
+	
+}
+.plussign
+{	
+	
+	display: none;
+}
+.body2
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #f3f3f3;
+	max-width: 100% ;
+	width: 100%;
 	
 }
 }

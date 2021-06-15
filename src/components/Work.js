@@ -35,7 +35,7 @@ export default class Work extends Component {
          <li><Link to='./home' style={{ textDecoration: 'none' }} ><span className="active"  data-text="intro">intro</span></Link></li> 
          <li> <Link to='./users' style={{ textDecoration: 'none' }} ><span  data-text="work">work</span></Link></li> 
          <li><Link to='./team' style={{ textDecoration: 'none' }} ><span  data-text="team">team</span></Link></li> 
-         <li><Link style={{ textDecoration: 'none' }} ><span  data-text="contact">contact</span></Link></li> 
+         <li><Link to='./contact' style={{ textDecoration: 'none' }} ><span  data-text="contact">contact</span></Link></li> 
         </ul>
             
             <div className="screen">

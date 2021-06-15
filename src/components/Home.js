@@ -265,7 +265,7 @@ export default class Home extends Component {
 
 
     <div className='body2'>
-      <div data-sal="slide-right"
+      <div data-sal="fade-left"
                 data-sal-duration="2000"
                 data-sal-delay="500"
                 data-sal-easing="easeInBounce" className="containerabout2">
@@ -282,7 +282,7 @@ export default class Home extends Component {
           </div>
           <h2  class="plussign">+</h2>
 
-          <div data-sal="slide-left"
+          <div data-sal="fade-right"
                 data-sal-duration="2000"
                 data-sal-delay="500"
                 data-sal-easing="easeInBounce" className="containerabouts" >

@@ -121,7 +121,7 @@ export default class Contact extends Component {
                     
                     <div class="row100">
                         <div class="col">
-                            <input type="submit" value="Send"/>
+                            <button type="submit" value="Send"></button>
                         </div>
                     
                     </div>
