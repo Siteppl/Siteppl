@@ -444,7 +444,7 @@ div.screen {
 	  top: -35px;
 	  left: -10px;
   }
-input[type="submit"]
+button[type="submit"]
 {
     border: none;
     padding: 10px 40px;
