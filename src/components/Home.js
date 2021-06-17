@@ -264,11 +264,11 @@ export default class Home extends Component {
 
 
 
-    <div className='body2'>
+    <div className='body21'>
       <div data-sal="fade-left"
                 data-sal-duration="2000"
                 data-sal-delay="500"
-                data-sal-easing="easeInBounce" className="containerabout2">
+                data-sal-easing="easeInBounce" className="containerabout21">
         
             <h3>SEO</h3>
             <img  src="Images\seo.png" alt="Designer Image"/>
@@ -285,7 +285,7 @@ export default class Home extends Component {
           <div data-sal="fade-right"
                 data-sal-duration="2000"
                 data-sal-delay="500"
-                data-sal-easing="easeInBounce" className="containerabouts" >
+                data-sal-easing="easeInBounce" className="containerabouts1" >
           
           <h3>Marketing</h3>
           <img src="Images/market.png" alt="Developer Image"/>

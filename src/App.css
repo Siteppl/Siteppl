@@ -853,6 +853,11 @@ svg {
   }
 
 }
+/*  */
+
+
+
+
 
 /* Card2 // Designer section */
 
@@ -860,12 +865,13 @@ svg {
 .body2
 {
 	display: flex;
+	
 	justify-content: center;
 	align-items: center;
-	min-height: 50vh;
+	min-height: 65vh;
 	background: #f3f3f3;
 	max-width: 100% ;
-	width: 90%;
+	width: 100%;
 	
 }
 .containerabout2
@@ -873,6 +879,7 @@ svg {
 	position: relative;
 	width: 60%;
 	display: flex;
+	
 	flex-direction: column;
 	justify-content: center;
   	align-items: center;
@@ -1012,7 +1019,7 @@ svg {
 	display: flex;
 	justify-content: space-around;
 	align-items: bottom;
-	min-height: 50vh;
+	min-height: 70vh;
 	background: #f3f3f3;
 	max-width: 90vw ;
 	width: 90vw;
@@ -1314,6 +1321,235 @@ svg {
 
 
 
+  
+.body21
+{
+	display: flex;
+	
+	justify-content: center;
+	align-items: center;
+	min-height: 70vh;
+	background: #f3f3f3;
+	max-width: 100% ;
+	width: 90%;
+	
+}
+.containerabout21
+{
+	position: relative;
+	width: 60%;
+	display: flex;
+	
+	flex-direction: column;
+	justify-content: center;
+  	align-items: center;
+	margin-right: 1rem;
+	
+	transform: skewY(0deg);
+}
+.containerabout21 .cardabout2
+{
+	position: relative;
+	width: 550px;
+	height: 390px;
+	background: #fff;
+	transition: 0.5s;
+}
+.containerabout21 .cardabout2:hover
+{
+	transform: translateY(-40px);
+}
+.containerabout21 .cardabout2:before
+{
+	content: '';
+	position: absolute;
+	top: -15px;
+	left: 0;
+	width: 100%;
+	height: 15px;
+	background: rgb(192, 200, 207);
+	transform-origin: bottom;
+	transform: skewX(45deg);
+	transition: 0.5s;
+}
+.containerabout21 .cardabout2:after
+{
+	content: '';
+	position: absolute;
+	top: -15px;
+	left: -15px;
+	width: 15px;
+	height: 100%;
+	background: rgb(192, 200, 207);
+	border-bottom: 200px solid #d9d9d9;
+	transform-origin: left;
+	transform: skewY(45deg);
+	transition: 0.5s;
+}
+
+
+.containerabout21 .imgbx
+{
+	position: relative;
+	width: 100%;
+	height: 190px;
+	background: rgb(192, 200, 207);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.containerabout21  img
+{
+	width: 2rem;
+}
+.containerabout21  h3
+{
+	margin-top: 1.7rem;
+	font-size: 3em;
+    font-weight: 100;
+	font-family: 'Newspaper';
+    
+    color: white;
+    text-shadow: -1px 1px 1px #cacaca,
+        -1px 2px 1px #cacaca,
+        -1px 3px 1px #cacaca,
+        -1px 4px 1px #cacaca,
+        -1px 5px 1px #cacaca,
+        -1px 6px 1px #cacaca,
+       
+    1px 8px 6px rgba(16, 16, 16, 0.089),
+    1px 14px 10px rgba(16, 16, 16, 0.068);
+   
+    
+}
+.containerabout21 .contentabout
+{
+	position: relative;
+	width: 60%;
+	height: 200px;
+	padding: 30px;
+	
+	color: rgb(148, 148, 148);
+	text-align: center;
+}
+.containerabout21 .contentabout p
+{
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size: 20px;
+}
+.containerabout21 .contentabout:before
+{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 300px;
+	
+	transform-origin: bottom;
+	transform: skewX(45deg);
+	transition: 0.5s;
+	pointer-events: none;
+	z-index: -1;
+}
+
+
+
+
+
+
+/* Design icons/style */
+.containerdesign
+{
+	width: 60%;
+	display: flex;
+	
+	justify-content: center;
+	align-items: center;
+	transform: skewY(-3deg);
+}
+
+
+
+
+/* Card 4 and 5 // SE0 and marketing */
+
+.containerabouts1
+{
+	
+	width: 40%;
+	display: flex;
+	margin-right: 2rem;
+	
+	
+	flex-direction: column;
+	
+  align-items: center;
+	transform: skewY(0deg);
+}
+
+.containerabouts1  img
+{
+	width: 2rem;
+}
+.containerabouts1  h3
+{
+	margin-top: 1.7rem;
+	font-size: 3em;
+    font-weight: 100;
+	font-family: 'Newspaper';
+    
+    color: white;
+    text-shadow: -1px 1px 1px #cacaca,
+        -1px 2px 1px #cacaca,
+        -1px 3px 1px #cacaca,
+        -1px 4px 1px #cacaca,
+        -1px 5px 1px #cacaca,
+        -1px 6px 1px #cacaca,
+       
+    1px 8px 6px rgba(16, 16, 16, 0.089),
+    1px 14px 10px rgba(16, 16, 16, 0.068);
+}
+.containerabouts1 .contentabout
+{
+	position: relative;
+	width: 100%;
+	height: 200px;
+	padding: 30px;
+	
+	color: rgb(148, 148, 148);
+	text-align: center;
+	
+}
+.containerabouts1  .contentabout p
+{
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size: 20px;
+	opacity: .7;
+}
+.containerabouts1  .contentabout:before
+{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 300px;
+	
+	transform-origin: bottom;
+	transform: skewX(45deg);
+	transition: 0.5s;
+	pointer-events: none;
+	z-index: -1;
+}
+
+
+
+
+
+
+
 /* Media Queries for about section  */
 /* small computer screens // larger then phones */
 @media (max-width: 768px) {
@@ -1390,30 +1626,35 @@ svg {
 /* SEO and marketing section fit  */
 @media (max-width: 1348px) {
 
-	.containerabout2 .contentabout p
+
+	.containerabout21 
+	{
+		margin-left: 5rem;
+	}
+	.containerabout21 .contentabout p
 	{
 		font-family: 'Quattrocento Sans', sans-serif;
 		font-size: 16px;
 	}
 	
-	.containerabout2 .contentabout 
+	.containerabout21 .contentabout 
 	{
 		
 		
-		width: 100%;
+		width: 120%;
 	}
 	
-	.containerabouts .contentabout p
+	.containerabouts1 .contentabout p
 	{
 		font-family: 'Quattrocento Sans', sans-serif;
-		font-size: 17px;
+		font-size: 15px;
 	}
 	
-	.containerabouts .contentabout 
+	.containerabouts1 .contentabout 
 	{
 		
 		
-		width: 100%;
+		width: 120%;
 	}
 }
 
@@ -1423,7 +1664,7 @@ svg {
 	.containerabout2 .contentabout p
 	{
 		font-family: 'Quattrocento Sans', sans-serif;
-		font-size: 16px;
+		font-size: 12px;
 	}
 	
 	.containerabout2 .contentabout 
@@ -1443,13 +1684,17 @@ svg {
 	{
 		
 		
-		width: 120%;
+		width: 90%;
 	}
 }
 
 /* Phone screens for bottom 2 cards*/
 @media (max-width: 568px){
-	
+
+	.containerabout21 
+	{
+		margin-left: 0rem;
+	}
 	.containerabout2 .cardabout2
 {
 	position: relative;
@@ -1475,7 +1720,7 @@ svg {
 .containerabout2 .contentabout
 {
 	position: relative;
-	width: 150%;
+	width: 90vw;
 	height: 200px;
 	
 	
@@ -1546,19 +1791,43 @@ svg {
  }
 .bodys {
 	justify-content: center;
-	min-height: 50vh;
+	min-height: 90vh;
 }
 .containerabouts {
 	justify-content:center;
 	margin-right: 0rem;
 	margin-left: 0rem;
-	margin-top: 5rem;
+	
 }
 .containerdesign {
 	display: none;
 }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1300px) {
 	.mainwrapper {
@@ -1763,6 +2032,11 @@ svg {
 	
 	
 }
+.plussign
+{	
+	
+	display: none;
+}
 }
 @media (max-width: 568px) {
 .body1 {
@@ -1798,18 +2072,14 @@ svg {
 	background: linear-gradient(transparent,transparent,rgba(0,0,0,.1));
 	
 }
-.plussign
-{	
-	
-	display: none;
-}
-.body2
+
+.body21
 {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
-	min-height: 100vh;
+	min-height: 120vh;
 	background: #f3f3f3;
 	max-width: 100% ;
 	width: 100%;
