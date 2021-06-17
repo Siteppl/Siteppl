@@ -713,6 +713,7 @@ svg {
 	top:65rem;
 }
 
+
 .body .containerabout .imgbx h3 {
 	font-size: 2.25em;
 	text-shadow: 1px 1px 1px #cacaca,
@@ -1450,8 +1451,11 @@ svg {
 {
 	font-family: 'Quattrocento Sans', sans-serif;
 	font-size: 14px;
-	width: 100%;
+	width: 90vw;
 }
+
+
+
 
 .containerabouts .contentabout p
 {
@@ -1575,28 +1579,27 @@ svg {
 	{
 		margin-left: 0rem;
 	}
-	.containerabout2 .cardabout2
+	.containerabout21 .contentabout
 {
-	position: relative;
-	width: 15.5rem;
-	height: 15rem;
+
+	width: 90vw;
 	
-	transition: 0.5s;
+	
+	
+	
+	
 }
-.containerabout2 .cardabout2:after
+.containerabouts1 .contentabout
 {
-	content: '';
-	position: absolute;
-	top: -15px;
-	left: -15px;
-	width: 15px;
-	height: 24.25rem;
+
+	width: 90vw;
 	
-	border-bottom: 200px solid #d9d9d9;
-	transform-origin: left;
-	transform: skewY(45deg);
-	transition: 0.5s;
+	
+	
+	
+	
 }
+	
 .containerabout2 .contentabout
 {
 	position: relative;
