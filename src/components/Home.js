@@ -280,7 +280,7 @@ export default class Home extends Component {
           
         
           </div>
-          <h2  class="plussign">+</h2>
+          <h2  class="plussign">&</h2>
 
           <div data-sal="fade-right"
                 data-sal-duration="2000"
