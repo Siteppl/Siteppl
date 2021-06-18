@@ -465,13 +465,13 @@ div.screen {
   .sectionsnap:nth-child(2)
 {
 	
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   
 }
 .sectionsnap:nth-child(3)
 {
 	
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 }
 
@@ -901,10 +901,15 @@ a:hover {
 {
     transition: 0.5s;
     transition-delay: 0s;
+    
 }
 .cardspro .contentpro p 
 {
     font-size: 1.1em;
+}
+.cardspro .contentpro h2 
+{
+  font-family: 'Source Code Pro', monospace;
 }
 .cardspro:hover .contentpro
 {
@@ -990,6 +995,10 @@ a:hover {
 {
     font-size: 1.1em;
 }
+.cardspro2 .contentpro2 h2 
+{
+  font-family: 'Source Code Pro', monospace;
+}
 .cardspro2:hover .contentpro2
 {
   transform: translate(10px,-10px);
@@ -1067,6 +1076,10 @@ a:hover {
 .cardsprofin .contentprofin p 
 {
     font-size: 1.1em;
+}
+.cardsprofin .contentprofin h2 
+{
+  font-family: 'Source Code Pro', monospace;
 }
 .cardsprofin:hover .contentprofin
 {
@@ -1172,7 +1185,9 @@ justify-content: space-around;
 {
     opacity: .5;
     margin-bottom: 2.5rem;
+    
 }
+
 .cardspro3 .contentpro3 p
 {
     

@@ -46,7 +46,7 @@ export default class Home extends Component {
         <div className="screen">
           <header>
             
-            <a className="target-burger">
+            <a className="target-burger" >
               <ul className="buns">
                 <li className="bun"></li>
                 <li className="bun"></li>
@@ -55,7 +55,7 @@ export default class Home extends Component {
             </a>
             
           </header>
-          <nav className="lil-nav" role="navigation">
+          <nav className="lil-nav" role="navigation" >
             <ul>
                     <li><span className="active"onclick="transitionToPage('index.html')" data-text="intro">intro</span></li>
                     <li><span onclick="transitionToPage('work.html')" data-text="work">work</span></li>

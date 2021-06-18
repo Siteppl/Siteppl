@@ -957,6 +957,10 @@ a:hover {
 {
     font-size: 1.1em;
 }
+.cardspro2 .contentpro2 h2
+{
+  font-family: 'Source Code Pro', monospace;
+}
 .cardspro2:hover .contentpro2
 {
   transform: translate(10px,-10px);
