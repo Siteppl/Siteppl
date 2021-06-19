@@ -10,16 +10,13 @@ import sal from 'sal.js'
 
 
 
-
-
 export default class Team extends Component {
 
-    componentDidMount() {
-        sal({
-          
-          once: false,
-        })
-      }
+ 
+
+
+
+ 
 
 
     render() {
@@ -224,7 +221,8 @@ export default class Team extends Component {
 
     
     <div class="contactForm">
-      <form netlify>
+      <form  name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+      <input type="hidden" name="contact" value="contact" />
         <h2 id='textcomm'>Join the community</h2>
         
         <div class="inputBox">
@@ -242,7 +240,7 @@ export default class Team extends Component {
     </div>
   
     <div class="contactForm">
-      
+    
     <p class='underc'>Join our newsletter to get updates on projects, deals, and the building of the digital world.
     
     
