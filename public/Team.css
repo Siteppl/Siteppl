@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900');
-*
-{
-	margin: 0;
-	padding: 0;
-	font-family: 'Poppins', sans-serif;
-	box-sizing: border-box;
-}
+
 body{
 	
 	
@@ -420,9 +414,9 @@ div.screen {
   .body {
 	  height: 20vh;
 	  display: flex;
-	  width: 100%;
+	  width: 100vw;
 	  justify-content: center;
-	  background: linear-gradient(#ffcff4, white);
+	  background-color: #ffcff4;
 	  
   }
   /* displaying our images/idea */
@@ -430,9 +424,9 @@ div.screen {
 	height: 50vh;
 	display: block;
 	
-	width: 100%;
+	width: 100vw;
 	margin-top: 10rem;
-	background: linear-gradient(white, #ffcff4);
+	background-color: #ffcff4;
 	
 }
 
@@ -441,9 +435,9 @@ div.screen {
 .text {
 	display: flex;
 	height: 35rem;
-	background: linear-gradient( #ffcff4, #ffcff4, whitesmoke) ;
+	background: linear-gradient( #ffcff4, #ffcff4) ;
 	width: 100%;
-	
+	justify-content: center;
 }
   #texty
 {
@@ -452,7 +446,7 @@ div.screen {
     font-weight: 400;
 	font-family: 'Bree Serif';
     text-align: center;
-    color: #f2f3f7;
+    color: whitesmoke;
     text-shadow: 0 5px 5px rgba(0,0,0,.2),
                 0 -2px 2px rgba(255,255,255,1);
 }
@@ -463,7 +457,7 @@ div.screen {
     font-weight: 400;
 	font-family: 'Bree Serif';
     text-align: center;
-    color: #f2f3f7;
+    color: whitesmoke;
     text-shadow: 0 5px 5px rgba(0,0,0,.2),
                 0 -2px 2px rgba(255,255,255,1);
 }
@@ -475,12 +469,12 @@ div.screen {
     font-weight: 400;
 	font-family: 'Bree Serif';
     text-align: center;
-    color: #f2f3f7;
+    color: whitesmoke;
     text-shadow: 0 5px 5px rgba(0,0,0,.2),
                 0 -2px 2px rgba(255,255,255,1);
 }
 
-#textf
+#texti
 {
 	margin-top: 5rem;
     margin-left: 4rem;
@@ -488,9 +482,19 @@ div.screen {
     font-weight: 400;
 	font-family: 'Bree Serif';
     
-    color: #ffddf7;
-    text-shadow: 0 4px 4px rgba(0,0,0,.2),
-                0 -3px 3px rgba(255,255,255,1);
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px #cacaca,
+        1px 2px 1px #cacaca,
+        1px 3px 1px #cacaca,
+        1px 4px 1px #cacaca,
+        1px 5px 1px #cacaca,
+        1px 6px 1px #cacaca,
+        1px 7px 1px #cacaca,
+        1px 8px 1px #cacaca,
+        1px 9px 1px #cacaca,
+        1px 10px 1px #cacaca,
+    1px 10px 6px rgba(16, 16, 16, 0.164),
+    1px 15px 10px rgba(16, 16, 16, 0.068);
 }
 
 #textk
@@ -503,9 +507,20 @@ div.screen {
     font-weight: 400;
 	font-family: 'Bree Serif';
     
-    color: #ffddf7;
-    text-shadow: 0 4px 4px rgba(0,0,0,.2),
-                0 -3px 3px rgba(255,255,255,1);
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px #cacaca,
+        1px 2px 1px #cacaca,
+        1px 3px 1px #cacaca,
+        1px 4px 1px #cacaca,
+        1px 5px 1px #cacaca,
+        1px 6px 1px #cacaca,
+        1px 7px 1px #cacaca,
+        1px 8px 1px #cacaca,
+        1px 9px 1px #cacaca,
+        1px 10px 1px #cacaca,
+    1px 10px 6px rgba(16, 16, 16, 0.164),
+    1px 15px 10px rgba(16, 16, 16, 0.068);
+    
 }
 
 #textcomm
@@ -516,9 +531,9 @@ div.screen {
     font-weight: 200;
 	font-family: 'Bree Serif';
     
-    color: #ffddf7;
+    color: whitesmoke;
     text-shadow: 0 4px 4px rgba(0,0,0,.2),
-                0 -3px 3px rgba(255,255,255,1);
+                0 -2px 2px rgba(255,255,255,1);
 }
 
 
@@ -533,7 +548,7 @@ div.screen {
     font-size: 1.4em;
     font-weight: 200;
 	
-    border-color: #ffddf7;
+    border-color: lightgray;
 	border-width: .2rem;
     color: whitesmoke;
     text-shadow: 0 1px 1px rgba(0,0,0,.3),
@@ -546,7 +561,7 @@ div.screen {
     margin-left: 2.5rem;
     font-size: 1.4em;
     font-weight: 200;
-    border-color: #ffddf7;
+    border-color:lightgray;
 	border-width: .2rem;
     color: whitesmoke;
     text-shadow: 0 1px 1px rgba(0,0,0,.3),
@@ -706,17 +721,17 @@ div.screen {
     text-align: center;
     color: #f2f3f7;
     text-shadow: 0 5px 5px rgba(0,0,0,.2),
-                0 -2px 2px rgba(255,255,255,1);
+                0 -1px 1px rgba(255,255,255,1);
 }
 
 .under {
-	margin-bottom: 2rem;
+	margin-top: 10rem;
 	font-size: 1.3em;
     font-weight: 700;
     text-align: center;
-	display: block;
+	
 	width: 60%;
-	margin: 0 auto;
+	
 	font-family: "Quattrocento Sans";
     color: white;
 	text-shadow: 0 3px 3px rgba(163, 163, 163, 0.3),
@@ -733,7 +748,23 @@ div.screen {
 	width: 45rem;
 	
 	font-family: "Quattrocento Sans";
-    color: #ffddf7;
+    color: whitesmoke;
+	text-shadow: 0 1px 1px rgba(163, 163, 163, 0.5),
+				 0 -2px 2px rgba(255, 255, 255, 0.9);
+                
+}
+.underc {
+	display: flex;
+	justify-content: center;
+	font-size: 1.4em;
+    font-weight: 700;
+    text-align: center;
+	margin-top: 2rem;
+	
+	margin-right: 2rem;
+	
+	font-family: "Quattrocento Sans";
+    color: whitesmoke;
 	text-shadow: 0 1px 1px rgba(163, 163, 163, 0.5),
 				 0 -2px 2px rgba(255, 255, 255, 0.9);
                 
@@ -751,7 +782,9 @@ div.screen {
 
 
 #line {
-	margin: 5rem;
+	margin-left: 5rem;
+	margin-right: 5rem;
+	margin-top: 10rem;
 	border-width: .2rem;
 	border-color: white;
 	border-radius: .4rem;
@@ -796,7 +829,7 @@ div.screen {
 	width: 8%;
 	
 	box-shadow: 0 5px 5px rgba(0,0,0,.2),
-                0 -2px 2px rgba(255,255,255,1);
+                0 -1px 1px rgba(255,255,255,1);
 }
 
 
@@ -857,7 +890,7 @@ div.screen {
   width: 100%;
   height: 10rem;
   padding: 10px;
-  background: whitesmoke;
+  background:  #ffcff4;
 }
 .container2
 {
@@ -868,7 +901,7 @@ div.screen {
   height: 100vh;
   overflow: hidden;
   padding: 10px;
-  background: whitesmoke;
+  background: #ffcff4;
 }
 
 .container3
@@ -880,38 +913,24 @@ div.screen {
   
   height:65vh;
   padding: 10px;
-  background: whitesmoke;
+  background: #ffcff4;
 }
 
 .container4
 {
   
 	display: flex;
-	flex-direction: column;
-	height: 100vh;
+	flex-direction: row;
+	max-height: 40vh;
 	align-items: center;
 	padding: 10px;
-  width: 100%;
   
   
+	overflow: hidden;
   
-  background: whitesmoke;
+  background: #ffcff4;
 }
-.blockoPayBtn {
-	font-size: 2.5em;
-    font-weight: 200;
-	font-family: 'Bree Serif';
-    
-    color: #ffddf7;
-    text-shadow: 0 4px 4px rgba(0,0,0,.2),
-                0 -3px 3px rgba(255,255,255,1);
-	margin-right: 2rem;
-	margin-top: 8rem;
-}
-.blockoPayBtn:hover {
-	color: #ffddf7;
-	
-}
+
 
 
 @media (max-width: 335px) {
@@ -945,7 +964,7 @@ div.screen {
 	width: 100%;
 	
 	padding: 60px;
-	background: whitesmoke;
+	background: #ffcff4;
 }
 .contactForm h2
 {
@@ -967,10 +986,11 @@ div.screen {
 	font-size: 16px;
 	margin: 10px 0;
 	border: none;
-	background-color: whitesmoke;
+	background: #ffcff4;
 	border-bottom: 2px solid lightgray;
 	outline: none;
 	resize: none;
+	color: whitesmoke;
 }
 .contactForm .inputBox span
 {
@@ -981,7 +1001,7 @@ div.screen {
 	margin: 10px 0;
 	pointer-events: none;
 	transition: 0.5s;
-	color: leftgray;
+	color: whitesmoke;
 }
 .contactForm .inputBox input:focus ~ span,
 .contactForm .inputBox textarea:focus ~ span,
@@ -995,8 +1015,8 @@ div.screen {
 .contactForm .inputBox input[type=submit]
 {
 	width: 100px;
-	background: #ffddf7;
-	color: white;
+	background: whitesmoke;
+	color: #ffcff4;
 	border: none;
 	cursor: pointer;
 	padding: 10px;
@@ -1014,7 +1034,7 @@ section
     position: relative;
     width: 100%;
     height: 20vh;
-    background: linear-gradient(whitesmoke, #ffddf7);
+    background: #ffcff4;
     overflow: hidden;
 }
 section .wave
@@ -1091,7 +1111,7 @@ section .wave.wave4
 
 @media (max-height: 900px) {
 .plussign {
-	margin-top: 5rem;
+	margin-top: 8rem;
 	z-index: 1000;
 }
 .container2 {
@@ -1099,38 +1119,38 @@ section .wave.wave4
 	z-index: 1000;
 }
 .container3 {
-	height: 80vh;
+	height: 60vh;
 	
 }
 .container4 {
-	height: 105vh;
+	max-height: 80vh;
+	
 }
+
 
 }
 
 
 @media (max-width: 1050px) {
  .under {
-	font-size: .9em;
+	font-size: 1.2em;
  }
  #line {
 	 display: none;
  }
  
  .container2 {
-	 height: 120vh;
+	 height: 110vh;
 	 z-index: 5;
  }
- .container3 {
-	height: 115vh;
-}
-.container4 {
-	height: 125vh;
-}
+
+
+ 
 
 .text {
 	font-size: 15px ;
 }
+
 
 }
 
@@ -1140,29 +1160,42 @@ section .wave.wave4
 
 @media (max-width: 770px) {
 	#nameg {
-		justify-content: center;
-		flex-wrap: wrap;
+		justify-content: flex-start;
+		
 	}
+	
 	#textg {
 		margin-right: 0rem;
+		justify-content: flex-start;
 	}
 	#textf {
 		margin-left: 0rem;
 	}
+	#texti {
+		margin-left: 0rem;
+	}
+	#textk {
+		justify-content: flex-start;
+	}
 
 
 	#namet {
-		justify-content: center;
+		
 		flex-wrap: wrap;
 	}
 	#textdesc {
 		margin-left: 0rem;
+		
 	}
 	#line2 {
 		display: none;
 	}
 	#line1 {
 		display: none ;
+	}
+	.underc {
+		font-size: 1em;
+		width: 100%;
 	}
 	
    }
@@ -1172,9 +1205,26 @@ section .wave.wave4
 	section {
 		display:none
 	}
-	.container4 {
-		margin-top: -50px;
+	.plussign {
+		display: none;
 	}
+	.container2 {
+		height: 70vh;
+		z-index: 5;
+	}
+	.underc {
+		display: none;
+	}
+	.container4
+{
+  
+	
+	max-height: 40vh;
+	align-items: center;
+	justify-content: center;
+	
+}
+
 	
 }
 

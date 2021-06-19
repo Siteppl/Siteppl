@@ -69,13 +69,13 @@ export default class Team extends Component {
       <div class="col2">
         <h1 class="mainbanner">team</h1>
         <div class="center-con">
-          <div class="round">
+          {/* <div class="round">
             <div id="cta">
               <span class="arrow primera next "></span>
               <span class="arrow segunda next "></span>
             </div>
             
-          </div>
+          </div> */}
           
         </div>
        
@@ -99,17 +99,17 @@ export default class Team extends Component {
     
     
     <div class='text'>
-      <hr  id='line'/>
+      
       <p  class='under'><span id="sizedup">We are digital asset creators.</span> This entails the creation of applications in the fields of full stack web and mobile apps, blockchain development, data science and analysis, and anything that can create wealth on the web.
        Our team creates and manages applications built by us, and built by our clients. We work to develop value within every pocket of the web today. 
       </p>
-      <hr  id='line'/>
+      
       
     </div>
     
     
     <div class="container2">
-    <h2 id="textf">Architect</h2>
+    <h2 id="texti">Architect</h2>
 
 
     <div id="nameg">
@@ -193,11 +193,9 @@ export default class Team extends Component {
 
 
 
-  <div class="container4">
   
-    <hr data-sal="slide-down"
-    
-     id='linedown'/>
+  
+    <div className="container4">
 
     
     <div class="contactForm">
@@ -205,8 +203,8 @@ export default class Team extends Component {
         <h2 id='textcomm'>Join the community</h2>
         
         <div class="inputBox">
-          <input type="text" name="" required="required"/>
-          <span>Email</span>
+          <input type="text" name="" placeholder="Email" required="required"/>
+          
         </div>
         
         <div class="inputBox">
@@ -218,13 +216,21 @@ export default class Team extends Component {
       
     </div>
   
-    <h2 id='textcomm'>Or</h2>
+    <div class="contactForm">
+      
+    <p class='underc'>A Creator of code, design, and media.  
+    I am a full stack programmer, working with the JavaScript language.
+    
+    
+    </p>
+
+      
+    </div>
 
    
-    <a href="" class="blockoPayBtn" data-toggle="modal" data-uid="f1d47c888bf211eb"><img width="100" src="images/bitcoin.png"/>Donate</a>
-    
-    
     </div>
+    
+    
 
     
 
