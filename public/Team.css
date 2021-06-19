@@ -434,10 +434,12 @@ div.screen {
 
 .text {
 	display: flex;
+	flex-direction: column;
 	height: 35rem;
 	background: linear-gradient( #ffcff4, #ffcff4) ;
 	width: 100%;
-	justify-content: center;
+	
+	align-items: center;
 }
   #texty
 {
@@ -800,10 +802,25 @@ div.screen {
 	border-width: .2rem;
 	border-color: white;
 	border-radius: .4rem;
-	width: 10%;
+	
 	box-shadow: 0 5px 5px rgba(0,0,0,.2),
                 0 -2px 2px rgba(255,255,255,1);
 }
+
+
+#linetop {
+	
+	position: absolute;
+	top: 114%;
+	transform: rotate(-20deg);
+	border-width: .2rem;
+	border-color: white;
+	border-radius: .4rem;
+	width: 2%;
+	box-shadow: 0 5px 5px rgba(0,0,0,.2),
+                0 -2px 2px rgba(255,255,255,1);
+}
+
 
 #line2 {
 	
@@ -812,7 +829,7 @@ div.screen {
 	border-width: .2rem;
 	border-color: white;
 	border-radius: .4rem;
-	width: 10%;
+	width: 5%;
 	box-shadow: 0 5px 5px rgba(0,0,0,.2),
                 0 -2px 2px rgba(255,255,255,1);
 }

@@ -99,9 +99,17 @@ export default class Team extends Component {
     
     
     <div class='text'>
-      
-      <p  class='under'><span id="sizedup">We are digital asset creators.</span> This entails the creation of applications in the fields of full stack web and mobile apps, blockchain development, data science and analysis, and anything that can create wealth on the web.
-       Our team creates and manages applications built by us, and built by our clients. We work to develop value within every pocket of the web today. 
+    <hr data-sal="slide-right"
+                data-sal-duration="2000"
+                data-sal-delay="500"
+                data-sal-easing="easeInBounce"
+                id="linetop"/> 
+      <p class='under'><span id="sizedup">We are digital asset creators.</span>
+                  <span data-sal="fade"
+                data-sal-duration="1000"
+                data-sal-delay="500"
+                data-sal-easing="easeInBounce" > This entails the creation of applications in the fields of full stack web and mobile apps, blockchain development, data science and analysis, and anything that can create wealth on the web.
+       Our team creates and manages applications built by us, and built by our clients. We work to develop value within every pocket of the web today.</span>
       </p>
       
       
@@ -201,8 +209,8 @@ export default class Team extends Component {
 
 <div id="undercontainer"> 
   <p class='underg'>A Creator of code, design, and media.  
-    I am a full stack programmer, working with the JavaScript language.
-    
+    I am a full stack programmer, working with the JavaScript language. Along with programming, I work in the business development and marketing fields along with copywriting services.
+    I work to ensure our clients are provided with the most possible value across the build and deployment process 
     
     </p>
   </div>
