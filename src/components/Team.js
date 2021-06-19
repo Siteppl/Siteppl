@@ -14,7 +14,12 @@ export default class Team extends Component {
 
  
 
-
+  componentDidMount() {
+    sal({
+      
+      once: false,
+    })
+  }
 
  
 
