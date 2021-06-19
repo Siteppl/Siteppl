@@ -113,25 +113,32 @@ export default class Team extends Component {
 
 
     <div id="nameg">
-    <hr id='line1'/>
+    <hr data-sal="slide-right"
+                data-sal-duration="2000"
+                data-sal-delay="500"
+                data-sal-easing="easeInBounce" id='line1'/>
 
 
     <div id="socialsg">
     <h3  id="textg">Gavin Henderson / Co-founder</h3>
     <ul class="socials">
       
-      <li data-sal="zoom-up"
-      
-      data-sal-easing="easeInQuint"><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-      <li data-sal="zoom-up"
-      
-      data-sal-easing="easeInQuint"><a href="#"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a></li>
-      <li data-sal="zoom-up"
-     
-      data-sal-easing="easeInQuint"><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-      <li data-sal="zoom-up"
-      
-      data-sal-easing="easeInQuint"><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+      <li data-sal="fade"
+                data-sal-duration="2000"
+                data-sal-delay="500"
+                data-sal-easing="easeInBounce"><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+      <li data-sal="fade"
+                data-sal-duration="2000"
+                data-sal-delay="700"
+                data-sal-easing="easeInBounce"><a href="#"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a></li>
+      <li data-sal="fade"
+                data-sal-duration="2000"
+                data-sal-delay="800"
+                data-sal-easing="easeInBounce"><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+      <li data-sal="fade"
+                data-sal-duration="2000"
+                data-sal-delay="1000"
+                data-sal-easing="easeInBounce"><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
     </ul>
   </div>
   </div>
@@ -145,7 +152,10 @@ export default class Team extends Component {
       </p>
     </div>
       
-      <h2  class="plussign">+</h2>
+      <h2  data-sal="fade"
+                data-sal-duration="2000"
+                data-sal-delay="500"
+                data-sal-easing="easeInBounce"class="plussign">+</h2>
     </div>
  
 
@@ -162,21 +172,28 @@ export default class Team extends Component {
     <h3 id="textdesc">Tyler Smith / Co-founder</h3>
     <ul class="socials">
       
-      <li data-sal="zoom-up"
-      
-      data-sal-easing="easeInQuint"><a href="https://twitter.com/Smith_t7"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-      <li data-sal="zoom-up"
-      
-      data-sal-easing="easeInQuint"><a href="https://tylersmith.digital"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a></li>
-      <li data-sal="zoom-up"
-      
-      data-sal-easing="easeInQuint"><a href="https://www.linkedin.com/in/tylersmith77/"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
-      <li data-sal="zoom-up"
-      
-      data-sal-easing="easeInQuint"><a href="https://www.instagram.com/smith7t/"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+      <li data-sal="fade"
+                data-sal-duration="2000"
+                data-sal-delay="500"
+                data-sal-easing="easeInBounce"><a href="https://twitter.com/Smith_t7"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+      <li data-sal="fade"
+                data-sal-duration="2000"
+                data-sal-delay="700"
+                data-sal-easing="easeInBounce"><a href="https://tylersmith.digital"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a></li>
+      <li data-sal="fade"
+                data-sal-duration="2000"
+                data-sal-delay="900"
+                data-sal-easing="easeInBounce"><a href="https://www.linkedin.com/in/tylersmith77/"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+      <li data-sal="fade"
+                data-sal-duration="2000"
+                data-sal-delay="1000"
+                data-sal-easing="easeInBounce"><a href="https://www.instagram.com/smith7t/"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
     </ul>
   </div>
-  <hr  id='line2'/>
+  <hr data-sal="fade"
+                data-sal-duration="2000"
+                data-sal-delay="500"
+                data-sal-easing="easeInBounce" id='line2'/>
   
 </div>
 
@@ -218,8 +235,7 @@ export default class Team extends Component {
   
     <div class="contactForm">
       
-    <p class='underc'>A Creator of code, design, and media.  
-    I am a full stack programmer, working with the JavaScript language.
+    <p class='underc'>Join our newsletter to get updates on projects, deals, and the building of the digital world.
     
     
     </p>

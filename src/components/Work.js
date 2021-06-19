@@ -135,7 +135,7 @@ export default class Work extends Component {
               <div className="layerpro2">
                 <div className="contentpro2">
                   <h2>Entertainment</h2>
-                  <p>Media and social apps created to build a community</p>
+                  <p>Media and social apps created to build a lasting community</p>
                 </div>
                 
               </div>
