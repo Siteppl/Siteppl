@@ -231,12 +231,12 @@ export default class Team extends Component {
         <h2 id='textcomm'>Join the community</h2>
         
         <div class="inputBox">
-          <input type="text" name="form-name" placeholder="Email" required="required"/>
+          <input type="text" name="contact" placeholder="Email" required="required"/>
           
         </div>
         
         <div class="inputBox">
-          <input type="submit" name="" value="Send"/>
+          <input type="submit" value="Send"/>
         </div>
       </form>
 
