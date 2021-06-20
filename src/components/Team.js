@@ -231,7 +231,7 @@ export default class Team extends Component {
         <h2 id='textcomm'>Join the community</h2>
         
         <div class="inputBox">
-          <input type="text" name="contact" placeholder="Email" required="required"/>
+          <input type="text" name="email" placeholder="Email" required="required"/>
           
         </div>
         
