@@ -7,12 +7,21 @@ import sal from 'sal.js'
 
 
 
-
+const encode = (data) => {
+  return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+}
 
 
 export default class Team extends Component {
 
- 
+  constructor(props) {
+    super(props);
+    this.state = { email: ""};
+  }
+
+
 
   componentDidMount() {
     sal({
@@ -21,10 +30,23 @@ export default class Team extends Component {
     })
   }
 
- 
+  handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+    e.preventDefault();
+  };
+
+  handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
 
     render() {
+      const { name, email, message } = this.state;
     return(
         <div>
             <Helmet>
@@ -210,7 +232,7 @@ export default class Team extends Component {
 
 
 <div id="undercontainer"> 
-  <p class='underg'>A Creator of code, design, and media.  
+  <p class='underg'>A creator of code, design, and media.  
     I am a full stack programmer, working with the JavaScript language. Along with programming, I work in the business development and marketing fields along with copywriting services.
     I work to ensure our clients are provided with the most possible value across the build and deployment process 
     
@@ -226,12 +248,12 @@ export default class Team extends Component {
 
     
     <div class="contactForm">
-      <form  name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+      <form onSubmit={this.handleSubmit}>
       <input type="hidden" name="form-name"  />
         <h2 id='textcomm'>Join the community</h2>
         
         <div class="inputBox">
-          <input type="text" name="email" placeholder="Email" required="required"/>
+        <input type="email" name="email" value={email} onChange={this.handleChange}/>
           
         </div>
         
