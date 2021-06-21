@@ -7,21 +7,12 @@ import sal from 'sal.js'
 
 
 
-const encode = (data) => {
-  return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
-}
+
 
 
 export default class Team extends Component {
 
-  constructor(props) {
-    super(props);
-    this.state = { email: ""};
-  }
-
-
+ 
 
   componentDidMount() {
     sal({
@@ -30,23 +21,10 @@ export default class Team extends Component {
     })
   }
 
-  handleSubmit = e => {
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...this.state })
-    })
-      .then(() => alert("Success!"))
-      .catch(error => alert(error));
-
-    e.preventDefault();
-  };
-
-  handleChange = e => this.setState({ [e.target.name]: e.target.value });
+ 
 
 
     render() {
-      const { name, email, message } = this.state;
     return(
         <div>
             <Helmet>
@@ -248,17 +226,17 @@ export default class Team extends Component {
 
     
     <div class="contactForm">
-      <form onSubmit={this.handleSubmit}>
-      <input type="hidden" name="form-name"  />
+      <form  name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+      <input type="hidden" name="contact"  />
         <h2 id='textcomm'>Join the community</h2>
         
         <div class="inputBox">
-        <input type="email" name="email" value={email} onChange={this.handleChange}/>
+          <input type="text" name="contact" placeholder="Email" required="required"/>
           
         </div>
         
         <div class="inputBox">
-        <button type="submit">Send</button>
+          <input type="submit" value="Send"/>
         </div>
       </form>
 
