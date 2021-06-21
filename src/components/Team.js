@@ -258,7 +258,7 @@ export default class Team extends Component {
         </div>
         
         <div class="inputBox">
-          <input type="submit" value="Send"/>
+        <button type="submit">Send</button>
         </div>
       </form>
 
