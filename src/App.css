@@ -2695,51 +2695,56 @@ section .wave.wave4
 @media (max-width: 768px) {
 
 
-	/* design section  */
+
 	
-	.containerabout2 {
-		transform: skewY(0deg);
-	}
-	
-	.containerabouts {
-		transform: skewY(0deg);
-	}
+
 	
 	.containerabout2 .contentabout p
 	{
-		font-family: 'Quattrocento Sans', sans-serif;
+		
 		font-size: 14px;
 	}
-	
-	.containerabout2 .contentabout 
+	.containerabout21 .contentabout p
 	{
-		font-family: 'Quattrocento Sans', sans-serif;
+		
 		font-size: 14px;
-		width: 100%;
 	}
-	
-	
-	
-	
+	.containerabouts1 .contentabout p
+	{
+		
+		font-size: 14px;
+	}
 	.containerabouts .contentabout p
 	{
-		font-family: 'Quattrocento Sans', sans-serif;
+		
 		font-size: 14px;
+
 	}
-	
 	.containerabouts .contentabout 
 	{
-		font-family: 'Quattrocento Sans', sans-serif;
-		
-		width: 100%;
+		transform: SkewY(0deg);
+		width: 150%;
+
 	}
-	/* developer section */
-	
+	.containerabout2 .contentabout 
+	{
+		
+		width: 150%;
+	}
+	.containerabout21 .contentabout 
+	{
+		
+		width: 150%;
+	}
+	.containerabouts1 .contentabout 
+	{
+		
+		width: 190%;
+	}
 	.containerabouts .contentabout 
 	{
 		
-		
-		
+		width: 150%;
 	}
 	
 	}
