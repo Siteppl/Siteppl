@@ -17,8 +17,8 @@ body{
 }
 @media (max-width: 1300px) {
 	.mainwrapper {
-		grid-template-columns: 20% 80%;
-	}
+		grid-template-columns: 0% 100%;
+	  }
 	.col3 {
 		display: none;
 	}
@@ -923,10 +923,10 @@ div.screen {
   
 	display: flex;
 	flex-direction: row;
-	max-height: 40vh;
+	height: 80vh;
 	align-items: center;
 	padding: 10px;
-	
+	width: 100vw;
   
 	overflow: hidden;
   
@@ -949,7 +949,7 @@ div.screen {
 	width: 100%;
 	
 	padding: 60px;
-	background: #ffcff4;
+	
 }
 .contactForm h2
 {
@@ -1149,7 +1149,9 @@ section .wave.wave4
 		justify-content: flex-start;
 		
 	}
-	
+	.plussign {
+		display: none;
+	}
 	
 	#textg {
 		margin-right: 0rem;
@@ -1210,10 +1212,9 @@ section .wave.wave4
 	.underc {
 		display: none;
 	}
-	.contactForm
+	.container4
 {
 	
-	margin-left: 15%;
 }
 .underg {
 	font-size: 22px;
@@ -1223,8 +1224,8 @@ section .wave.wave4
 	font-size: 12px ;
 }
 .contactForm {
-	max-height: 50vh;
-	margin-top: 15%;
+	
+	margin-left: 10%;
 }
 	
 }

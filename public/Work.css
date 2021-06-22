@@ -389,7 +389,7 @@ div.screen {
   }
   @media (max-width: 1300px) {
     .mainwrapper {
-      grid-template-columns: 20% 80%;
+      grid-template-columns: 0% 100%;
     }
     .col3 {
       display: none;
@@ -449,7 +449,7 @@ div.screen {
 {
 	background-color: #b3b5f2 ;
 	background-size: cover;
-	height: 105vh;
+	
   margin-bottom: 10rem;
   
 }
@@ -457,7 +457,7 @@ div.screen {
 {
 	background-color: #b3b5f2 ;
 	background-size: cover;
-  height: 105vh;
+  
   
 }
 }
@@ -803,11 +803,11 @@ a:hover {
       margin-left: 3rem;
     }
     #textA {
-      font-size: 4em;
+      font-size: 2.5em;
       margin-left: 8rem;
     }
     #textB {
-      font-size: 4em;
+      font-size: 2.5em;
       margin-left: 8rem;
     }
     #textC {
