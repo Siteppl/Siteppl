@@ -289,14 +289,7 @@ div.screen {
 	justify-content: center;
 	transform: rotate(90deg);
 }
-@media (max-width: 768px) {
-	.mainbanner {
-		font-size: 8em;
-		margin-top: 15rem;
-		margin-right: 4rem;
-	}
-	
-}
+
 
 
 .round {
@@ -400,15 +393,7 @@ div.screen {
 	  opacity: 1.0;
 	}
   }
-  @media (max-width: 768px) {
-	.arrow {
-		display: none;
-	}
-	.round {
-		display: none;
-	}
-	
-}
+ 
 
   /* main 'who section' */
   .body {
@@ -950,24 +935,7 @@ div.screen {
 
 
 
-@media (max-width: 335px) {
-	.profile {
-		height: 4rem;
-		width: 4rem;
-	}
 
-
-}
-@media (min-width: 1101px){
-	div.screen{
-		display: none;
-	}
-}
-@media (max-width: 1100px) {
-	.topleft li span{
-		display: none;
-	}
-}
 
 
 
@@ -1182,6 +1150,7 @@ section .wave.wave4
 		
 	}
 	
+	
 	#textg {
 		margin-right: 0rem;
 		justify-content: flex-start;
@@ -1202,6 +1171,7 @@ section .wave.wave4
 		justify-content: flex-start;
 		
 	  }
+
 
 
 	#namet {
@@ -1245,11 +1215,36 @@ section .wave.wave4
 	
 	margin-left: 15%;
 }
+.underg {
+	font-size: 22px;
+}
 
-
+.text {
+	font-size: 12px ;
+}
+.contactForm {
+	max-height: 50vh;
+	margin-top: 15%;
+}
 	
 }
 
 
+@media (max-width: 768px) {
+	.arrow {
+		display: none;
+	}
+	.round {
+		display: none;
+	}
+	
+}
 
-
+@media (max-width: 768px) {
+	.mainbanner {
+		font-size: 8em;
+		margin-top: 15rem;
+		margin-right: 4rem;
+	}
+	
+}

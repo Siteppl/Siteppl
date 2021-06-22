@@ -60,7 +60,7 @@ export default class Contact extends Component {
                 
 
             
-                <div class="col2"> 
+                <div class="col2con"> 
                 <h1  class="mainbanner">contact</h1>
                 
                 <form name="contact" method="post">

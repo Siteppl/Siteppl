@@ -198,7 +198,7 @@ export default class Work extends Component {
         <div className="contentsnap">
           <div  id="textC" data-text="Our apps">Our apps</div>
           <div  id="textunder" data-text="Created + Launched + managed + updated by site ppl.">Created + Launched + managed + updated by site ppl.</div>
-          <div id="textA" data-text="Ordering app"><a href='https://tender-jepsen-13a810.netlify.app'>Ordering app</a></div>
+          <div id="textA" data-text="Ordering app"><a href='https://tomsdeli.netlify.app'>Ordering app</a></div>
           <div id="textB" data-text="Appointment system"><a href='#'>Appointment system</a></div>
           
         </div>

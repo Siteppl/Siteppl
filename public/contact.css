@@ -9,7 +9,7 @@
 body{
 	
 	
-	width: 100vw;
+
  
 }
 .color{
@@ -19,8 +19,8 @@ body{
 	display: grid;
 	grid-template-columns: 20% 60% 20%;
 	
-	height: 100vh;
-	
+	height: 130vh;
+	margin-right: 1rem;
 	overflow: hidden;
 	
 }
@@ -256,6 +256,7 @@ div.screen {
 	  display: flex;
 	  justify-content: center;
 	  flex-direction: column;
+	  
   }
 .mainbanner
 {	
@@ -508,6 +509,10 @@ button[type="submit"]
 				
 				-10px 10px rgba(0,0,0,0.2);
 }
+.col2con {
+	height: 120vh;
+	
+}
 .container{
 	margin-top: -3em;
 }
@@ -515,16 +520,26 @@ button[type="submit"]
 }
 
 @media (max-width: 550px){
-	.mainbanner{ 
-		margin-top: 6rem;
-		font-size: 4em;
-		
-}
+	
 	
 .container
 {
     width: 80%;
     padding: 20px;
+	
+}
+.mainbanner{ 
+	font-size: 4.5em;
+	margin-left: 1.5em;
+	
+}
+.mainwrapper2 {
+	display: grid;
+	grid-template-columns: 0% 80% 20%;
+	
+	height: 130vh;
+	
+	overflow: hidden;
 	
 }
 

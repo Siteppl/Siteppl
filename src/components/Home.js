@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
+import { Parallax } from 'react-scroll-parallax';
 import {Helmet} from 'react-helmet';
 import sal from 'sal.js'
 import '../App.css'
@@ -110,9 +110,11 @@ export default class Home extends Component {
   
       <div className="containerabout">
       <div className="imgwrapper">
+      
             <svg data-sal="slide-right" data-sal-duration="1000" width="44px" height="44px" className="path"viewBox="0 0 128 128">
 <path fill="transparent" stroke="#fff" stroke-width="1" fill="lightblue" d="M38.089 77.466l-11.4 4.896 10.559 4.514 12.241-4.514-11.4-4.896zm-17.138 6.12l-.382 22.034 16.679 7.345V90.089l-16.297-6.503zm34.276 0l-15.073 5.739V110.9l15.073-6.121V83.586zm17.979-68.551L61.73 19.931l10.635 4.515 12.241-4.515-11.4-4.896zm-15.914 6.503v22.034l14.231 4.132.459-20.046-14.69-6.12zm31.828 1.224L75.654 28.5v21.652l13.466-6.121V22.762zM19.306 46.047L7.907 50.944l10.558 4.514 12.241-4.514-11.4-4.897zM2.168 52.168l-.382 22.034 16.679 7.345V58.671L2.168 52.168zm34.275 0l-15.071 5.738V79.48l15.071-6.12V52.168zm19.587-6.937l-11.4 4.897 10.558 4.514 12.241-4.514-11.399-4.897zm-17.137 6.121l-.383 22.035 16.679 7.345V57.855l-16.296-6.503zm34.275 0L58.096 57.09v21.576l15.072-6.121V51.352zm35.908-36.317l-11.399 4.896 10.559 4.515 12.241-4.515-11.401-4.896zm-17.137 6.121l-.382 22.034 16.679 7.344V27.658l-16.297-6.502zm34.275 0l-15.071 5.738v21.575l15.071-6.12V21.156z"></path>
 </svg>
+
 <svg  data-sal-delay="500" data-sal="slide-right" data-sal-duration="1000" width="44px" height="44px" viewBox="0 0 128 128">
 <path fill="white" d="M112.771 30.334L68.674 4.729c-2.781-1.584-6.402-1.584-9.205 0L14.901 30.334C12.031 31.985 10 35.088 10 38.407v51.142c0 3.319 2.084 6.423 4.954 8.083l11.775 6.688c5.628 2.772 7.617 2.772 10.178 2.772 8.333 0 13.093-5.039 13.093-13.828v-50.49c0-.713-.371-1.774-1.071-1.774h-5.623C42.594 41 41 42.061 41 42.773v50.49c0 3.896-3.524 7.773-10.11 4.48L18.723 90.73c-.424-.23-.723-.693-.723-1.181V38.407c0-.482.555-.966.982-1.213l44.424-25.561c.415-.235 1.025-.235 1.439 0l43.882 25.555c.42.253.272.722.272 1.219v51.142c0 .488.183.963-.232 1.198l-44.086 25.576c-.378.227-.847.227-1.261 0l-11.307-6.749c-.341-.198-.746-.269-1.073-.086-3.146 1.783-3.726 2.02-6.677 3.043-.726.253-1.797.692.41 1.929l14.798 8.754a9.294 9.294 0 004.647 1.246c1.642 0 3.25-.426 4.667-1.246l43.885-25.582c2.87-1.672 4.23-4.764 4.23-8.083V38.407c0-3.319-1.36-6.414-4.229-8.073zM77.91 81.445c-11.726 0-14.309-3.235-15.17-9.066-.1-.628-.633-1.379-1.272-1.379h-5.731c-.709 0-1.279.86-1.279 1.566 0 7.466 4.059 16.512 23.453 16.512 14.039 0 22.088-5.455 22.088-15.109 0-9.572-6.467-12.084-20.082-13.886-13.762-1.819-15.16-2.738-15.16-5.962 0-2.658 1.184-6.203 11.374-6.203 9.105 0 12.461 1.954 13.842 8.091.118.577.645.991 1.24.991h5.754c.354 0 .692-.143.94-.396.24-.272.367-.613.335-.979-.891-10.568-7.912-15.493-22.112-15.493-12.631 0-20.166 5.334-20.166 14.275 0 9.698 7.497 12.378 19.622 13.577 14.505 1.422 15.633 3.542 15.633 6.395 0 4.955-3.978 7.066-13.309 7.066z"></path>
 </svg>
@@ -137,20 +139,20 @@ export default class Home extends Component {
                 data-sal-delay="500"
                 data-sal-easing="easeInBounce"className="contentabout">
                   
-            <p >We are builders of digital assets, including websites, mobile apps, libraries, dapps, games, and more. Get a quote on any design or development service, built for your needs. </p>
+            <p >We are builders of digital assets, including websites, mobile apps, libraries, dapps, games, and more.</p>
           </div>
           <div data-sal="slide-left"
                 data-sal-duration="1000"
                 data-sal-delay="1000"
                 data-sal-easing="easeInBounce" className="contentabout2">
-                  <img id="logo"src="Images/logotry.png"/>
-            <p ></p>
+                  
+                  <p >We believe that the digital world is constantly evolving. The creator economy is growing every day. Let us help grow your business the right way. </p>
           </div>
           <div data-sal="slide-up"
                 data-sal-duration="2000"
                 data-sal-delay="1000"
                 data-sal-easing="easeInBounce"className="contentabout3">
-            <p >Get a free quote, or contact us</p>
+            <p >Get a <Link to='./quote' style={{ textDecoration: 'none' }}><span id="quote">free quote</span></Link>, or <Link to='./contact' style={{ textDecoration: 'none' }}><span id="contact">contact us</span></Link> now.</p>
           </div>
           
         </div>
@@ -176,6 +178,7 @@ export default class Home extends Component {
                 data-sal-duration="2000"
                 data-sal-delay="500"
                 data-sal-easing="easeInBounce">Designers</h3>
+                
             <img  data-sal="fade"
                 data-sal-duration="2000"
                 data-sal-delay="500"
@@ -310,21 +313,17 @@ export default class Home extends Component {
     
 
     <div className="container">
-      <div className="checkox">
-        <p id='switch'>Work</p>
-        <label>
-          <input onclick="transitionToPage('work.html')" type="checkbox" name=""/>
-          <span className="toggle"></span>
-        </label>
-      </div>
-      
-      <div className="checkox">
-        <p id='switch'>Our Team</p>
-        <label>
-          <input onclick="transitionToPage('team.html')" type="checkbox" name=""/>
-          <span  className="toggle"></span>
-        </label>
-      </div>
+    
+    {/* <ul className="bottomnav">
+    
+         <li> <Link to='./users' style={{ textDecoration: 'none' }} ><span  data-text="work">work </span></Link></li> 
+         <li><span  data-text="-">- </span></li>
+         <li><Link to='./team' style={{ textDecoration: 'none' }} ><span  data-text="team">team</span></Link></li> 
+         <li><span  data-text="-">- </span></li>
+         <li><Link to='./contact' style={{ textDecoration: 'none' }} ><span  data-text="contact">contact</span></Link></li> 
+         <li><span  data-text="-">- </span></li>
+         <li><Link to='./contact' style={{ textDecoration: 'none' }} ><span  data-text="quote">quote</span></Link></li> 
+        </ul> */}
       
     </div>
     
