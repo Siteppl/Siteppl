@@ -231,7 +231,7 @@ export default class Team extends Component {
     
     <div class="contactForm">
       <form  name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-      <input type="hidden" name="contact" value="contact" />
+      <input type="hidden" name="form-name" value="contact" />
         <h2 id='textcomm'>Join the community</h2>
         
         <div class="inputBox">
