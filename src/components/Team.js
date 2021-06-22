@@ -7,11 +7,7 @@ import sal from 'sal.js'
 
 
 
-<form name="contact" netlify netlify-honeypot="bot-field" hidden>
 
-<input type="email" name="email" />
-
-</form>
 
 
 export default class Team extends Component {
@@ -229,8 +225,8 @@ export default class Team extends Component {
     <div className="container4">
 
     <div class="contactForm">
-      <form  name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-      <input type="hidden" name="form-name" value="email" />
+      <form  name="contact" method="post">
+      <input type="hidden" name="form-name" value="contact" />
         <h2 id='textcomm'>Join the community</h2>
         
         <div class="inputBox">
