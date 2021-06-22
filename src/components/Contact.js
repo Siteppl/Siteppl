@@ -63,13 +63,13 @@ export default class Contact extends Component {
                 <div class="col2"> 
                 <h1  class="mainbanner">contact</h1>
                 
-                <form name="contact" netlify netlify-honeypot="bot-field" >
-                <input type="hidden" name="contact" value="contact" />
+                <form name="contact" method="post">
+                <input type="hidden" name="form-name" value="contact" />
                     <div class="containerform">
                     <div class="row100">
                         <div class="col">
                         <div class="inputBox">
-                            <input type="text" name="" required="required"/>
+                            <input type="text" name="firstname" required="required"/>
                             <span class="text">First Name</span>
                             <span class="line"></span>
                         </div>
@@ -78,7 +78,7 @@ export default class Contact extends Component {
                         
                         <div class="col">
                         <div class="inputBox">
-                            <input type="text" name="" required="required"/>
+                            <input type="text" name="lastname" required="required"/>
                             <span class="text">Last Name</span>
                             <span class="line"></span>
                         </div>
@@ -90,7 +90,7 @@ export default class Contact extends Component {
                     <div class="row100">
                         <div class="col">
                         <div class="inputBox">
-                            <input type="text" name="" required="required"/>
+                            <input type="text" name="email" required="required"/>
                             <span class="text">Email</span>
                             <span class="line"></span>
                         </div>
@@ -99,7 +99,7 @@ export default class Contact extends Component {
                         
                         <div class="col">
                         <div class="inputBox">
-                            <input type="text" name="" required="required"/>
+                            <input type="text" name="mobile" required="required"/>
                             <span class="text">Mobile</span>
                             <span class="line"></span>
                         </div>
@@ -111,7 +111,7 @@ export default class Contact extends Component {
                     <div class="row100">
                         <div class="col">
                         <div class="inputBox textarea">
-                            <textarea required="required"></textarea>
+                            <textarea name="message" required="required"></textarea>
                             <span class="text">Type Your Message Here...</span>
                             <span class="line"></span>
                         </div>

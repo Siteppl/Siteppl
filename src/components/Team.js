@@ -225,8 +225,8 @@ export default class Team extends Component {
     <div className="container4">
 
     <div class="contactForm">
-      <form  name="contact" method="post">
-      <input type="hidden" name="form-name" value="contact" />
+      <form  name="newsletter" method="post">
+      <input type="hidden" name="form-name" value="newsletter" />
         <h2 id='textcomm'>Join the community</h2>
         
         <div class="inputBox">
