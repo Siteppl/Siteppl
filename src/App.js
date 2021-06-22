@@ -28,6 +28,7 @@ const pageVariants = {
   const pageTransition = {
     ease: "easeOut",
     duration: 1,
+    delay: .8
   };
   const menuTransition = {
     ease: "easeOut",

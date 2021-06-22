@@ -7,12 +7,17 @@ import sal from 'sal.js'
 
 
 
-<form name="contact" netlify netlify-honeypot="bot-field" hidden>
 
-<input type="email" name="email" />
 
-</form>
 
+
+
+
+const encode = (data) => {
+  return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+}
 
 export default class Team extends Component {
 
@@ -25,10 +30,26 @@ export default class Team extends Component {
     })
   }
 
- 
+
+  handleSubmit = e => {
+    e.preventDefault()
+    const form = e.target
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": form.getAttribute('name'), ...this.state })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+
+  };
+
+  handleChange = e => this.setState({ [e.target.name]: e.target.value });
 
 
     render() {
+      const { email} = this.state;
     return(
         <div>
             <Helmet>
@@ -230,12 +251,16 @@ export default class Team extends Component {
 
     
     <div class="contactForm">
-      <form  name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-      <input type="hidden" name="form-name" value="contact" />
+      <form name="contact"
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        onSubmit={this.handleSubmit}>
+        <input type="hidden" name="form-name" value="contact" />
         <h2 id='textcomm'>Join the community</h2>
         
         <div class="inputBox">
-          <input type="email" name="email" placeholder="Email" required="required"/>
+          <input type="email" name="email" value={email} onChange={this.handleChange}/>
           
         </div>
         

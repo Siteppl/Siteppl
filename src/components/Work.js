@@ -68,7 +68,7 @@ export default class Work extends Component {
           
           <div className="col2"> 
             <h1 className="mainbanner">work</h1>
-            <div className="center-con">
+            {/* <div className="center-con">
               <div className="round">
                 <div id="cta">
                   <span className="arrow primera next "></span>
@@ -77,7 +77,7 @@ export default class Work extends Component {
                 
               </div>
               
-            </div>
+            </div> */}
             
           </div>
           

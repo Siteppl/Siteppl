@@ -76,7 +76,7 @@ export default class Home extends Component {
                 data-sal-delay="500"
                 data-sal-easing="easeInBounce" className="mainbanner">site ppl</h1>
         
-        <div className="center-con">
+        {/* <div className="center-con">
           <div className="round">
             <div id="cta">
               <span className="arrow primera next "></span>
@@ -85,7 +85,7 @@ export default class Home extends Component {
             
           </div>
           
-        </div>
+        </div> */}
         
       </div>
       
@@ -137,7 +137,7 @@ export default class Home extends Component {
                 data-sal-delay="500"
                 data-sal-easing="easeInBounce"className="contentabout">
                   
-            <p >We are builders of digital assets, including websites, apps, libraries, and more. Get a quote on any design or development service, built for your needs.</p>
+            <p >We are builders of digital assets, including websites, mobile apps, libraries, dapps, games, and more. Get a quote on any design or development service, built for your needs. </p>
           </div>
           <div data-sal="slide-left"
                 data-sal-duration="1000"
