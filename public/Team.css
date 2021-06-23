@@ -470,9 +470,9 @@ div.screen {
 	font-family: 'Bree Serif';
     
     color: whitesmoke;
-    text-shadow: 1px 1px 1px #cacaca,
-        1px 2px 1px #cacaca,
-        1px 3px 1px #cacaca,
+    text-shadow: 1px 1px 1px #e0e0e0,
+        1px 2px 1px #e0e0e0,
+        1px 3px 1px #e0e0e0,
         1px 4px 1px #cacaca,
         1px 5px 1px #cacaca,
         1px 6px 1px #cacaca,
@@ -495,18 +495,18 @@ div.screen {
 	font-family: 'Bree Serif';
     
     color: whitesmoke;
-    text-shadow: 1px 1px 1px #cacaca,
-        1px 2px 1px #cacaca,
-        1px 3px 1px #cacaca,
-        1px 4px 1px #cacaca,
-        1px 5px 1px #cacaca,
-        1px 6px 1px #cacaca,
-        1px 7px 1px #cacaca,
-        1px 8px 1px #cacaca,
-        1px 9px 1px #cacaca,
-        1px 10px 1px #cacaca,
-    1px 10px 6px rgba(16, 16, 16, 0.164),
-    1px 15px 10px rgba(16, 16, 16, 0.068);
+    text-shadow: 1px 1px 1px #e0e0e0,
+	1px 2px 1px #e0e0e0,
+	1px 3px 1px #e0e0e0,
+	1px 4px 1px #cacaca,
+	1px 5px 1px #cacaca,
+	1px 6px 1px #cacaca,
+	1px 7px 1px #cacaca,
+	1px 8px 1px #cacaca,
+	1px 9px 1px #cacaca,
+	1px 10px 1px #cacaca,
+1px 10px 6px rgba(16, 16, 16, 0.164),
+1px 15px 10px rgba(16, 16, 16, 0.068);
     
 }
 
@@ -573,19 +573,18 @@ div.screen {
 	
 	user-select: none;
 	transform: rotate(-2deg) skewX(10deg);
-	text-shadow: -1px 1px #cacaca,
-				-2px 2px #cacaca,
-				-3px 3px #cacaca,
-				-4px 4px #cacaca,
-				-5px 5px #cacaca,
-				-6px 6px #cacaca,
-				-7px 7px #cacaca,
-				-8px 8px #cacaca,
-				-9px 9px #cacaca,
-				-10px 10px #cacaca,
-				-11px 11px #cacaca,
-				
-				-18px 18px rgba(0,0,0,0.2);
+	text-shadow:1px 1px 1px #e0e0e0,
+	1px 2px 1px #e0e0e0,
+	1px 3px 1px #e0e0e0,
+	1px 4px 1px #cacaca,
+	1px 5px 1px #cacaca,
+	1px 6px 1px #cacaca,
+	1px 7px 1px #cacaca,
+	1px 8px 1px #cacaca,
+	1px 9px 1px #cacaca,
+	1px 10px 1px #cacaca,
+1px 10px 6px rgba(16, 16, 16, 0.164),
+1px 15px 10px rgba(16, 16, 16, 0.068);
 	transition: 2.5s;
 }
 
@@ -788,8 +787,19 @@ div.screen {
 	border-color: white;
 	border-radius: .4rem;
 	
-	box-shadow: 0 5px 5px rgba(0,0,0,.2),
-                0 -2px 2px rgba(255,255,255,1);
+	box-shadow:1px 1px 1px #e0e0e0,
+        1px 2px 1px #e0e0e0,
+        1px 3px 1px #e0e0e0,
+        1px 4px 1px #cacaca,
+        1px 5px 1px #cacaca,
+        1px 6px 1px #cacaca,
+        1px 7px 1px #cacaca,
+        1px 8px 1px #cacaca,
+        1px 9px 1px #cacaca,
+        1px 10px 1px #cacaca,
+    1px 10px 6px rgba(16, 16, 16, 0.164),
+    1px 15px 10px rgba(16, 16, 16, 0.068);
+				
 }
 
 
@@ -923,7 +933,7 @@ div.screen {
   
 	display: flex;
 	flex-direction: row;
-	height: 80vh;
+	height: 100vh;
 	justify-content: center;
 	align-items: center;
 	padding: 10px;
