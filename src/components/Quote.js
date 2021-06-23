@@ -4,19 +4,88 @@ import { Link } from 'react-router-dom';
 import {Helmet} from 'react-helmet';
 import sal from 'sal.js'
 
-
-
-
-
 export default class Contact extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      currentStep: 1,
+      fName:  '',
+      lName: '',
+      company: '',
+      industry: '', 
+      purpose: '',
+      orders: '', 
+      email: '', 
+      phone: '',   
+    }
+  }
 
+  handleChange = event => {
+    const {name, value} = event.target
+    this.setState({
+      [name]: value
+    })    
+  }
+   
+  handleSubmit = event => {
+    event.preventDefault()
+    const { fName, lName, company, industry, purpose, orders, email, phone } = this.state
+    alert(`Your registration detail: \n 
+           First Name: ${fName} \n 
+           Last Name: ${lName} \n
+           Company: ${company} \n
+           Industry: ${industry} \n
+           Purpose: ${purpose} \n
+           Orders per day: ${orders} \n
+           Email: ${email} \n
+           Phone: ${phone} \n`)
+  }
+  _next = () => {
+    let currentStep = this.state.currentStep
+    currentStep = currentStep >= 2? 3: currentStep + 1
+    this.setState({
+      currentStep: currentStep
+    })
+  }
     
-      render() {
-        
-        return (
-
-<main>
-            <Helmet>
+  _prev = () => {
+    let currentStep = this.state.currentStep
+    currentStep = currentStep <= 1? 1: currentStep - 1
+    this.setState({
+      currentStep: currentStep
+    })
+  }
+  previousButton() {
+    let currentStep = this.state.currentStep;
+    if(currentStep !==1){
+      return (
+        <button 
+          className="yeet" 
+          type="button" onClick={this._prev}>
+        Previous
+        </button>
+      )
+    }
+    return null;
+  }
+  
+  nextButton(){
+    let currentStep = this.state.currentStep;
+    if(currentStep <3){
+      return (
+        <button 
+          className="yeet float_right" 
+          type="button" onClick={this._next}>
+        Next
+        </button>        
+      )
+    }
+    return null;
+  }
+  render() {    
+    return (
+      <React.Fragment>
+                 <Helmet>
             <link rel="stylesheet" href="Quote.css" />
             </Helmet>
       <div class="mainwrapper2">
@@ -31,69 +100,116 @@ export default class Contact extends Component {
         </ul>
           
           
-          <div class="screen">
-            <header>
+          
+           
              
-              <a class="target-burger">
-                <ul class="buns">
-                  <li class="bun"></li>
-                  <li class="bun"></li>
-                </ul>
-               
-              </a>
-             
-            </header>
-            <nav class="lil-nav" role="navigation">
-              <ul>
-                <li><span onclick="transitionToPage('index.html')" data-text="intro">intro</span></li>
-                <li><span onclick="transitionToPage('work.html')" data-text="work">work</span></li>
-                <li><span onclick="transitionToPage('team.html')" data-text="team">team</span></li>
-                <li><span onclick="transitionToPage('contact.html')" data-text="contact">contact</span></li>
-                <li><span class="active"onclick="transitionToPage('quote.html')">quote</span></li>
-              </ul>
-            </nav>
             
-          </div>
+              <ul class="lil-nav">
+              <li><Link to='./home' style={{ textDecoration: 'none' }} ><span className="active"  data-text="intro">intro</span></Link></li> 
+         <li> <Link to='./users' style={{ textDecoration: 'none' }} ><span  data-text="work">work</span></Link></li> 
+         <li><Link to='./team' style={{ textDecoration: 'none' }} ><span  data-text="team">team</span></Link></li> 
+         <li><Link to='./contact' style={{ textDecoration: 'none' }} ><span  data-text="contact">contact</span></Link></li> 
+         <li><Link to='./Quote' style={{ textDecoration: 'none' }} ><span  data-text="contact">quote</span></Link></li> 
+              </ul>
+            
+           
+            
+            
+          
           
         </div>
-          
-        <form  id="msform" netlify>
-          
-          <ul id="progressbar">
-              <li class="active">Name</li>
-              <li>Details</li>
-              <li>Contact</li>
-          </ul>
-         
-          <fieldset>
+        
+
+      <form className="jawn" onSubmit={this.handleSubmit}>
+      {/* 
+        render the form steps and pass required props in
+      */}
+        <Step1 
+          currentStep={this.state.currentStep} 
+          handleChange={this.handleChange}
+          email={this.state.email}
+        />
+        <Step2 
+          currentStep={this.state.currentStep} 
+          handleChange={this.handleChange}
+          username={this.state.username}
+        />
+        <Step3 
+          currentStep={this.state.currentStep} 
+          handleChange={this.handleChange}
+          password={this.state.password}
+        />
+        {this.previousButton()}
+        {this.nextButton()}
+
+      </form>
+      </div>
+      </React.Fragment>
+    );
+  }
+}
+function Step1(props) {
+  if (props.currentStep !== 1) {
+    return null
+  } 
+  return(
+    <form  id="msform" netlify>
+    <fieldset>
               <h2 class="fs-title">Hey! Welcome to Site PPL.</h2>
               <h3 class="fs-subtitle">What's your name?</h3>
-              <input type="text" name="email" placeholder="First Name" />
-              <input type="text" name="pass" placeholder="Last Name" />
-              <input type="button" name="next" class="next action-button" value="Next" />
+              <input type="text" name="fName" placeholder="First Name" value={props.fName}
+        onChange={props.handleChange} />
+              <input type="text" name="lName" placeholder="Last Name" value={props.lName}
+        onChange={props.handleChange}/>
+              
           </fieldset>
-          <fieldset>
-              <h2 class="fs-title">Details</h2>
-              <h3 class="fs-subtitle">Tell us a little about yourself.</h3>
-              <input type="text" name="twitter" placeholder="Company Name" />
-              <input type="text" name="facebook" placeholder="Industry" />
-              <textarea name="purpose" placeholder="Describe the purpose for your new site."></textarea>
-              <input type="text" name="gplus" placeholder="Avg. Online Orders Per Day (if applicable)" />
-              <input type="button" name="previous" class="previous action-button" value="Previous" />
-              <input type="button" name="next" class="next action-button" value="Next" />
-          </fieldset>
-          <fieldset>
+          </form>
+  );
+}
+function Step2(props) {
+  if (props.currentStep !== 2) {
+    return null
+  } 
+  return(
+    
+    <form  id="msform" netlify>
+    <fieldset>
+    
+    <h2 class="fs-title">Details</h2>
+    
+    <h3 class="fs-subtitle">Tell us a little about yourself.</h3>
+    <input type="text" name="company" placeholder="Company Name" value={props.company}
+        onChange={props.handleChange}/>
+    <input type="text" name="industry" placeholder="Industry" value={props.industry}
+        onChange={props.handleChange}/>
+    <textarea name="purpose" placeholder="Describe the purpose for your new site."value={props.purpose}
+        onChange={props.handleChange}></textarea>
+    <input type="text" name="orders" placeholder="Avg. Online Orders Per Day (if applicable)" value={props.orders}
+        onChange={props.handleChange}/>
+   
+</fieldset>
+</form>
+  );
+}
+function Step3(props) {
+  if (props.currentStep !== 3) {
+    return null
+  } 
+  return(
+    <React.Fragment>
+    <form  id="msform" netlify>
+     <fieldset>
               <h2 class="fs-title">Contact</h2>
               <h3 class="fs-subtitle">How can we reach you?</h3>
-              <input type="text" name="email" placeholder="Email" />
-              <input type="text" name="phone" placeholder="Phone" />
-              <input type="button" name="previous" class="previous action-button" value="Previous" />
-              <input type="submit" name="submit" class="submit action-button" value="Submit" />
+              <input type="text" name="email" placeholder="Email" value={props.email}
+        onChange={props.handleChange}/>
+              <input type="text" name="phone" placeholder="Phone" value={props.phone}
+        onChange={props.handleChange}/>
+        <button className="btn btn-success btn-block">Sign up</button>
+              
           </fieldset>
-        </form>
-        
-      </div>
-     
-    </main>
-
-        )}}
+          </form>
+    
+    </React.Fragment>
+  );
+}

@@ -98,140 +98,33 @@ body {
 	-webkit-text-stroke: 1px #cacaca;
 	transform: translate(5px,-5px);
 }
-div.screen {
-	margin: 0 auto;
-	width: 23.5em;
-	height: 35.25em;
-	overflow: hidden;
-	position: relative;
-	
-	
-	
-  }
-  div.screen nav.lil-nav {
-	position: absolute;
-	left: 0;
-	top: 0;
-	z-index: 0;
-	height: 100%;
-	width: 100%;
-	padding: 2em;
-	-webkit-opacity: 0;
-	-moz-opacity: 0;
-	opacity: 0;
-	-webkit-transform: scale(0.85);
-	-ms-transform: scale(0.85);
-	transform: scale(0.85);
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-  }
-  div.screen nav.lil-nav.toggled {
-	display: block;
-	z-index: 10;
-	-webkit-transform: scale(1);
-	-ms-transform: scale(1);
-	transform: scale(1);
-	-webkit-opacity: 1;
-	-moz-opacity: 1;
-	opacity: 1;
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-  }
-  div.screen nav.lil-nav ul {
-	padding: 2em 0 0 0;
-	list-style: none;
-	
-  }
-  
-  div.screen nav.lil-nav ul li span {
-	font-size: 1.25em;
-	color: #fff;
-	padding: 1em 0;
-	font-weight: 300;
-	display: block;
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-	text-decoration: none;
-  }
- 
-  div.screen nav.lil-nav ul li span:hover {
-	-webkit-opacity: 0.7;
-	-moz-opacity: 0.7;
-	opacity: 0.7;
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-	padding: 1em;
-  }
-  div.screen header {
-	position: absolute;
-	top: 0;
-	z-index: 15;
-  }
-  div.screen header a.target-burger {
-	margin: 1.125em;
-	width: 3.25em;
-	height: 3.25em;
-	position: absolute;
-	display: block;
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-  }
-  div.screen header a.target-burger:hover {
-	cursor: pointer;
-	-webkit-opacity: 0.7;
-	-moz-opacity: 0.7;
-	opacity: 0.7;
-  }
-  div.screen header a.target-burger.toggled ul.buns li.bun {
-	-webkit-transform: rotate(45deg) translateZ(0);
-	transform: rotate(45deg) translateZ(0);
-  }
-  div.screen header a.target-burger.toggled ul.buns li.bun:last-child {
-	-webkit-transform: rotate(-45deg) translateZ(0);
-	transform: rotate(-45deg) translateZ(0);
-  }
-  div.screen header a.target-burger ul.buns {
-	width: 1.625em;
-	height: 1.625em;
-	list-style: none;
-	margin: -0.8125em 0 0 -0.8125em;
-	padding: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transition: -webkit-transform 1s cubic-bezier(0.23, 1, 0.32, 1), color 1s cubic-bezier(0.23, 1, 0.32, 1);
-	transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1), color 1s cubic-bezier(0.23, 1, 0.32, 1);
-	-webkit-transform: translateZ(0);
-	transform: translateZ(0);
-	color: #fff;
-  }
-  div.screen header a.target-burger ul.buns li.bun {
-	width: 100%;
-	height: 2px;
-	background-color: #fff;
-	position: absolute;
-	top: 50%;
-	margin-top: -0.75px;
-	-webkit-transform: translateY(-3.75px) translateZ(0);
-	transform: translateY(-3.75px) translateZ(0);
-	-webkit-transition: -webkit-transform 1s cubic-bezier(0.23, 1, 0.32, 1), background-color 1s cubic-bezier(0.23, 1, 0.32, 1);
-	transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1), background-color 1s cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  div.screen header a.target-burger ul.buns li.bun:last-child {
-	-webkit-transform: translateY(3.75px) translateZ(0);
-	transform: translateY(3.75px) translateZ(0);
-  }
 
+.lil-nav
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333;
+	  }
+	  .lil-nav
+	  ul li {
+		  float: left;
+	  }
+	  .lil-nav
+	  ul li span{
+		
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+	  }
+
+	  @media (max-width: 1100px){
+		  .col1{
+			  width: 100%;
+		  }
+	  }
   /* =============================================================================
 	 Mixins & Functions
 	 ========================================================================== */
@@ -398,6 +291,12 @@ div.screen {
 	background: black;
 	color: white;
 }
+.btn-success{
+	background-color: #8feeb5;
+}
+.btn-success:hover{
+	background-color: #cacaca;
+}
 @keyframes fadeIn {
 	0% {
 	  opacity: 0.0;
@@ -407,7 +306,7 @@ div.screen {
 	}
   }
   @media (min-width: 1101px){
-	div.screen{
+	.lil-nav{
 		display: none;
 	}
 }

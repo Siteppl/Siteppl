@@ -8,6 +8,7 @@ import Team from './components/Team'
 import Contact from './components/Contact'
 import Quote from './components/Quote'
 import './Sal.css'
+import AnimatedCursor from "react-animated-cursor"
 
 const pageVariants = {
     initial: {
@@ -43,6 +44,14 @@ function App() {
     
         
     <AnimatePresence exitBeforeEnter>
+    <AnimatedCursor
+      innerSize={30}
+      outerSize={10}
+      color='255, 255, 255'
+      outerAlpha={0.4}
+      innerScale={0.7}
+      outerScale={10}
+    />
     {/* A <Switch> looks through its children <Route>s and
         renders the first one that matches the current URL. */}
     <Switch location={location} key={location.pathname}>
