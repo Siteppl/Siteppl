@@ -369,10 +369,26 @@ export default class Home extends Component {
     
 
     <div className="quotes2">
-      <span onclick="transitionToPage('quote.html')">get a free quote
-      </span>
+      <div id='footercol1'>
+      <div > 
+        Work
+      </div>
+      <div >
+        Team
+      </div>
+      <div > 
+        Contact
+      </div>
+      </div>
+      <div id='footercol2'>
+      <div >Quote
+      </div>
+      <div >Newsletter
+      </div>
+      <div >&copy; Site ppl Co.
+      </div>
+      </div>
     </div>
-    
 
 
     

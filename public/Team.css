@@ -889,7 +889,7 @@ div.screen {
   
 	display: flex;
 	
-  width: 100%;
+  width: 100vw;
   height: 10rem;
   padding: 10px;
   background:  #ffcff4;
@@ -924,11 +924,12 @@ div.screen {
 	display: flex;
 	flex-direction: row;
 	height: 80vh;
+	justify-content: center;
 	align-items: center;
 	padding: 10px;
-	
+	width: 100%;
   
-	overflow: hidden;
+	overflow-x: hidden;
   
   background: #ffcff4;
 }
@@ -1223,10 +1224,7 @@ section .wave.wave4
 .text {
 	font-size: 12px ;
 }
-.contactForm {
-	
-	margin-left: 10%;
-}
+
 	
 }
 
@@ -1248,4 +1246,44 @@ section .wave.wave4
 		margin-right: 4rem;
 	}
 	
+}
+
+
+.quotes3 {
+	display: flex;
+  height: 15vh;
+	justify-content: space-around;
+	font-family: 'Poppins', sans-serif;
+	font-size: 10px;
+	line-height: 22px;
+	letter-spacing:4px;
+	color: #fff;
+	background-color: #ffcff4;
+	
+	flex-wrap: wrap;
+	position: relative;
+	display: none;
+  }
+  .quotes3 > div
+{
+	user-select: none;
+	text-decoration: none;
+	color: white;
+}
+#footercol1 {
+  display: flex;
+  flex-direction: column ;
+  align-content: space-between;
+}
+#footercol2 {
+  display: flex;
+  flex-direction: column ;
+  align-content: space-between;
+}
+@media (max-width: 1250px) {
+	.quotes3 {
+		display: flex;
+		justify-content: space-around;
+		margin-left: 0rem;
+	}
 }

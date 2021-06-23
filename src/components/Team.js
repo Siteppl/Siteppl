@@ -243,7 +243,7 @@ export default class Team extends Component {
       
     </div>
   
-    <div class="contactForm">
+    <div class="newsletter">
     
     <p class='underc'>Join our newsletter to get updates on projects, deals, and the building of the digital world.
     
@@ -258,7 +258,27 @@ export default class Team extends Component {
     
     
 
-    
+    <div className="quotes3">
+      <div id='footercol1'>
+      <div > 
+        Home
+      </div>
+      <div >
+        Work
+      </div>
+      <div > 
+        Contact
+      </div>
+      </div>
+      <div id='footercol2'>
+      <div >Quote
+      </div>
+      <div >Newsletter
+      </div>
+      <div >&copy; Site ppl Co.
+      </div>
+      </div>
+    </div>
 
     <section>
       <div class="wave wave1"></div>
