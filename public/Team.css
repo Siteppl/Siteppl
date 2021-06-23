@@ -1211,7 +1211,7 @@ section .wave.wave4
 
    @media (max-width: 568px){
 	section {
-		display:none
+		
 	}
 	.plussign {
 		display: none;
