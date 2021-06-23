@@ -148,6 +148,27 @@ export default class Contact extends Component {
                 </div>
               
             </div>
+            <div className="quotes3">
+      <div id='footercol1'>
+      <div > 
+        Home
+      </div>
+      <div >
+        Work
+      </div>
+      <div > 
+        Contact
+      </div>
+      </div>
+      <div id='footercol2'>
+      <div >Quote
+      </div>
+      <div >Newsletter
+      </div>
+      <div >&copy; Site ppl Co.
+      </div>
+      </div>
+    </div>
             </div>
             </main>  
             </div>

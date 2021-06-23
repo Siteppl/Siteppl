@@ -146,7 +146,7 @@ export default class Home extends Component {
                 data-sal-delay="1000"
                 data-sal-easing="easeInBounce" className="contentabout2">
                   
-                  <p >We believe that the digital world is constantly evolving. The creator economy is growing every day. Let us help grow your business the right way. </p>
+                  <p >The digital world is constantly evolving, and the creator economy is growing daily. Create revenue streams doing what you love today and escape the reins of modern work days. </p>
           </div>
           <div data-sal="slide-up"
                 data-sal-duration="2000"
@@ -369,10 +369,26 @@ export default class Home extends Component {
     
 
     <div className="quotes2">
-      <span onclick="transitionToPage('quote.html')">get a free quote
-      </span>
+      <div id='footercol1'>
+      <div > 
+        Work
+      </div>
+      <div >
+        Team
+      </div>
+      <div > 
+        Contact
+      </div>
+      </div>
+      <div id='footercol2'>
+      <div >Quote
+      </div>
+      <div >Newsletter
+      </div>
+      <div >&copy; Site ppl Co.
+      </div>
+      </div>
     </div>
-    
 
 
     

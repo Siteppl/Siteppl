@@ -1012,9 +1012,9 @@ svg {
 {
 	position: relative;
 	display: inline-block;
-	color: rgb(236, 236, 236);
-	text-shadow: 0 1px 1px rgba(0,0,0,.5),
-                0 -1px 1px rgba(255,255,255,1);
+	color: rgb(245, 245, 245);
+	text-shadow: 0 1px 1px rgba(107, 107, 107, 0.8),
+                0 -1px 1px rgba(200, 200, 200, 0.4);
 	font-size: 2em;
 
 	width: 100%;
@@ -1068,30 +1068,7 @@ svg {
 }
 
 
-#socialsdev {
-	position: absolute;
-	/*top: 70%;
-	left: 50%;*/
-	color: white;
-	opacity: .45;
-	transform-origin: bottom;
-	font-weight: 600;
-	font-size: 3em;
-	transform: translate(0%,150%) rotate(0deg) skewX(25deg);
-  
-	text-shadow: -1px 1px #cacaca,
-				-2px 2px #cacaca,
-				-3px 3px #cacaca,
-				-4px 4px #cacaca,
-				-5px 5px #cacaca,
-				-6px 6px #cacaca,
-				-7px 7px #cacaca,
-				-8px 8px #cacaca;
-	z-index: -1;
-	outline: none;
-	white-space: nowrap;
-	
-}
+
 
 
 
@@ -1893,25 +1870,35 @@ section .wave.wave4
 
 .quotes2 {
 	display: flex;
-	justify-content: flex-start;
+  height: 20vh;
+	justify-content: space-around;
 	font-family: 'Poppins', sans-serif;
-	font-size: 22px;
-	line-height: 32px;
-	letter-spacing: 8px;
+	font-size: 10px;
+	line-height: 22px;
+	letter-spacing:4px;
 	color: #fff;
-	top: -48px;
+	
 	margin-top: 4rem;
-	margin-left: 4rem;
+	flex-wrap: wrap;
 	position: relative;
 	display: none;
   }
-  .quotes2 > span 
+  .quotes2 > div
 {
 	user-select: none;
 	text-decoration: none;
 	color: lightblue;
 }
-
+#footercol1 {
+  display: flex;
+  flex-direction: column ;
+  align-content: space-between;
+}
+#footercol2 {
+  display: flex;
+  flex-direction: column ;
+  align-content: space-between;
+}
 
 
 
@@ -2239,8 +2226,8 @@ section .wave.wave4
 
   @media (max-width: 1300px) {
 	.mainwrapper {
-		grid-template-columns: 20% 80%;
-	}
+		grid-template-columns: 0% 100%;
+	  }
 	.colsvg {
 		display: none;
 	}
@@ -2289,6 +2276,15 @@ section .wave.wave4
 /* media queries for social icons */
 
 @media (max-width: 768px) {
+
+
+
+	.containerdev .icondev .contentdev:before
+{
+	
+	height: 130px;
+	
+}
 	#socials {
 		font-size: 5em;
 	}
@@ -2311,7 +2307,8 @@ section .wave.wave4
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	min-height: 160vh;
+	min-height: 120vh;
+	
 	background: #f3f3f3;
 	max-width: 100% ;
 	width: 100%;
@@ -2324,6 +2321,9 @@ section .wave.wave4
 	margin-top: 5rem;
 	margin-bottom: 10rem;
 }
+.mainbanner {
+	margin-left: 20%
+  }
 
 	#socials {
 	font-size: 3em;
@@ -2382,7 +2382,7 @@ section .wave.wave4
 @media (max-width: 1250px) {
 	.quotes2 {
 		display: flex;
-		justify-content: center;
+		justify-content: space-around;
 		margin-left: 0rem;
 	}
 }
@@ -2400,18 +2400,35 @@ section .wave.wave4
 
 
 @media (max-width: 768px){
-
 	.containerabout .contentabout p
 	{
-		color: rgb(148, 148, 148);
-		font-family: 'Poppins', monospace;
 		
-		font-size: 1em;
-		text-shadow: 1px 1px 1px #dbdbdb,
-			1px 2px 1px #dbdbdb;
+		
+		font-size: .7em;
+		text-shadow: none;
 			
 		
 	}
+	.containerabout .contentabout2 p
+	{
+		
+		
+		font-size: .7em;
+		text-shadow: none;
+			
+		
+	}
+	
+	.containerabout .contentabout3 p
+	{
+		
+		
+		font-size: .7em;
+		text-shadow: none;
+			
+		
+	}
+	
 	.containerabout  .imgwrapper 
 	{
 		
@@ -2442,9 +2459,9 @@ section .wave.wave4
 			1px 3px 1px #cacaca,
 			1px 4px 1px #cacaca,
 			1px 5px 1px #cacaca,
-			1px 6px 1px #cacaca,
+			1px 6px 1px #cacaca;
 		   
-		1px 18px 6px rgba(16, 16, 16, 0.123);
+		
 	   
 	  }
 	
@@ -2453,11 +2470,18 @@ section .wave.wave4
 
 	@media (max-width: 1150px) {
 		.containerdev {
-			display: none;
+			margin-left: 2rem;
 		}
 	   .bodys {
 		   justify-content: center;
+		   flex-direction: column-reverse;
 		   min-height: 70vh;
+	   }
+	   .body2 {
+		   flex-direction: column;
+		   min-height: 25vh;
+		margin-top: 10rem;
+		margin-bottom: 0rem;
 	   }
 	   .containerabouts {
 		   justify-content:center;
@@ -2466,9 +2490,29 @@ section .wave.wave4
 		   
 	   }
 	   .containerdesign {
-		   display: none;
+		margin-bottom: 10rem;
 	   }
-	   
+	   .containerdev .icondev .contentdev a 
+{
+	position: relative;
+	display: inline-block;
+	color: rgb(245, 245, 245);
+	text-shadow: 0 1px 1px rgba(107, 107, 107, 0.8),
+                0 -1px 1px rgba(200, 200, 200, 0.4);
+	font-size: 1.75em;
+
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	transition: 0.5s;
+	font-family: 'Source Code Pro', serif;
+}
+
+
+
 	   }
 
 	   @media (max-width: 1100px) {
@@ -2476,7 +2520,7 @@ section .wave.wave4
 		.containerabout2 .contentabout p
 		{
 			font-family: 'Quattrocento Sans', sans-serif;
-			font-size: 16px;
+			font-size: 18px;
 		}
 		.bodys {
 			min-height: 35vh;	
@@ -2487,7 +2531,7 @@ section .wave.wave4
 		margin-bottom: 0rem;
 		}
 		.body21 {
-			margin-top: 0rem;
+			margin-top: 10rem;
 			
 			margin-bottom: 0rem;
 			}
@@ -2501,7 +2545,7 @@ section .wave.wave4
 		.containerabouts .contentabout p
 		{
 			font-family: 'Quattrocento Sans', sans-serif;
-			font-size: 16px;
+			font-size: 18px;
 		}
 		
 		.containerabouts .contentabout 
@@ -2519,7 +2563,31 @@ section .wave.wave4
 	
 	/* Phone screens for bottom 2 cards*/
 	@media (max-width: 568px){
+		.containerdev .icondev .contentdev:before
+{
 	
+	height: 100px;
+	
+}
+		.containerdev .icondev .contentdev a 
+		{
+			
+			color: rgb(245, 245, 245);
+			text-shadow: 0 1px 1px rgba(107, 107, 107, 0.8),
+						0 -1px 1px rgba(200, 200, 200, 0.4);
+			font-size: 1.5em;
+		
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-decoration: none;
+			transition: 0.5s;
+			font-family: 'Source Code Pro', serif;
+		}
+		
+
 		.containerabout .contentabout p
 {
 	
@@ -2562,7 +2630,7 @@ section .wave.wave4
 		.containerabout21 .contentabout
 	{
 	
-		width: 90vw;
+		width: 100vw;
 		
 		
 		
@@ -2674,68 +2742,161 @@ section .wave.wave4
 
 @media (max-width: 568px){
 	section {
-		display:none
+		
 	}
 	.containerabouts1 .contentabout p
 	{
 		
 		font-size: 12px;
 	}
+	.containerdev .icondev
+	{
+		position: relative;
+		height: 60px;
+		
+		margin: 0 20px;
+		transition: transform 0.5s;
+		z-index: calc(2 * var(--i));
+	}
+	.containerdev .icondev:hover
+	{
+		transform: translateY(-40px);
+	}
+	.containerdev .icondev:before
+	{
+		content: '';
+		position: absolute;
+		top: -15px;
+		left: 0;
+		width: 100%;
+		height: 15px;
+		background: #fff;
+		transform-origin: bottom;
+		transform: skewX(45deg);
+		transition: .5s;
+	}
+	.containerdev .icondev:after
+	{
+		content: '';
+		position: absolute;
+		top: -15px;
+		left: -15px;
+		width: 15px;
+		height: 100%;
+		background: #ececec;
+		transform-origin: left;
+		transform: skewY(45deg);
+		transition: 0.5s;
+	}
+	.containerdev .icondev .imgbx h3
+	{
+		position: relative;
+		color: #fff;
+		margin-top: 10px;
+		
+	}
+	.containerdev .icondev .contentdev
+	{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		background: #f7f7f7;
+		transition: 0.5s;
+		
+	}
+	.containerdev .icondev .contentdev a 
+		{
+			position: relative;
+			display: inline-block;
+			color: rgb(245, 245, 245);
+			text-shadow: 0 1px 1px rgba(107, 107, 107, 0.8),
+						0 -1px 1px rgba(200, 200, 200, 0.4);
+			font-size: 1.25em;
+		
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-decoration: none;
+			transition: 0.5s;
+			font-family: 'Source Code Pro', serif;
+		}
 	
 }
-
-
+@media (max-width: 420px) {
+	.containerdev .icondev .contentdev a 
+	{
+		
+		color: rgb(245, 245, 245);
+		text-shadow: 0 1px 1px rgba(107, 107, 107, 0.8),
+					0 -1px 1px rgba(200, 200, 200, 0.4);
+		font-size: 1em;
+	margin-top: 0rem;
+		
+	}
+}
 
 /* Media Queries for about section  */
 /* small computer screens // larger then phones */
 @media (max-width: 768px) {
 
+	.containerdev
+	{
+		width: 100%;
+		
+	}
+	
 
-	/* design section  */
 	
-	.containerabout2 {
-		transform: skewY(0deg);
-	}
-	
-	.containerabouts {
-		transform: skewY(0deg);
-	}
+
 	
 	.containerabout2 .contentabout p
 	{
-		font-family: 'Quattrocento Sans', sans-serif;
+		
 		font-size: 14px;
 	}
-	
-	.containerabout2 .contentabout 
+	.containerabout21 .contentabout p
 	{
-		font-family: 'Quattrocento Sans', sans-serif;
+		
 		font-size: 14px;
-		width: 100%;
 	}
-	
-	
-	
-	
+	.containerabouts1 .contentabout p
+	{
+		
+		font-size: 14px;
+	}
 	.containerabouts .contentabout p
 	{
-		font-family: 'Quattrocento Sans', sans-serif;
+		
 		font-size: 14px;
+
 	}
-	
 	.containerabouts .contentabout 
 	{
-		font-family: 'Quattrocento Sans', sans-serif;
-		
-		width: 100%;
+		transform: SkewY(0deg);
+		width: 150%;
+
 	}
-	/* developer section */
-	
+	.containerabout2 .contentabout 
+	{
+		
+		width: 150%;
+	}
+	.containerabout21 .contentabout 
+	{
+		
+		width: 150%;
+	}
+	.containerabouts1 .contentabout 
+	{
+		
+		width: 190%;
+	}
 	.containerabouts .contentabout 
 	{
 		
-		
-		
+		width: 150%;
 	}
 	
 	}

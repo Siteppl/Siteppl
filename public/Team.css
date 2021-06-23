@@ -17,8 +17,8 @@ body{
 }
 @media (max-width: 1300px) {
 	.mainwrapper {
-		grid-template-columns: 20% 80%;
-	}
+		grid-template-columns: 0% 100%;
+	  }
 	.col3 {
 		display: none;
 	}
@@ -470,9 +470,9 @@ div.screen {
 	font-family: 'Bree Serif';
     
     color: whitesmoke;
-    text-shadow: 1px 1px 1px #cacaca,
-        1px 2px 1px #cacaca,
-        1px 3px 1px #cacaca,
+    text-shadow: 1px 1px 1px #e0e0e0,
+        1px 2px 1px #e0e0e0,
+        1px 3px 1px #e0e0e0,
         1px 4px 1px #cacaca,
         1px 5px 1px #cacaca,
         1px 6px 1px #cacaca,
@@ -495,18 +495,18 @@ div.screen {
 	font-family: 'Bree Serif';
     
     color: whitesmoke;
-    text-shadow: 1px 1px 1px #cacaca,
-        1px 2px 1px #cacaca,
-        1px 3px 1px #cacaca,
-        1px 4px 1px #cacaca,
-        1px 5px 1px #cacaca,
-        1px 6px 1px #cacaca,
-        1px 7px 1px #cacaca,
-        1px 8px 1px #cacaca,
-        1px 9px 1px #cacaca,
-        1px 10px 1px #cacaca,
-    1px 10px 6px rgba(16, 16, 16, 0.164),
-    1px 15px 10px rgba(16, 16, 16, 0.068);
+    text-shadow: 1px 1px 1px #e0e0e0,
+	1px 2px 1px #e0e0e0,
+	1px 3px 1px #e0e0e0,
+	1px 4px 1px #cacaca,
+	1px 5px 1px #cacaca,
+	1px 6px 1px #cacaca,
+	1px 7px 1px #cacaca,
+	1px 8px 1px #cacaca,
+	1px 9px 1px #cacaca,
+	1px 10px 1px #cacaca,
+1px 10px 6px rgba(16, 16, 16, 0.164),
+1px 15px 10px rgba(16, 16, 16, 0.068);
     
 }
 
@@ -573,19 +573,18 @@ div.screen {
 	
 	user-select: none;
 	transform: rotate(-2deg) skewX(10deg);
-	text-shadow: -1px 1px #cacaca,
-				-2px 2px #cacaca,
-				-3px 3px #cacaca,
-				-4px 4px #cacaca,
-				-5px 5px #cacaca,
-				-6px 6px #cacaca,
-				-7px 7px #cacaca,
-				-8px 8px #cacaca,
-				-9px 9px #cacaca,
-				-10px 10px #cacaca,
-				-11px 11px #cacaca,
-				
-				-18px 18px rgba(0,0,0,0.2);
+	text-shadow:1px 1px 1px #e0e0e0,
+	1px 2px 1px #e0e0e0,
+	1px 3px 1px #e0e0e0,
+	1px 4px 1px #cacaca,
+	1px 5px 1px #cacaca,
+	1px 6px 1px #cacaca,
+	1px 7px 1px #cacaca,
+	1px 8px 1px #cacaca,
+	1px 9px 1px #cacaca,
+	1px 10px 1px #cacaca,
+1px 10px 6px rgba(16, 16, 16, 0.164),
+1px 15px 10px rgba(16, 16, 16, 0.068);
 	transition: 2.5s;
 }
 
@@ -788,8 +787,19 @@ div.screen {
 	border-color: white;
 	border-radius: .4rem;
 	
-	box-shadow: 0 5px 5px rgba(0,0,0,.2),
-                0 -2px 2px rgba(255,255,255,1);
+	box-shadow:1px 1px 1px #e0e0e0,
+        1px 2px 1px #e0e0e0,
+        1px 3px 1px #e0e0e0,
+        1px 4px 1px #cacaca,
+        1px 5px 1px #cacaca,
+        1px 6px 1px #cacaca,
+        1px 7px 1px #cacaca,
+        1px 8px 1px #cacaca,
+        1px 9px 1px #cacaca,
+        1px 10px 1px #cacaca,
+    1px 10px 6px rgba(16, 16, 16, 0.164),
+    1px 15px 10px rgba(16, 16, 16, 0.068);
+				
 }
 
 
@@ -889,7 +899,7 @@ div.screen {
   
 	display: flex;
 	
-  width: 100%;
+  width: 100vw;
   height: 10rem;
   padding: 10px;
   background:  #ffcff4;
@@ -912,7 +922,7 @@ div.screen {
 	display: flex;
 	flex-direction: column;
   width: 100%;
-  
+  padding-bottom: 10rem;
   height:65vh;
   padding: 10px;
   background: #ffcff4;
@@ -923,12 +933,13 @@ div.screen {
   
 	display: flex;
 	flex-direction: row;
-	max-height: 40vh;
+	height: 100vh;
+	justify-content: center;
 	align-items: center;
 	padding: 10px;
 	
   
-	overflow: hidden;
+	overflow-x: hidden;
   
   background: #ffcff4;
 }
@@ -949,7 +960,7 @@ div.screen {
 	width: 100%;
 	
 	padding: 60px;
-	background: #ffcff4;
+	
 }
 .contactForm h2
 {
@@ -1105,11 +1116,11 @@ section .wave.wave4
 }
 .container3 {
 	
-	height: 80vh;
+	height: 100vh;
 	
 }
 .container4 {
-	max-height: 80vh;
+	
 	
 }
 
@@ -1149,7 +1160,9 @@ section .wave.wave4
 		justify-content: flex-start;
 		
 	}
-	
+	.plussign {
+		display: none;
+	}
 	
 	#textg {
 		margin-right: 0rem;
@@ -1198,7 +1211,7 @@ section .wave.wave4
 
    @media (max-width: 568px){
 	section {
-		display:none
+		height: 10rem;
 	}
 	.plussign {
 		display: none;
@@ -1210,10 +1223,9 @@ section .wave.wave4
 	.underc {
 		display: none;
 	}
-	.contactForm
+	.container4
 {
 	
-	margin-left: 15%;
 }
 .underg {
 	font-size: 22px;
@@ -1222,10 +1234,7 @@ section .wave.wave4
 .text {
 	font-size: 12px ;
 }
-.contactForm {
-	max-height: 50vh;
-	margin-top: 15%;
-}
+
 	
 }
 
@@ -1247,4 +1256,44 @@ section .wave.wave4
 		margin-right: 4rem;
 	}
 	
+}
+
+
+.quotes3 {
+	display: flex;
+  height: 25vh;
+	justify-content: space-around;
+	font-family: 'Poppins', sans-serif;
+	font-size: 10px;
+	line-height: 22px;
+	letter-spacing:4px;
+	color: #fff;
+	background-color: #ffcff4;
+	
+	flex-wrap: wrap;
+	position: relative;
+	display: none;
+  }
+  .quotes3 > div
+{
+	user-select: none;
+	text-decoration: none;
+	color: white;
+}
+#footercol1 {
+  display: flex;
+  flex-direction: column ;
+  align-content: space-between;
+}
+#footercol2 {
+  display: flex;
+  flex-direction: column ;
+  align-content: space-between;
+}
+@media (max-width: 1250px) {
+	.quotes3 {
+		display: flex;
+		justify-content: space-around;
+		margin-left: 0rem;
+	}
 }
