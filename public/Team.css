@@ -922,7 +922,7 @@ div.screen {
 	display: flex;
 	flex-direction: column;
   width: 100%;
-  padding-bottom: 10rem;
+  
   height:65vh;
   padding: 10px;
   background: #ffcff4;
@@ -933,11 +933,11 @@ div.screen {
   
 	display: flex;
 	flex-direction: row;
-	height: 100vh;
+	height: 80vh;
 	justify-content: center;
 	align-items: center;
 	padding: 10px;
-	
+	width: 100%;
   
 	overflow-x: hidden;
   
@@ -1116,11 +1116,11 @@ section .wave.wave4
 }
 .container3 {
 	
-	height: 100vh;
+	height: 80vh;
 	
 }
 .container4 {
-	
+	max-height: 80vh;
 	
 }
 
@@ -1211,7 +1211,7 @@ section .wave.wave4
 
    @media (max-width: 568px){
 	section {
-		height: 10rem;
+		
 	}
 	.plussign {
 		display: none;
@@ -1261,7 +1261,7 @@ section .wave.wave4
 
 .quotes3 {
 	display: flex;
-  height: 25vh;
+  height: 15vh;
 	justify-content: space-around;
 	font-family: 'Poppins', sans-serif;
 	font-size: 10px;
