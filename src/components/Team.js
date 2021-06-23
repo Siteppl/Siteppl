@@ -106,6 +106,7 @@ export default class Team extends Component {
                 data-sal-delay="500"
                 data-sal-easing="easeInBounce"
                 id="linetop"/> 
+                
       <p class='under'><span id="sizedup">We are digital asset creators.</span>
                   <span data-sal="fade"
                 data-sal-duration="1000"
@@ -113,10 +114,9 @@ export default class Team extends Component {
                 data-sal-easing="easeInBounce" > This entails the creation of applications in the fields of full stack web and mobile apps, blockchain development, data science and analysis, and anything that can create wealth on the web.
        Our team creates and manages applications built by us, and built by our clients. We work to develop value within every pocket of the web today.</span>
       </p>
+      </div>
       
-      
-    </div>
-    
+   
     
     <div class="container2">
     <h2 id="texti">Architect</h2>
