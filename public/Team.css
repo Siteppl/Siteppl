@@ -937,7 +937,7 @@ div.screen {
 	justify-content: center;
 	align-items: center;
 	padding: 10px;
-	width: 100%;
+	
   
 	overflow-x: hidden;
   
@@ -1120,7 +1120,7 @@ section .wave.wave4
 	
 }
 .container4 {
-	height: 100vh;
+	height: 150vh;
 	
 }
 
@@ -1211,7 +1211,7 @@ section .wave.wave4
 
    @media (max-width: 568px){
 	section {
-		
+		height: 10rem;
 	}
 	.plussign {
 		display: none;
