@@ -30,6 +30,7 @@ export default class Contact extends Component {
   handleSubmit = event => {
     event.preventDefault()
     const { fName, lName, company, industry, purpose, orders, email, phone } = this.state
+    console.log( fName )
     alert(`Your registration detail: \n 
            First Name: ${fName} \n 
            Last Name: ${lName} \n
@@ -205,7 +206,7 @@ function Step3(props) {
         onChange={props.handleChange}/>
               <input type="text" name="phone" placeholder="Phone" value={props.phone}
         onChange={props.handleChange}/>
-        <button className="btn btn-success btn-block">Sign up</button>
+        <button type="submit" className="btn btn-success btn-block">Sign up</button>
               
           </fieldset>
           </form>

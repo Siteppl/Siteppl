@@ -212,7 +212,7 @@ export default class Team extends Component {
 <div id="undercontainer"> 
   <p class='underg'>A creator of code, design, and media.  
     I am a full stack programmer, working with the JavaScript language. Along with programming, I work in the business development and marketing fields along with copywriting services.
-    I work to ensure our clients are provided with the most possible value across the build and deployment process 
+    I work to ensure our clients are provided with the most possible value in all fields.
     
     </p>
   </div>
@@ -260,21 +260,34 @@ export default class Team extends Component {
 
     <div className="quotes3">
       <div id='footercol1'>
+      <Link to="./home" style={{ textDecoration: 'none', color: "white"}}>
       <div > 
         Home
       </div>
-      <div >
+      </Link>
+      <Link to="./users" style={{ textDecoration: 'none', color: "white"}}>
+      <div > 
         Work
       </div>
+      </Link>
+      <Link to="./contact" style={{ textDecoration: 'none', color: "white"}}>
       <div > 
         Contact
       </div>
+      </Link>
       </div>
+
       <div id='footercol2'>
-      <div >Quote
+      <Link to="./quote" style={{ textDecoration: 'none', color: "white"}}>
+      <div >
+        Quote
       </div>
-      <div >Newsletter
+      </Link>
+      <Link to="./team" style={{ textDecoration: 'none', color: "white"}}>
+      <div >
+        Newsletter
       </div>
+      </Link>
       <div >&copy; Site ppl Co.
       </div>
       </div>

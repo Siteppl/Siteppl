@@ -15,8 +15,10 @@ export default class Work extends Component {
       once: false,
     })
   }
+
+  
     render() {
-      
+     
       return (
         
         <div >
@@ -157,10 +159,11 @@ export default class Work extends Component {
               </div>
               
             </div>
-            
+           
           </div>
           
-              
+          
+         
           <div className="containerpro3"
            >
             <div className="cardspro3">
@@ -187,44 +190,71 @@ export default class Work extends Component {
             </div>
           </div>
           
-          
         </div>
         
       </div>
-      
-
+      <motion.div
+  
+ 
+  whileTap={{ scale: 0.95 }}
+><Link to="./quote">
+      <div id="endtextwrap">
+          <div  id="textunder1" >Create yours today -{'>'}</div>
+          </div>
+          </Link>
+</motion.div>
       
       <div className="sectionsnap">
         <div className="contentsnap">
           <div  id="textC" data-text="Our apps">Our apps</div>
-          <div  id="textunder" data-text="Created + Launched + managed + updated by site ppl.">Created + Launched + managed + updated by site ppl.</div>
-          <div id="textA" data-text="Ordering app"><a href='https://tomsdeli.netlify.app'>Ordering app</a></div>
-          <div id="textB" data-text="Appointment system"><a href='#'>Appointment system</a></div>
+          <div  id="textunder" >Created and developed by our team</div>
+          <motion.div
+  
+  whileHover={{ scale: 1.1 }}
+  whileTap={{ scale: 0.9 }}
+>
+<div id="textA" data-text="Ordering app"><a href='https://tomsdeli.netlify.app'>Ordering app</a></div>
+</motion.div>
+          {/* <div id="textB" data-text="Appointment system"><a href='#'>Appointment system</a></div> */}
           
         </div>
         
       </div>
       <div className="quotes3">
       <div id='footercol1'>
+      <Link to="./home" style={{ textDecoration: 'none', color: "white"}}>
       <div > 
         Home
       </div>
-      <div >
+      </Link>
+      <Link to="./team" style={{ textDecoration: 'none', color: "white"}}>
+      <div > 
         Team
       </div>
+      </Link>
+      <Link to="./contact" style={{ textDecoration: 'none', color: "white"}}>
       <div > 
         Contact
       </div>
+      </Link>
       </div>
+
       <div id='footercol2'>
-      <div >Quote
+      <Link to="./quote" style={{ textDecoration: 'none', color: "white"}}>
+      <div >
+        Quote
       </div>
-      <div >Newsletter
+      </Link>
+      <Link to="./team" style={{ textDecoration: 'none', color: "white"}}>
+      <div >
+        Newsletter
       </div>
+      </Link>
       <div >&copy; Site ppl Co.
       </div>
       </div>
     </div>
+
     </div>
         </div>
       )}}

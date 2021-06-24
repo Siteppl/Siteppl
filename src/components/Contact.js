@@ -150,21 +150,34 @@ export default class Contact extends Component {
             </div>
             <div className="quotes3">
       <div id='footercol1'>
+      <Link to="./home" style={{ textDecoration: 'none', color: "white"}}>
       <div > 
         Home
       </div>
-      <div >
+      </Link>
+      <Link to="./work" style={{ textDecoration: 'none', color: "white"}}>
+      <div > 
         Work
       </div>
+      </Link>
+      <Link to="./team" style={{ textDecoration: 'none', color: "white"}}>
       <div > 
-        Contact
+        Team
       </div>
+      </Link>
       </div>
+
       <div id='footercol2'>
-      <div >Quote
+      <Link to="./quote" style={{ textDecoration: 'none', color: "white"}}>
+      <div >
+        Quote
       </div>
-      <div >Newsletter
+      </Link>
+      <Link to="./team" style={{ textDecoration: 'none', color: "white"}}>
+      <div >
+        Newsletter
       </div>
+      </Link>
       <div >&copy; Site ppl Co.
       </div>
       </div>
