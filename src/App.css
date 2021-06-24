@@ -2086,7 +2086,7 @@ section .wave.wave4
   @media (max-width: 1068px) {
 	.mainbanner {
 		font-size: 8em;
-		margin-top: 8rem;
+		margin-top: 200px;
 	}
 	.body .containerabout .imgbx h3 {
 	  font-size: 5.25em;
@@ -2100,7 +2100,7 @@ section .wave.wave4
 @media (max-width: 768px) {
 	.mainbanner {
 		font-size: 8em;
-		margin-top: 8rem;
+		margin-top: 12rem;
 	}
 	.body .containerabout .imgbx h3 {
 	  font-size: 3em;
