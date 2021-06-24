@@ -104,6 +104,47 @@ body{
 	-webkit-text-stroke: 1px #cacaca;
 	transform: translate(5px,-5px);
 }
+
+
+  /* =============================================================================
+	 Mixins & Functions
+	 ========================================================================== */
+  .inline-block {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+  }
+.mainbanner
+{	
+	margin-top: 25vh;
+	font-family: 'Source Code Pro', monospace;
+	
+	color: #fff;
+	font-size: 10em;
+	
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	outline: none;
+	
+	user-select: none;
+	transform: rotate(-2deg) skewX(10deg);
+	text-shadow: -1px 1px #cacaca,
+				-2px 2px #cacaca,
+				-3px 3px #cacaca,
+				-4px 4px #cacaca,
+				-5px 5px #cacaca,
+				-6px 6px #cacaca,
+				-7px 7px #cacaca,
+				-8px 8px #cacaca,
+				-9px 9px #cacaca,
+				-10px 10px #cacaca,
+				-11px 11px #cacaca,
+				-12px 12px #cacaca,
+				-20px 20px rgba(0,0,0,0.2);
+	transition: 2.5s;
+}
 div.screen {
 	margin: 0 auto;
 	width: 23.5em;
@@ -237,46 +278,6 @@ div.screen {
 	-webkit-transform: translateY(3.75px) translateZ(0);
 	transform: translateY(3.75px) translateZ(0);
   }
-
-  /* =============================================================================
-	 Mixins & Functions
-	 ========================================================================== */
-  .inline-block {
-	display: inline-block;
-	*display: inline;
-	*zoom: 1;
-  }
-.mainbanner
-{	
-	margin-top: 25vh;
-	font-family: 'Source Code Pro', monospace;
-	
-	color: #fff;
-	font-size: 10em;
-	
-	
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	outline: none;
-	
-	user-select: none;
-	transform: rotate(-2deg) skewX(10deg);
-	text-shadow: -1px 1px #cacaca,
-				-2px 2px #cacaca,
-				-3px 3px #cacaca,
-				-4px 4px #cacaca,
-				-5px 5px #cacaca,
-				-6px 6px #cacaca,
-				-7px 7px #cacaca,
-				-8px 8px #cacaca,
-				-9px 9px #cacaca,
-				-10px 10px #cacaca,
-				-11px 11px #cacaca,
-				-12px 12px #cacaca,
-				-20px 20px rgba(0,0,0,0.2);
-	transition: 2.5s;
-}
 .mainbanner:hover{
 	transform: rotate(-1.8deg) skewX(6deg) translate(3px,-3px);
 	
@@ -1148,7 +1149,9 @@ section .wave.wave4
 .text {
 	font-size: 15px ;
 }
-
+.topleft li span{
+	font-size: 2rem;
+}
 
 }
 
