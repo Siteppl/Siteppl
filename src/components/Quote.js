@@ -210,15 +210,15 @@ function Step3(props) {
      
               <h2 className="fs-title">Contact</h2>
               <h3 className="fs-subtitle">How can we reach you?</h3>
-              <input type="text" name="fName" placeholder={props.fName} value={props.fName}
+              <input type="text" name="fName" placeholder={this.state.fName} value={props.fName}
         onChange={props.handleChange} />
-              <input type="text" name="lName" placeholder={props.lName} value={props.lName}
+              <input type="text" name="lName" placeholder={this.state.lName} value={props.lName}
         onChange={props.handleChange}/>
-        <input type="text" name="company" placeholder={props.company} value={props.company}
+        <input type="text" name="company" placeholder={this.state.company} value={props.company}
         onChange={props.handleChange}/>
-    <input type="text" name="industry" placeholder={props.industry} value={props.industry}
+    <input type="text" name="industry" placeholder={this.state.industry} value={props.industry}
         onChange={props.handleChange}/>
-    <textarea name="purpose" placeholder={props.purpose} value={props.purpose}
+    <textarea name="purpose" placeholder={this.state.purpose} value={props.purpose}
         onChange={props.handleChange}></textarea>
     <input type="text" name="orders" placeholder="Avg. Online Orders Per Day (if applicable)" value={props.orders}
         onChange={props.handleChange}/>
