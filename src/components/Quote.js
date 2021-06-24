@@ -5,6 +5,15 @@ import {Helmet} from 'react-helmet';
 import sal from 'sal.js'
 import logo from '../Images/sp.png'
 
+
+
+
+
+const encode = (data) => {
+  return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+}
 export default class Contact extends Component {
   constructor(props) {
     super(props)
@@ -32,6 +41,16 @@ export default class Contact extends Component {
     event.preventDefault()
     const { fName, lName, company, industry, purpose, orders, email, phone } = this.state
     console.log( fName )
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "quote", ...this.state })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+    
+
     alert(`Your registration detail: \n 
            First Name: ${fName} \n 
            Last Name: ${lName} \n
@@ -106,7 +125,7 @@ export default class Contact extends Component {
         </div>
         
 
-      <div className="jawn" >
+      <form className="jawn" onSubmit={this.handleSubmit}>
       {/* 
         render the form steps and pass required props in
       */}
@@ -135,7 +154,7 @@ export default class Contact extends Component {
         {this.previousButton()}
         {this.nextButton()}
 
-      </div>
+      </form>
       </div>
       </React.Fragment>
     );
@@ -166,7 +185,7 @@ function Step2(props) {
   } 
   return(
     
-    <form  id="msform">
+    <form id="msform">
     
     <fieldset>
     
@@ -193,23 +212,13 @@ function Step3(props) {
   } 
   return(
     <React.Fragment>
-     <form  id="msform" name="quote" method="post">
+     <form name="quote" method="post">
     <input type="hidden" name="form-name" value="quote" />
      <fieldset>
      
               <h2 className="fs-title">Contact</h2>
               <h3 className="fs-subtitle">How can we reach you?</h3>
-              <input type="text" name="fName" placeholder="First Name" value={props.fName}
-        onChange={props.handleChange} hidden/>
-    <input type="text" name="lName" placeholder="Last Name" value={props.lName} onChange={props.handleChange} hidden/>
-              <input type="text" name="company" placeholder="Company Name" value={props.company}
-        onChange={props.handleChange} hidden/>
-    <input type="text" name="industry" placeholder="Industry" value={props.industry}
-        onChange={props.handleChange} hidden/>
-    <textarea name="purpose" placeholder="Describe the purpose for your new site."value={props.purpose}
-        onChange={props.handleChange} hidden></textarea>
-    <input type="text" name="orders" placeholder="Avg. Online Orders Per Day (if applicable)" value={props.orders}
-        onChange={props.handleChange} hidden/>
+              
               <input type="text" name="email" placeholder="Email" value={props.email}
         onChange={props.handleChange}/>
               <input type="text" name="phone" placeholder="Phone" value={props.phone}
