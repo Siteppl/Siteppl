@@ -5,15 +5,6 @@ import {Helmet} from 'react-helmet';
 import sal from 'sal.js'
 import logo from '../Images/sp.png'
 
-
-
-const encode = (data) => {
-  return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
-}
-
-
 export default class Contact extends Component {
   constructor(props) {
     super(props)
@@ -37,36 +28,19 @@ export default class Contact extends Component {
     })    
   }
    
-  handleSubmit = (e) => {
-    e.preventDefault()
-
-
+  handleSubmit = event => {
+    event.preventDefault()
     const { fName, lName, company, industry, purpose, orders, email, phone } = this.state
     console.log( fName )
-
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "quote", ...this.state })
-    })
-      .then(() => alert(`Your registration detail: \n 
-      First Name: ${fName} \n 
-      Last Name: ${lName} \n
-      Company: ${company} \n
-      Industry: ${industry} \n
-      Purpose: ${purpose} \n
-      Orders per day: ${orders} \n
-      Email: ${email} \n
-      Phone: ${phone} \n`))
-      .catch(error => alert(error));
-
-
-
-
-
-
-           
-      
+    alert(`Your registration detail: \n 
+           First Name: ${fName} \n 
+           Last Name: ${lName} \n
+           Company: ${company} \n
+           Industry: ${industry} \n
+           Purpose: ${purpose} \n
+           Orders per day: ${orders} \n
+           Email: ${email} \n
+           Phone: ${phone} \n`)
   }
   _next = () => {
     let currentStep = this.state.currentStep
@@ -102,7 +76,7 @@ export default class Contact extends Component {
     if(currentStep <3){
       return (
         <button 
-          className=" yeet float_right" 
+          className="yeet float_right" 
           type="button" onClick={this._next}>
         Next
         </button>        
@@ -132,10 +106,7 @@ export default class Contact extends Component {
         </div>
         
 
-      <form name="quote"className="jawn"method="post"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field" onSubmit={this.handleSubmit}>
-      <input type="hidden" name="form-name" value="contact" />
+      <div className="jawn" onSubmit={this.handleSubmit}>
       {/* 
         render the form steps and pass required props in
       */}
@@ -161,10 +132,44 @@ export default class Contact extends Component {
           email={this.state.email}
           phone={this.state.phone}
         />
-        {this.previousButton()}
-        {this.nextButton()}
+        {/* {this.previousButton()}
+        {this.nextButton()} */}
+        <div className="quotes2">
+      <div id='footercol1'>
+      <Link to="./users" style={{ textDecoration: 'none', color: "lightgray"}}>
+      <div > 
+        Work
+      </div>
+      </Link>
+      <Link to="./team" style={{ textDecoration: 'none', color: "lightgray"}}>
+      <div > 
+        Team
+      </div>
+      </Link>
+      <Link to="./contact" style={{ textDecoration: 'none', color: "lightgray"}}>
+      <div > 
+        Contact
+      </div>
+      </Link>
+      </div>
 
-      </form>
+      <div id='footercol2'>
+      <Link to="./quote" style={{ textDecoration: 'none', color: "lightgray"}}>
+      <div >
+        Quote
+      </div>
+      </Link>
+      <Link to="./team" style={{ textDecoration: 'none', color: "lightgray"}}>
+      <div >
+        Newsletter
+      </div>
+      </Link>
+      <div >&copy; Site ppl Co.
+      </div>
+      </div>
+    </div>
+      </div>
+  
       </div>
       </React.Fragment>
     );
@@ -175,7 +180,8 @@ function Step1(props) {
     return null
   } 
   return(
-    <form  id="msform" >
+    <form id="msform" name="contact" method="post">
+    <input type="hidden" name="form-name" value="contact" />
     <fieldset>
     
               <h2 className="fs-title">Hey! Welcome to Site PPL.</h2>
@@ -184,25 +190,9 @@ function Step1(props) {
         onChange={props.handleChange} />
               <input type="text" name="lName" placeholder="Last Name" value={props.lName}
         onChange={props.handleChange}/>
-              
-          </fieldset>
-          </form>
-  );
-}
-function Step2(props) {
-  if (props.currentStep !== 2) {
-    return null
-  } 
-  return(
-    
-    <form id="msform">
-    
-    <fieldset>
-    
-    <h2 className="fs-title">Details</h2>
+               <h2 className="fs-title">Details</h2>
     
     <h3 className="fs-subtitle">Tell us a little about yourself.</h3>
-    
     <input type="text" name="company" placeholder="Company Name" value={props.company}
         onChange={props.handleChange}/>
     <input type="text" name="industry" placeholder="Industry" value={props.industry}
@@ -211,6 +201,28 @@ function Step2(props) {
         onChange={props.handleChange}></textarea>
     <input type="text" name="orders" placeholder="Avg. Online Orders Per Day (if applicable)" value={props.orders}
         onChange={props.handleChange}/>
+    <h2 className="fs-title">Contact</h2>
+              <h3 className="fs-subtitle">How can we reach you?</h3>
+              <input type="text" name="email" placeholder="Email" value={props.email}
+        onChange={props.handleChange}/>
+              <input type="text" name="phone" placeholder="Phone" value={props.phone}
+        onChange={props.handleChange}/>
+        <button type="submit" className="btn btn-success btn-block">Sign up</button>
+              
+          </fieldset>
+          </form>
+          
+  );
+}
+function Step2(props) {
+  if (props.currentStep !== 2) {
+    return null
+  } 
+  return(
+    
+    <form  id="msform" netlify>
+    <fieldset>
+    
    
 </fieldset>
 </form>
@@ -222,20 +234,10 @@ function Step3(props) {
   } 
   return(
     <React.Fragment>
-      <form  id="msform" >
-       
-    
+    <form  id="msform" netlify="true">
      <fieldset>
      
-              <h2 className="fs-title">Contact</h2>
-              <h3 className="fs-subtitle">How can we reach you?</h3>
              
-              <input type="text" name="email" placeholder="email" value={props.email}
-        onChange={props.handleChange}/>
-              <input type="text" name="phone" placeholder="phone" value={props.phone}
-        onChange={props.handleChange}/>
-        <button type="submit" className="btn btn-success btn-block">Sign up</button>
-              
           </fieldset>
           </form>
     

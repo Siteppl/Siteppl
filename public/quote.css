@@ -9,17 +9,18 @@
 body {
 	font-family: montserrat, arial, verdana;
 	text-align: center;
+	background-color: white;
 	
 	
 }
 .mainwrapper2 {
     display: grid;
 	grid-template-columns: 10% 90%;
-	
-	height: 100vh;
+	overflow: hidden;
+	height: 150vh;
 	background: 
 		linear-gradient(#8feeb5 70%, white 100%);
-	overflow: hidden;
+	
 }
 .col1{
 	margin-top: 2vh;
@@ -169,7 +170,7 @@ body {
 	padding: 20px 30px;
 	box-sizing: border-box;
 	width: 80%;
-	margin: 0 10%;
+	margin: 0 5%;
 	
 	/*stacking fieldsets above each other*/
 	position: relative;
@@ -327,3 +328,27 @@ button{
 		height: 125vh;
 	}
   } */
+
+
+
+  .quotes2 {
+	display: flex;
+  height: 20vh;
+	justify-content: space-around;
+	font-family: 'Poppins', sans-serif;
+	font-size: 10px;
+	line-height: 33px;
+	letter-spacing:4px;
+	color: #fff;
+	
+	margin-top: 4rem;
+	flex-wrap: wrap;
+	position: relative;
+
+  }
+  .quotes2 > div
+{
+	user-select: none;
+	text-decoration: none;
+	color: lightgray;
+}
