@@ -41,15 +41,6 @@ export default class Contact extends Component {
     event.preventDefault()
     const { fName, lName, company, industry, purpose, orders, email, phone } = this.state
     console.log( fName )
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "quote", ...this.state })
-    })
-      .then(() => alert("Success!"))
-      .catch(error => alert(error));
-
-    
 
     alert(`Your registration detail: \n 
            First Name: ${fName} \n 
@@ -95,7 +86,7 @@ export default class Contact extends Component {
     if(currentStep <3){
       return (
         <button 
-          className="submit yeet float_right" 
+          className=" yeet float_right" 
           type="button" onClick={this._next}>
         Next
         </button>        
@@ -212,16 +203,28 @@ function Step3(props) {
   } 
   return(
     <React.Fragment>
-     <form id="msform" >
+      <form name="contact" method="post">
+        <input type="hidden" name="form-name" value="contact" />
     
      <fieldset>
      
               <h2 className="fs-title">Contact</h2>
               <h3 className="fs-subtitle">How can we reach you?</h3>
-              
-              <input type="text" name="email" placeholder="Email" value={props.email}
+              <input type="text" name="fName" placeholder={props.fName} value={props.fName}
+        onChange={props.handleChange} />
+              <input type="text" name="lName" placeholder={props.lName} value={props.lName}
         onChange={props.handleChange}/>
-              <input type="text" name="phone" placeholder="Phone" value={props.phone}
+        <input type="text" name="company" placeholder={props.company} value={props.company}
+        onChange={props.handleChange}/>
+    <input type="text" name="industry" placeholder={props.industry} value={props.industry}
+        onChange={props.handleChange}/>
+    <textarea name="purpose" placeholder={props.purpose} value={props.purpose}
+        onChange={props.handleChange}></textarea>
+    <input type="text" name="orders" placeholder="Avg. Online Orders Per Day (if applicable)" value={props.orders}
+        onChange={props.handleChange}/>
+              <input type="text" name="email" placeholder={props.email} value={props.email}
+        onChange={props.handleChange}/>
+              <input type="text" name="phone" placeholder={props.phone} value={props.phone}
         onChange={props.handleChange}/>
         <button type="submit" className="btn btn-success btn-block">Sign up</button>
               
