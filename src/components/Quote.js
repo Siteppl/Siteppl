@@ -203,8 +203,8 @@ function Step3(props) {
   } 
   return(
     <React.Fragment>
-      <form  id="msform" name="contact" method="post">
-        <input type="hidden" name="form-name" value="contact" />
+      <form  id="msform" name="quote" method="post">
+        <input type="hidden" name="form-name" value="quote" />
     
      <fieldset>
      
@@ -222,9 +222,9 @@ function Step3(props) {
         onChange={props.handleChange}></textarea>
     <input type="text" name="orders" placeholder="Avg. Online Orders Per Day (if applicable)" value={props.orders}
         onChange={props.handleChange}/>
-              <input type="text" name="email" placeholder={props.email} value={props.email}
+              <input type="text" name="email" placeholder="email" value={props.email}
         onChange={props.handleChange}/>
-              <input type="text" name="phone" placeholder={props.phone} value={props.phone}
+              <input type="text" name="phone" placeholder="phone" value={props.phone}
         onChange={props.handleChange}/>
         <button type="submit" className="btn btn-success btn-block">Sign up</button>
               
