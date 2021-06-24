@@ -95,7 +95,7 @@ export default class Contact extends Component {
     if(currentStep <3){
       return (
         <button 
-          className="yeet float_right" 
+          className="submit yeet float_right" 
           type="button" onClick={this._next}>
         Next
         </button>        
