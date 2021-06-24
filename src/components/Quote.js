@@ -212,8 +212,8 @@ function Step3(props) {
   } 
   return(
     <React.Fragment>
-     <form name="quote" method="post">
-    <input type="hidden" name="form-name" value="quote" />
+     <form id="msform" >
+    
      <fieldset>
      
               <h2 className="fs-title">Contact</h2>
