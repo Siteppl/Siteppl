@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import {Helmet} from 'react-helmet';
 import sal from 'sal.js'
+import logo from '../Images/sp.png'
 
 export default class Contact extends Component {
   constructor(props) {
@@ -88,9 +89,11 @@ export default class Contact extends Component {
                  <Helmet>
             <link rel="stylesheet" href="Quote.css" />
             </Helmet>
-      <div class="mainwrapper2">
-        
-        <div class="col1">
+      <div className="mainwrapper2">
+     <div className="sp-wrap">
+        <img className="sp-pic" src={logo} alt="site ppl logo"></img>
+        </div>
+        <div className="col1">
           
         <ul className="topleft">
          <li><Link to='./home' style={{ textDecoration: 'none' }} ><span className="active"  data-text="intro">intro</span></Link></li> 
@@ -99,50 +102,39 @@ export default class Contact extends Component {
          <li><Link to='./contact' style={{ textDecoration: 'none' }} ><span  data-text="contact">contact</span></Link></li> 
         </ul>
           
-          
-          
-           
-             
-            
-              <ul class="lil-nav">
-              <li><Link to='./home' style={{ textDecoration: 'none' }} ><span className="active"  data-text="intro">intro</span></Link></li> 
-         <li> <Link to='./users' style={{ textDecoration: 'none' }} ><span  data-text="work">work</span></Link></li> 
-         <li><Link to='./team' style={{ textDecoration: 'none' }} ><span  data-text="team">team</span></Link></li> 
-         <li><Link to='./contact' style={{ textDecoration: 'none' }} ><span  data-text="contact">contact</span></Link></li> 
-         <li><Link to='./Quote' style={{ textDecoration: 'none' }} ><span  data-text="contact">quote</span></Link></li> 
-              </ul>
-            
-           
-            
-            
-          
-          
         </div>
         
 
-      <form className="jawn" onSubmit={this.handleSubmit}>
+      <div netlify="true"className="jawn" onSubmit={this.handleSubmit}>
       {/* 
         render the form steps and pass required props in
       */}
         <Step1 
+         
           currentStep={this.state.currentStep} 
           handleChange={this.handleChange}
-          email={this.state.email}
+          fName={this.state.fName}
+          lName={this.state.lName}
+          
         />
         <Step2 
           currentStep={this.state.currentStep} 
           handleChange={this.handleChange}
-          username={this.state.username}
+          company={this.state.company}
+          industry={this.state.industry}
+          purpose={this.state.purpose}
+          orders={this.state.orders}
         />
         <Step3 
           currentStep={this.state.currentStep} 
           handleChange={this.handleChange}
-          password={this.state.password}
+          email={this.state.email}
+          phone={this.state.phone}
         />
         {this.previousButton()}
         {this.nextButton()}
 
-      </form>
+      </div>
       </div>
       </React.Fragment>
     );
@@ -153,10 +145,11 @@ function Step1(props) {
     return null
   } 
   return(
-    <form  id="msform" netlify>
+    <form  id="msform" netlify="true">
     <fieldset>
-              <h2 class="fs-title">Hey! Welcome to Site PPL.</h2>
-              <h3 class="fs-subtitle">What's your name?</h3>
+    
+              <h2 className="fs-title">Hey! Welcome to Site PPL.</h2>
+              <h3 className="fs-subtitle">What's your name?</h3>
               <input type="text" name="fName" placeholder="First Name" value={props.fName}
         onChange={props.handleChange} />
               <input type="text" name="lName" placeholder="Last Name" value={props.lName}
@@ -175,9 +168,9 @@ function Step2(props) {
     <form  id="msform" netlify>
     <fieldset>
     
-    <h2 class="fs-title">Details</h2>
+    <h2 className="fs-title">Details</h2>
     
-    <h3 class="fs-subtitle">Tell us a little about yourself.</h3>
+    <h3 className="fs-subtitle">Tell us a little about yourself.</h3>
     <input type="text" name="company" placeholder="Company Name" value={props.company}
         onChange={props.handleChange}/>
     <input type="text" name="industry" placeholder="Industry" value={props.industry}
@@ -197,10 +190,11 @@ function Step3(props) {
   } 
   return(
     <React.Fragment>
-    <form  id="msform" netlify>
+    <form  id="msform" netlify="true">
      <fieldset>
-              <h2 class="fs-title">Contact</h2>
-              <h3 class="fs-subtitle">How can we reach you?</h3>
+     
+              <h2 className="fs-title">Contact</h2>
+              <h3 className="fs-subtitle">How can we reach you?</h3>
               <input type="text" name="email" placeholder="Email" value={props.email}
         onChange={props.handleChange}/>
               <input type="text" name="phone" placeholder="Phone" value={props.phone}

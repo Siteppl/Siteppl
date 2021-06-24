@@ -8,6 +8,7 @@
 
 body {
 	font-family: montserrat, arial, verdana;
+	text-align: center;
 	
 	
 }
@@ -26,7 +27,7 @@ body {
 }
 .topleft{
 	position: relative;
-	max-width: 100vw;
+
 	z-index: 1000;
     font-family: 'Poppins', sans-serif;
 }
@@ -99,32 +100,7 @@ body {
 	transform: translate(5px,-5px);
 }
 
-.lil-nav
-	ul {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		overflow: hidden;
-		background-color: #333;
-	  }
-	  .lil-nav
-	  ul li {
-		  float: left;
-	  }
-	  .lil-nav
-	  ul li span{
-		
-		display: block;
-		color: white;
-		text-align: center;
-		padding: 14px 16px;
-	  }
 
-	  @media (max-width: 1100px){
-		  .col1{
-			  width: 100%;
-		  }
-	  }
   /* =============================================================================
 	 Mixins & Functions
 	 ========================================================================== */
@@ -151,7 +127,7 @@ body {
 @media (max-width: 1080px ) {
 	.mainwrapper{
 		display: grid;
-		grid-template-columns: 5% 95%;
+		grid-template-columns: 100%;
 		
 		height: 100vh;
 		
@@ -215,7 +191,7 @@ body {
 	font-size: 18px;
 }
 /*buttons*/
-#msform .action-button {
+.yeet {
 	width: 100px;
 	background: #b0ffd0;
 	font-weight: bold;
@@ -224,10 +200,16 @@ body {
 	border-radius: 1px;
 	cursor: pointer;
 	padding: 10px 5px;
-	margin: 10px 5px;
+	margin-top: 20px;
+	
 }
-#msform .action-button:hover, #msform .action-button:focus {
-	box-shadow: 0 0 0 2px white, 0 0 0 3px #b0ffd0;
+button{
+	z-index: 1000;
+}
+.yeet:hover {
+	box-shadow: 0 0 0 2px white;
+	color: #fff;
+	background: black;
 }
 /*headings*/
 .fs-title {
@@ -305,14 +287,26 @@ body {
 	  opacity: 1.0;
 	}
   }
-  @media (min-width: 1101px){
-	.lil-nav{
-		display: none;
-	}
-}
+ 
 @media (max-width: 1100px) {
+	.col1{
+		width: 100vw;
+		display: flex;
+		justify-content: center;
+		
+	}
+	.topleft {
+		display: flex;
+		flex-direction: row;
+		width: 100vw;
+		font-size: .5em;
+		height: 200px;
+		
+		
+		
+	}
 	.topleft li span{
-		display: none;
+		padding-right: 10px;
 	}
 }
 

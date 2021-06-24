@@ -20,7 +20,21 @@ body {
 	height: 100vh;
 	
 	overflow: hidden;
+	position: relative;
 	
+}
+.sp-wrap{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 75px;
+	height: 100px;
+
+}
+
+.sp-pic{
+	width: 75px;
+	height: 85px;
 }
 .col1{
 	margin-top: 2vh;
@@ -270,8 +284,8 @@ div.screen {
 				-9px 9px #cacaca,
 				-10px 10px #cacaca,
 				-11px 11px #cacaca,
-				-12px 12px #cacaca,
-				-20px 20px rgba(0,0,0,0.2);
+				-12px 12px #cacaca;
+				
 	transition: 2.5s;
 }
 /* .mainbanner:hover{
