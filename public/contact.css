@@ -339,7 +339,7 @@ button[type="submit"]
 @media (max-width: 840px){
 	.mainbanner{ 
 		font-size: 6em;
-		margin-top: 400px;
+		margin-top: 250px;
 		text-shadow: -1px 1px #cacaca,
 				-2px 2px #cacaca,
 				-3px 3px #cacaca,
