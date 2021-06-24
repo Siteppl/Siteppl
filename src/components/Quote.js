@@ -47,7 +47,7 @@ export default class Contact extends Component {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...this.state })
+      body: encode({ "form-name": "quote", ...this.state })
     })
       .then(() => alert(`Your registration detail: \n 
       First Name: ${fName} \n 
@@ -132,7 +132,10 @@ export default class Contact extends Component {
         </div>
         
 
-      <form className="jawn" onSubmit={this.handleSubmit}>
+      <form name="quote"className="jawn"method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field" onSubmit={this.handleSubmit}>
+      <input type="hidden" name="form-name" value="contact" />
       {/* 
         render the form steps and pass required props in
       */}
