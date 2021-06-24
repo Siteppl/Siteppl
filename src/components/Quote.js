@@ -37,8 +37,8 @@ export default class Contact extends Component {
     })    
   }
    
-  handleSubmit = event => {
-    event.preventDefault()
+  handleSubmit = (e) => {
+    e.preventDefault()
 
 
     const { fName, lName, company, industry, purpose, orders, email, phone } = this.state
