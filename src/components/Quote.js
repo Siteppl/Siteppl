@@ -182,8 +182,8 @@ function Step1(props) {
     return null
   } 
   return(
-    <form id="msform" name="contact" method="post">
-    <input type="hidden" name="form-name" value="contact" />
+    <form id="msform" name="quote" method="post">
+    <input type="hidden" name="form-name" value="quote" />
     <fieldset>
     
               <h2 className="fs-title">Hey! Welcome to Site PPL.</h2>
