@@ -7,13 +7,13 @@ import logo from '../Images/sp.png'
 
 
 
-
-
 const encode = (data) => {
   return Object.keys(data)
       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
       .join("&");
 }
+
+
 export default class Contact extends Component {
   constructor(props) {
     super(props)
@@ -39,18 +39,34 @@ export default class Contact extends Component {
    
   handleSubmit = event => {
     event.preventDefault()
+
+
     const { fName, lName, company, industry, purpose, orders, email, phone } = this.state
     console.log( fName )
 
-    alert(`Your registration detail: \n 
-           First Name: ${fName} \n 
-           Last Name: ${lName} \n
-           Company: ${company} \n
-           Industry: ${industry} \n
-           Purpose: ${purpose} \n
-           Orders per day: ${orders} \n
-           Email: ${email} \n
-           Phone: ${phone} \n`)
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state })
+    })
+      .then(() => alert(`Your registration detail: \n 
+      First Name: ${fName} \n 
+      Last Name: ${lName} \n
+      Company: ${company} \n
+      Industry: ${industry} \n
+      Purpose: ${purpose} \n
+      Orders per day: ${orders} \n
+      Email: ${email} \n
+      Phone: ${phone} \n`))
+      .catch(error => alert(error));
+
+
+
+
+
+
+           
+      
   }
   _next = () => {
     let currentStep = this.state.currentStep
@@ -203,25 +219,14 @@ function Step3(props) {
   } 
   return(
     <React.Fragment>
-      <form  id="msform" name="quote" method="post">
-        <input type="hidden" name="form-name" value="quote" />
+      <form  id="msform" >
+       
     
      <fieldset>
      
               <h2 className="fs-title">Contact</h2>
               <h3 className="fs-subtitle">How can we reach you?</h3>
-              <input type="text" name="fName" placeholder={props.fName} value={props.fName}
-        onChange={props.handleChange} />
-              <input type="text" name="lName" placeholder={props.lName} value={props.lName}
-        onChange={props.handleChange}/>
-        <input type="text" name="company" placeholder={props.company} value={props.company}
-        onChange={props.handleChange}/>
-    <input type="text" name="industry" placeholder={props.industry} value={props.industry}
-        onChange={props.handleChange}/>
-    <textarea name="purpose" placeholder={props.purpose} value={props.purpose}
-        onChange={props.handleChange}></textarea>
-    <input type="text" name="orders" placeholder="Avg. Online Orders Per Day (if applicable)" value={props.orders}
-        onChange={props.handleChange}/>
+             
               <input type="text" name="email" placeholder="email" value={props.email}
         onChange={props.handleChange}/>
               <input type="text" name="phone" placeholder="phone" value={props.phone}
