@@ -106,7 +106,7 @@ export default class Contact extends Component {
         </div>
         
 
-      <div className="jawn" onSubmit={this.handleSubmit}>
+      <div className="jawn" >
       {/* 
         render the form steps and pass required props in
       */}
