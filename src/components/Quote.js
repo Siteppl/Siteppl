@@ -203,7 +203,7 @@ function Step3(props) {
   } 
   return(
     <React.Fragment>
-      <form name="contact" method="post">
+      <form  id="msform" name="contact" method="post">
         <input type="hidden" name="form-name" value="contact" />
     
      <fieldset>
