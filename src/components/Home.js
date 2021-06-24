@@ -47,10 +47,7 @@ export default class Home extends Component {
       
       
       <div className="col2">
-        <h1  data-sal="fade-down"
-                data-sal-duration="2000"
-                data-sal-delay="500"
-                data-sal-easing="easeInBounce" className="mainbanner">site ppl</h1>
+       <h1  className="mainbanner"> site ppl</h1>
         
         {/* <div className="center-con">
           <div className="round">
@@ -71,7 +68,7 @@ export default class Home extends Component {
             <rect className="shape" height="60" width="225"></rect>
           </svg>
             <div className="quotes">
-              <Link to='./quote' style={{ textDecoration: 'none', color: 'white' }}><span>free quote
+              <Link to='./quote' style={{ textDecoration: 'none', color: 'white'}}><span>free quote
               </span></Link>
             </div>
             
@@ -149,11 +146,8 @@ export default class Home extends Component {
 
     <div className='body2'>
       <div  className="containerabout2">
-        
-            <h3 data-sal="fade"
-                data-sal-duration="2000"
-                data-sal-delay="500"
-                data-sal-easing="easeInBounce">Designers</h3>
+     
+            <h3 >Designers</h3>
                 
             <img  data-sal="fade"
                 data-sal-duration="2000"
@@ -174,8 +168,13 @@ export default class Home extends Component {
                 data-sal-duration="2000"
                 data-sal-delay="500"
                 data-sal-easing="easeInCirc"className="containerdesign">
+                   <motion.div
+  
+  whileHover={{ scale: 1.09 }}
+  whileTap={{ scale: 0.9 }}
+>
           <a id='ux' data-text='UX & UX'>UI & UX</a>
-                      
+          </motion.div>         
         </div>
         
         
@@ -200,7 +199,7 @@ export default class Home extends Component {
           
           <div className="icondev" >
             <div className="contentdev">
-              <a>Security</a>
+              <a>Games</a>
             </div>
             
           </div>
@@ -346,21 +345,34 @@ export default class Home extends Component {
 
     <div className="quotes2">
       <div id='footercol1'>
+      <Link to="./users" style={{ textDecoration: 'none', color: "lightblue"}}>
       <div > 
         Work
       </div>
-      <div >
+      </Link>
+      <Link to="./team" style={{ textDecoration: 'none', color: "lightblue"}}>
+      <div > 
         Team
       </div>
+      </Link>
+      <Link to="./contact" style={{ textDecoration: 'none', color: "lightblue"}}>
       <div > 
         Contact
       </div>
+      </Link>
       </div>
+
       <div id='footercol2'>
-      <div >Quote
+      <Link to="./quote" style={{ textDecoration: 'none', color: "lightblue"}}>
+      <div >
+        Quote
       </div>
-      <div >Newsletter
+      </Link>
+      <Link to="./team" style={{ textDecoration: 'none', color: "lightblue"}}>
+      <div >
+        Newsletter
       </div>
+      </Link>
       <div >&copy; Site ppl Co.
       </div>
       </div>

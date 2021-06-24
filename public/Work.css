@@ -441,8 +441,7 @@ body {
   
 }
 #textA:hover {
-  margin-left: -20px;
-  transition: .5s;
+  
 }
 
 #textB
@@ -550,6 +549,30 @@ a:hover {
   color: white;
   text-decoration: none;
 }
+#endtextwrap {
+  display: flex;
+  height: 5rem;
+  width: 100%;
+  
+}
+#textunder1
+{
+  display: flex;
+  color: whitesmoke;
+  font-weight: 700;
+  font-size: 1em;
+  outline: none;
+  width: 100%;
+  line-height: 0.9em;
+  letter-spacing: 2px;
+  margin-top: 9rem;
+  justify-content: flex-end;
+  transform: rotate(-25deg) skew(25deg);
+  text-shadow: -1px 1px #cacaca,
+  -2px 2px #cacaca;
+  
+  
+}
 #textunder
 {
   position: relative;
@@ -563,7 +586,11 @@ a:hover {
   text-align: left;
   margin-top: 4rem;
   margin-left: 4rem;
-  transform: rotate(0deg) skew(10deg);
+  transform: rotate(0deg) skew(5deg);
+  text-shadow: -1px 1px #cacaca,
+  -2px 2px #cacaca;
+  
+  
 }
 
 
@@ -675,7 +702,7 @@ a:hover {
     }
     #textA {
       font-size: 2.5em;
-      margin-left: 8rem;
+      
     }
     #textB {
       font-size: 2.5em;
@@ -780,7 +807,10 @@ a:hover {
 }
 .cardspro .contentpro h2 
 {
-  
+  text-shadow: -1px 1px #cacaca,
+  -2px 2px #cacaca,
+  -3px 3px #cacaca,
+  -4px 4px #cacaca;
 }
 .cardspro:hover .contentpro
 {
@@ -789,6 +819,17 @@ a:hover {
     transition-delay: 1.5s;
     color: #b3b5f2;
 }
+
+.cardspro:hover .contentpro h2
+{
+  transform: translate(10px,-10px);
+  text-shadow: -1px 1px whitesmoke,
+  -2px 2px #cacaca;
+  transition: .5s;
+    transition-delay: .5s;
+    color: #b3b5f2;
+}
+
 .containerpro2 {
   display: flex;
   justify-content: flex-end;
@@ -868,13 +909,27 @@ a:hover {
 }
 .cardspro2 .contentpro2 h2 
 {
+  text-shadow: -1px 1px #cacaca,
+  -2px 2px #cacaca,
+  -3px 3px #cacaca,
+  -4px 4px #cacaca;
   
 }
+
 .cardspro2:hover .contentpro2
 {
   transform: translate(10px,-10px);
   text-shadow: -2px 2px 0 rgba(0,0,0,.1);
     transition-delay: 1.5s;
+    color: #b3b5f2;
+}
+.cardspro2:hover .contentpro2 h2
+{
+  transform: translate(10px,-10px);
+  text-shadow: -1px 1px whitesmoke,
+  -2px 2px #cacaca;
+  transition: .5s;
+    transition-delay: .5s;
     color: #b3b5f2;
 }
 
@@ -891,7 +946,7 @@ a:hover {
 }
 .cardsprofin:hover
 {
-   
+  
     transition-delay: 0s;
 }
 .cardsprofin .layerprofin
@@ -950,7 +1005,10 @@ a:hover {
 }
 .cardsprofin .contentprofin h2 
 {
-  
+  text-shadow: -1px 1px #cacaca,
+  -2px 2px #cacaca,
+  -3px 3px #cacaca,
+  -4px 4px #cacaca;
 }
 .cardsprofin:hover .contentprofin
 {
@@ -959,7 +1017,15 @@ a:hover {
     transition-delay: 1.5s;
     color: #b3b5f2;
 }
-
+.cardsprofin:hover .contentprofin h2
+{
+  transform: translate(10px,-10px);
+  text-shadow: -1px 1px whitesmoke,
+  -2px 2px #cacaca;
+  transition: .5s;
+    transition-delay: .5s;
+    color: #b3b5f2;
+}
 
 
 
@@ -1518,7 +1584,7 @@ justify-content: space-around;
 	margin-top: 4rem;
 	flex-wrap: wrap;
 	position: relative;
-	display: none;
+	
   }
   .quotes3 > div
 {

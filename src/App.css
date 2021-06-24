@@ -1756,14 +1756,14 @@ section .wave.wave4
 	justify-content: space-around;
 	font-family: 'Poppins', sans-serif;
 	font-size: 10px;
-	line-height: 22px;
+	line-height: 33px;
 	letter-spacing:4px;
 	color: #fff;
 	
 	margin-top: 4rem;
 	flex-wrap: wrap;
 	position: relative;
-	display: none;
+
   }
   .quotes2 > div
 {

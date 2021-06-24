@@ -31,6 +31,7 @@ export default class Contact extends Component {
   handleSubmit = event => {
     event.preventDefault()
     const { fName, lName, company, industry, purpose, orders, email, phone } = this.state
+    console.log( fName )
     alert(`Your registration detail: \n 
            First Name: ${fName} \n 
            Last Name: ${lName} \n
@@ -105,7 +106,8 @@ export default class Contact extends Component {
         </div>
         
 
-      <div netlify="true"className="jawn" onSubmit={this.handleSubmit}>
+      <form className="jawn"  name="quote" method="post">
+      <input type="hidden" name="form-name" value="quote" />
       {/* 
         render the form steps and pass required props in
       */}
@@ -131,10 +133,45 @@ export default class Contact extends Component {
           email={this.state.email}
           phone={this.state.phone}
         />
-        {this.previousButton()}
-        {this.nextButton()}
 
+        {/* {this.previousButton()}
+        {this.nextButton()} */}
+        <div className="quotes2">
+      <div id='footercol1'>
+      <Link to="./users" style={{ textDecoration: 'none', color: "lightgray"}}>
+      <div > 
+        Work
       </div>
+      </Link>
+      <Link to="./team" style={{ textDecoration: 'none', color: "lightgray"}}>
+      <div > 
+        Team
+      </div>
+      </Link>
+      <Link to="./contact" style={{ textDecoration: 'none', color: "lightgray"}}>
+      <div > 
+        Contact
+      </div>
+      </Link>
+      </div>
+
+      <div id='footercol2'>
+      <Link to="./quote" style={{ textDecoration: 'none', color: "lightgray"}}>
+      <div >
+        Quote
+      </div>
+      </Link>
+      <Link to="./team" style={{ textDecoration: 'none', color: "lightgray"}}>
+      <div >
+        Newsletter
+      </div>
+      </Link>
+      <div >&copy; Site ppl Co.
+      </div>
+      </div>
+    </div>
+      </form>
+  
       </div>
       </React.Fragment>
     );
@@ -145,7 +182,8 @@ function Step1(props) {
     return null
   } 
   return(
-    <form  id="msform" netlify="true">
+    <form id="msform" name="quote" method="post">
+    <input type="hidden" name="form-name" value="quote" />
     <fieldset>
     
               <h2 className="fs-title">Hey! Welcome to Site PPL.</h2>
@@ -154,9 +192,28 @@ function Step1(props) {
         onChange={props.handleChange} />
               <input type="text" name="lName" placeholder="Last Name" value={props.lName}
         onChange={props.handleChange}/>
+               <h2 className="fs-title">Details</h2>
+    
+    <h3 className="fs-subtitle">Tell us a little about yourself.</h3>
+    <input type="text" name="company" placeholder="Company Name" value={props.company}
+        onChange={props.handleChange}/>
+    <input type="text" name="industry" placeholder="Industry" value={props.industry}
+        onChange={props.handleChange}/>
+    <textarea name="purpose" placeholder="Describe the purpose for your new site."value={props.purpose}
+        onChange={props.handleChange}></textarea>
+    <input type="text" name="orders" placeholder="Avg. Online Orders Per Day (if applicable)" value={props.orders}
+        onChange={props.handleChange}/>
+    <h2 className="fs-title">Contact</h2>
+              <h3 className="fs-subtitle">How can we reach you?</h3>
+              <input type="text" name="email" placeholder="Email" value={props.email}
+        onChange={props.handleChange}/>
+              <input type="text" name="phone" placeholder="Phone" value={props.phone}
+        onChange={props.handleChange}/>
+        <button type="submit" className="btn btn-success btn-block">Sign up</button>
               
           </fieldset>
           </form>
+          
   );
 }
 function Step2(props) {
@@ -168,17 +225,6 @@ function Step2(props) {
     <form  id="msform" netlify>
     <fieldset>
     
-    <h2 className="fs-title">Details</h2>
-    
-    <h3 className="fs-subtitle">Tell us a little about yourself.</h3>
-    <input type="text" name="company" placeholder="Company Name" value={props.company}
-        onChange={props.handleChange}/>
-    <input type="text" name="industry" placeholder="Industry" value={props.industry}
-        onChange={props.handleChange}/>
-    <textarea name="purpose" placeholder="Describe the purpose for your new site."value={props.purpose}
-        onChange={props.handleChange}></textarea>
-    <input type="text" name="orders" placeholder="Avg. Online Orders Per Day (if applicable)" value={props.orders}
-        onChange={props.handleChange}/>
    
 </fieldset>
 </form>
@@ -193,14 +239,7 @@ function Step3(props) {
     <form  id="msform" netlify="true">
      <fieldset>
      
-              <h2 className="fs-title">Contact</h2>
-              <h3 className="fs-subtitle">How can we reach you?</h3>
-              <input type="text" name="email" placeholder="Email" value={props.email}
-        onChange={props.handleChange}/>
-              <input type="text" name="phone" placeholder="Phone" value={props.phone}
-        onChange={props.handleChange}/>
-        <button className="btn btn-success btn-block">Sign up</button>
-              
+             
           </fieldset>
           </form>
     
