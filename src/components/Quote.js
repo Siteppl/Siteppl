@@ -106,7 +106,8 @@ export default class Contact extends Component {
         </div>
         
 
-      <div className="jawn" onSubmit={this.handleSubmit}>
+      <form className="jawn"  name="quote" method="post">
+      <input type="hidden" name="form-name" value="quote" />
       {/* 
         render the form steps and pass required props in
       */}
@@ -132,6 +133,7 @@ export default class Contact extends Component {
           email={this.state.email}
           phone={this.state.phone}
         />
+
         {/* {this.previousButton()}
         {this.nextButton()} */}
         <div className="quotes2">
@@ -168,7 +170,7 @@ export default class Contact extends Component {
       </div>
       </div>
     </div>
-      </div>
+      </form>
   
       </div>
       </React.Fragment>
