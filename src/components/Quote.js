@@ -106,7 +106,7 @@ export default class Contact extends Component {
         </div>
         
 
-      <div netlify="true"className="jawn" onSubmit={this.handleSubmit}>
+      <div className="jawn" onSubmit={this.handleSubmit}>
       {/* 
         render the form steps and pass required props in
       */}
@@ -146,7 +146,7 @@ function Step1(props) {
     return null
   } 
   return(
-    <form  id="msform" netlify="true">
+    <form  id="msform" >
     <fieldset>
     
               <h2 className="fs-title">Hey! Welcome to Site PPL.</h2>
@@ -166,12 +166,14 @@ function Step2(props) {
   } 
   return(
     
-    <form  id="msform" netlify>
+    <form  id="msform">
+    
     <fieldset>
     
     <h2 className="fs-title">Details</h2>
     
     <h3 className="fs-subtitle">Tell us a little about yourself.</h3>
+    
     <input type="text" name="company" placeholder="Company Name" value={props.company}
         onChange={props.handleChange}/>
     <input type="text" name="industry" placeholder="Industry" value={props.industry}
@@ -191,11 +193,23 @@ function Step3(props) {
   } 
   return(
     <React.Fragment>
-    <form  id="msform" netlify="true">
+     <form  id="msform" name="quote" method="post">
+    <input type="hidden" name="form-name" value="quote" />
      <fieldset>
      
               <h2 className="fs-title">Contact</h2>
               <h3 className="fs-subtitle">How can we reach you?</h3>
+              <input type="text" name="fName" placeholder="First Name" value={props.fName}
+        onChange={props.handleChange} hidden/>
+    <input type="text" name="lName" placeholder="Last Name" value={props.lName} onChange={props.handleChange} hidden/>
+              <input type="text" name="company" placeholder="Company Name" value={props.company}
+        onChange={props.handleChange} hidden/>
+    <input type="text" name="industry" placeholder="Industry" value={props.industry}
+        onChange={props.handleChange} hidden/>
+    <textarea name="purpose" placeholder="Describe the purpose for your new site."value={props.purpose}
+        onChange={props.handleChange} hidden></textarea>
+    <input type="text" name="orders" placeholder="Avg. Online Orders Per Day (if applicable)" value={props.orders}
+        onChange={props.handleChange} hidden/>
               <input type="text" name="email" placeholder="Email" value={props.email}
         onChange={props.handleChange}/>
               <input type="text" name="phone" placeholder="Phone" value={props.phone}
