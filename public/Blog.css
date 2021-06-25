@@ -12,16 +12,23 @@ body {
 
 .mainwrapper {
 	display: grid;
-	grid-template-columns: 20% 60% 20%;
+	grid-template-columns: 10% 80% 10%;
+	background: rgb(47, 47, 47);
+	height: 130vh;
+	overflow: hidden;
+	
+}
+.mainwrapper2 {
+	display: flex;
 	background: rgb(47, 47, 47);
 	height: 100vh;
 	overflow: hidden;
 	
 }
-.mainwrapper2 {
-	
+.mainwrapper3 {
+	display: flex;
 	background: rgb(47, 47, 47);
-	height: 100vh;
+	height: 30vh;
 	overflow: hidden;
 	
 }
@@ -290,7 +297,7 @@ div.screen {
 	align-items: center;
 	justify-content: center;
 	outline: none;
-	
+	margin-left:2rem;
 	user-select: none;
 	transform: rotate(-2deg) skewX(10deg);
 	text-shadow: -1px 1px #cacaca,
@@ -337,6 +344,7 @@ div.screen {
 	height: 30rem;
     margin-left: 2rem;
 	display: flex;
+    flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	outline: none;
@@ -352,7 +360,7 @@ div.screen {
 				-7px 7px #cacaca,
                 -8px 8px #cacaca,
                 -9px 9px #cacaca,
-				-15px 15px rgba(0, 0, 0, 0.431);
+				-15px 15px rgba(68, 39, 39, 0.431);
 	transition: 2.5s;
 }
 #script {
@@ -378,7 +386,7 @@ div.screen {
 	transition: 2.5s;
 }
 #sub {
-    width: 90%;
+    width: 100%;
     display: flex; 
     justify-content: center;
 }
@@ -514,10 +522,346 @@ div.screen {
 	  }
   }
 
+#post {
+  text-align: center;
+}
+
+.contentc {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
 
+ .glitch {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 800;
+    position: relative;
+    font-size: 60px;
+    margin-left: 5rem;
+    padding: 30px;
+    transform: rotate(-2deg) skewX(10deg);
+	text-shadow: -1px 1px #cacaca,
+				-2px 2px #cacaca,
+				-3px 3px #cacaca,
+				-4px 4px #cacaca,
+				-5px 5px #cacaca,
+				-6px 6px #cacaca,
+				
+				-10px 10px rgba(0,0,0,0.2);
+  }
+  .glitch::before, 
+  .glitch::after {
+    padding: 30px;
+    color: white;
+    content: "Tech";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    overflow: hidden;
+    top: 0;
+    text-shadow: -1px 1px #cacaca,
+				-2px 2px #cacaca,
+				-3px 3px #cacaca,
+				-4px 4px #cacaca,
+				-5px 5px #cacaca,
+				-6px 6px #cacaca,
+				
+				-10px 10px rgba(0,0,0,0.2);
+  }
+  .glitch::before {
+    left: 3px;
+    
+    animation-name: glitch-animation-1;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse-alternate;
+    text-shadow: -1px 1px #cacaca,
+				-2px 2px #cacaca,
+				-3px 3px #cacaca,
+				-4px 4px #cacaca,
+				-5px 5px #cacaca,
+				-6px 6px #cacaca,
+				
+				-10px 10px rgba(0,0,0,0.2);
+  }
+  .glitch::after {
+    left: -3px;
+    text-shadow: -2px 0 lightgray;
+    animation-name: glitch-animation-2;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse-alternate;
+  }
+  
+  .glitch1 {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 800;
+    position: relative;
+    font-size: 60px;
+    padding: 30px;
+    transform: rotate(-2deg) skewX(10deg);
+	text-shadow: -1px 1px #cacaca,
+				-2px 2px #cacaca,
+				-3px 3px #cacaca,
+				-4px 4px #cacaca,
+				-5px 5px #cacaca,
+				-6px 6px #cacaca,
+				
+				-10px 10px rgba(0,0,0,0.2);
+  }
+  .glitch1::before, 
+  .glitch1::after {
+    padding: 30px;
+    color: white;
+    content: "Startups";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    overflow: hidden;
+    top: 0;
+    text-shadow: -1px 1px #cacaca,
+				-2px 2px #cacaca,
+				-3px 3px #cacaca,
+				-4px 4px #cacaca,
+				-5px 5px #cacaca,
+				-6px 6px #cacaca,
+				
+				-10px 10px rgba(0,0,0,0.2);
+  }
+  .glitch1::before {
+    left: 3px;
+    
+    animation-name: glitch-animation-1;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse-alternate;
+    text-shadow: -1px 1px #cacaca,
+				-2px 2px #cacaca,
+				-3px 3px #cacaca,
+				-4px 4px #cacaca,
+				-5px 5px #cacaca,
+				-6px 6px #cacaca,
+				
+				-10px 10px rgba(0,0,0,0.2);
+  }
+  .glitch1::after {
+    left: -3px;
+    text-shadow: -2px 0 lightgray;
+    animation-name: glitch-animation-2;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse-alternate;
+  }
 
-
+    
+  .glitch2 {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 800;
+    position: relative;
+    font-size: 60px;
+    padding: 30px;
+    transform: rotate(-2deg) skewX(10deg);
+	text-shadow: -1px 1px #cacaca,
+				-2px 2px #cacaca,
+				-3px 3px #cacaca,
+				-4px 4px #cacaca,
+				-5px 5px #cacaca,
+				-6px 6px #cacaca,
+				
+				-10px 10px rgba(0,0,0,0.2);
+  }
+  .glitch2::before, 
+  .glitch2::after {
+    padding: 30px;
+    color: white;
+    content: "Software";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    overflow: hidden;
+    top: 0;
+    text-shadow: -1px 1px #cacaca,
+				-2px 2px #cacaca,
+				-3px 3px #cacaca,
+				-4px 4px #cacaca,
+				-5px 5px #cacaca,
+				-6px 6px #cacaca,
+				
+				-10px 10px rgba(0,0,0,0.2);
+  }
+  .glitch2::before {
+    left: 3px;
+    
+    animation-name: glitch-animation-1;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse-alternate;
+    text-shadow: -1px 1px #cacaca,
+				-2px 2px #cacaca,
+				-3px 3px #cacaca,
+				-4px 4px #cacaca,
+				-5px 5px #cacaca,
+				-6px 6px #cacaca,
+				
+				-10px 10px rgba(0,0,0,0.2);
+  }
+  .glitch2::after {
+    left: -3px;
+    text-shadow: -2px 0 lightgray;
+    animation-name: glitch-animation-2;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse-alternate;
+  }
+  @keyframes glitch-animation-1 {
+    0% {
+      clip: rect(2px, 350px, 11px, 30px);
+    }
+    5% {
+      clip: rect(7px, 350px, 134px, 30px);
+    }
+    10% {
+      clip: rect(123px, 350px, 136px, 30px);
+    }
+    15% {
+      clip: rect(43px, 350px, 72px, 30px);
+    }
+    20% {
+      clip: rect(71px, 350px, 107px, 30px);
+    }
+    25% {
+      clip: rect(51px, 350px, 129px, 30px);
+    }
+    30% {
+      clip: rect(6px, 350px, 40px, 30px);
+    }
+    35% {
+      clip: rect(42px, 350px, 141px, 30px);
+    }
+    40% {
+      clip: rect(47px, 350px, 24px, 30px);
+    }
+    45% {
+      clip: rect(147px, 350px, 120px, 30px);
+    }
+    50% {
+      clip: rect(62px, 350px, 78px, 30px);
+    }
+    55% {
+      clip: rect(116px, 350px, 142px, 30px);
+    }
+    60% {
+      clip: rect(123px, 350px, 117px, 30px);
+    }
+    65% {
+      clip: rect(95px, 350px, 113px, 30px);
+    }
+    70% {
+      clip: rect(138px, 350px, 35px, 30px);
+    }
+    75% {
+      clip: rect(132px, 350px, 82px, 30px);
+    }
+    80% {
+      clip: rect(102px, 350px, 100px, 30px);
+    }
+    85% {
+      clip: rect(81px, 350px, 29px, 30px);
+    }
+    90% {
+      clip: rect(38px, 350px, 126px, 30px);
+    }
+    95% {
+      clip: rect(141px, 350px, 119px, 30px);
+    }
+    100% {
+      clip: rect(141px, 350px, 100px, 30px);
+    }
+  }
+  @keyframes glitch-animation-2 {
+    0% {
+      clip: rect(11px, 350px, 23px, 30px);
+    }
+    5% {
+      clip: rect(142px, 350px, 30px, 30px);
+    }
+    10% {
+      clip: rect(1px, 350px, 74px, 30px);
+    }
+    15% {
+      clip: rect(103px, 350px, 127px, 30px);
+    }
+    20% {
+      clip: rect(147px, 350px, 64px, 30px);
+    }
+    25% {
+      clip: rect(67px, 350px, 63px, 30px);
+    }
+    30% {
+      clip: rect(128px, 350px, 124px, 30px);
+    }
+    35% {
+      clip: rect(14px, 350px, 31px, 30px);
+    }
+    40% {
+      clip: rect(20px, 350px, 80px, 30px);
+    }
+    45% {
+      clip: rect(101px, 350px, 83px, 30px);
+    }
+    50% {
+      clip: rect(112px, 350px, 84px, 30px);
+    }
+    55% {
+      clip: rect(5px, 350px, 130px, 30px);
+    }
+    60% {
+      clip: rect(85px, 350px, 145px, 30px);
+    }
+    65% {
+      clip: rect(103px, 350px, 17px, 30px);
+    }
+    70% {
+      clip: rect(99px, 350px, 136px, 30px);
+    }
+    75% {
+      clip: rect(133px, 350px, 149px, 30px);
+    }
+    80% {
+      clip: rect(6px, 350px, 31px, 30px);
+    }
+    85% {
+      clip: rect(66px, 350px, 126px, 30px);
+    }
+    90% {
+      clip: rect(68px, 350px, 98px, 30px);
+    }
+    95% {
+      clip: rect(115px, 350px, 121px, 30px);
+    }
+    100% {
+      clip: rect(59px, 350px, 70px, 30px);
+    }
+  }
 
 
 
