@@ -194,7 +194,7 @@ body {
 /*buttons*/
 .yeet {
 	width: 100px;
-	background: #b0ffd0;
+	background: #662626;
 	font-weight: bold;
 	color: black;
 	border: 0 none;
@@ -275,7 +275,8 @@ button{
 	color: white;
 }
 .btn-success{
-	background-color: #8feeb5;
+	background-color: #662626;
+	border: #662626;
 }
 .btn-success:hover{
 	background-color: #cacaca;

@@ -106,7 +106,7 @@ body {
 }
 .topleft li span:hover:before 
 {
-	color: #cacaca;
+	color: lightblue;
 	z-index: 1;
 	-webkit-text-stroke: 1px rgba(0,0,0,0.2);
 	transform: translate(2.5px,-2.5px);
@@ -243,7 +243,7 @@ body {
 	stroke-dashoffset: -474;
 	stroke-width: 8px;
 	fill: transparent;
-	stroke: #fff;
+	stroke: lightblue;
 	border-bottom: 5px solid black;
 	transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
   }
@@ -827,7 +827,7 @@ svg {
 	left: 0;
 	width: 100%;
 	height: 15px;
-	background: #fff;
+	background: lightgrey;
 	transform-origin: bottom;
 	transform: skewX(45deg);
 	transition: .5s;
@@ -840,7 +840,7 @@ svg {
 	left: -15px;
 	width: 15px;
 	height: 100%;
-	background: #ececec;
+	background: lightgrey;
 	transform-origin: left;
 	transform: skewY(45deg);
 	transition: 0.5s;
@@ -930,14 +930,14 @@ svg {
 .containerdev .icondev:nth-child(2):hover:before,
 .containerdev .icondev:nth-child(2):hover:after
 {
-	background: #b3b5f2;
+	background: lightblue;
 
 }
 .containerdev .icondev:nth-child(3):hover .contentdev,
 .containerdev .icondev:nth-child(3):hover:before,
 .containerdev .icondev:nth-child(3):hover:after
 {
-	background: #ffcff4;
+	background: lightblue;
 
 }
 
