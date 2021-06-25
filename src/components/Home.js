@@ -32,6 +32,7 @@ export default class Home extends Component {
 
 
     <body id="home">
+      <div id="body">
     <div className="mainwrapper">
       
       <div className="col1">
@@ -388,9 +389,9 @@ export default class Home extends Component {
     </section>
     
 
-    
+    </div>
     </body>
-        </div>
+    </div>
 
 
 

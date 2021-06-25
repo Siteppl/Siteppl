@@ -9,7 +9,7 @@ body{
 .mainwrapper {
 	display: grid;
 	grid-template-columns: 20% 60% 20%;
-	background: #ffcff4;
+	background: #123d39;
 	height: 100vh;
 	
 	overflow: hidden;
@@ -402,7 +402,7 @@ div.screen {
 	  display: flex;
 	  width: 100vw;
 	  justify-content: center;
-	  background-color: #ffcff4;
+	  background-color: #123d39;
 	  
   }
   /* displaying our images/idea */
@@ -412,7 +412,7 @@ div.screen {
 	
 	width: 100vw;
 	margin-top: 10rem;
-	background-color: #ffcff4;
+	background-color: #123d39;
 	
 }
 
@@ -422,7 +422,7 @@ div.screen {
 	display: flex;
 	flex-direction: column;
 	height: 35rem;
-	background: linear-gradient( #ffcff4, #ffcff4) ;
+	background: linear-gradient( #123d39, #123d39) ;
 	width: 100%;
 justify-content: flex-start;
 	align-items: center;
@@ -895,7 +895,7 @@ justify-content: flex-start;
   width: 100vw;
   height: 10rem;
   padding: 10px;
-  background:  #ffcff4;
+  background:  #123d39;
 }
 .container2
 {
@@ -906,7 +906,7 @@ justify-content: flex-start;
   height: 100vh;
   
   padding: 10px;
-  background: #ffcff4;
+  background: #123d39;
 }
 
 .container3
@@ -918,7 +918,7 @@ justify-content: flex-start;
  
   height:85vh;
   padding: 10px;
-  background: #ffcff4;
+  background: #123d39;
 }
 
 .container4
@@ -934,7 +934,7 @@ justify-content: flex-start;
   
 	overflow-x: hidden;
   
-  background: #ffcff4;
+  background: #123d39;
 }
 
 
@@ -975,7 +975,7 @@ justify-content: flex-start;
 	font-size: 16px;
 	margin: 10px 0;
 	border: none;
-	background: #ffcff4;
+	background: #123d39;
 	border-bottom: 2px solid lightgray;
 	outline: none;
 	resize: none;
@@ -1023,7 +1023,7 @@ section
     position: relative;
     width: 100%;
     height: 20vh;
-    background: #ffcff4;
+    background: #123d39;
     overflow: hidden;
 }
 section .wave
