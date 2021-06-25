@@ -6,12 +6,17 @@
 	font-family: 'Poppins', sans-serif;
 	box-sizing: border-box;
 }
+html
+{
+   overflow:hidden;
+   height:100%;
+}
 body{
+	position:relative;
+	overflow-y:scroll;
+	height:100%;
+	-webkit-overflow-scrolling:touch;
 	
-	height: 100%;
-	min-height: 100vh;
-	overflow-x: hidden;
-	overflow-y: hidden;
 	background: #4c6865;
 	
  
@@ -23,7 +28,7 @@ body{
 	
 	
 	margin-right: 1rem;
-	overflow: hidden;
+	overflow-x: hidden;
 	
 }
 
@@ -318,9 +323,7 @@ button[type="submit"]
 }
 
 @media (max-width: 1100px) {
-.body{
-	overflow-y: visible;
-}
+	
 	.quotes{
 		display: none;
 	}
