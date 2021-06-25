@@ -16,12 +16,16 @@ body{
 	overflow-y:scroll;
 	height:100%;
 	-webkit-overflow-scrolling:touch;
-	
 	background: #4c6865;
 	
  
 }
-
+.body {
+	
+}
+.color{
+	background: #4c6865;
+}
 .mainwrapper2 {
 	display: grid;
 	grid-template-columns: 20% 60% 20%;
