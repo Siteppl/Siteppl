@@ -472,18 +472,17 @@ justify-content: flex-start;
 	font-family: 'Bree Serif';
     
     color: whitesmoke;
-    text-shadow: 1px 1px 1px #e0e0e0,
-        1px 2px 1px #e0e0e0,
-        1px 3px 1px #e0e0e0,
+    text-shadow: 1px 1px 1px #cacaca,
+        1px 2px 1px #cacaca,
+        1px 3px 1px #cacaca,
         1px 4px 1px #cacaca,
         1px 5px 1px #cacaca,
         1px 6px 1px #cacaca,
         1px 7px 1px #cacaca,
         1px 8px 1px #cacaca,
-        1px 9px 1px #cacaca,
-        1px 10px 1px #cacaca,
-    1px 10px 6px rgba(16, 16, 16, 0.164),
-    1px 15px 10px rgba(16, 16, 16, 0.068);
+        
+    1px 10px 6px rgba(16, 16, 16, 0.301),
+    1px 15px 10px rgba(16, 16, 16, 0.431);
 }
 
 #textk
@@ -497,18 +496,17 @@ justify-content: flex-start;
 	font-family: 'Bree Serif';
     
     color: whitesmoke;
-    text-shadow: 1px 1px 1px #e0e0e0,
-	1px 2px 1px #e0e0e0,
-	1px 3px 1px #e0e0e0,
+	text-shadow: 1px 1px 1px #cacaca,
+	1px 2px 1px #cacaca,
+	1px 3px 1px #cacaca,
 	1px 4px 1px #cacaca,
 	1px 5px 1px #cacaca,
 	1px 6px 1px #cacaca,
 	1px 7px 1px #cacaca,
 	1px 8px 1px #cacaca,
-	1px 9px 1px #cacaca,
-	1px 10px 1px #cacaca,
-1px 10px 6px rgba(16, 16, 16, 0.164),
-1px 15px 10px rgba(16, 16, 16, 0.068);
+	
+1px 10px 6px rgba(16, 16, 16, 0.301),
+1px 15px 10px rgba(16, 16, 16, 0.431);
     
 }
 

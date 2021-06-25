@@ -155,7 +155,7 @@ body {
 				-10px 10px #cacaca,
 				-11px 11px #cacaca,
 				-12px 12px #cacaca,
-				-20px 20px rgba(0,0,0,0.2);;
+				-20px 20px rgba(0, 0, 0, 0.308);;
 				
 	transition: 2.5s;
 }
@@ -383,9 +383,9 @@ svg {
         1px 8px 1px #cacaca,
         1px 9px 1px #cacaca,
         1px 10px 1px #cacaca,
-    1px 18px 6px rgba(16, 16, 16, 0.164),
-    1px 22px 10px rgba(16, 16, 16, 0.068),
-    1px 25px 35px rgba(16, 16, 16, 0.13);
+    1px 18px 6px rgba(16, 16, 16, 0.335),
+    1px 22px 10px rgba(16, 16, 16, 0.39),
+    1px 25px 35px rgba(16, 16, 16, 0.246);
     
 }
 .plussign
@@ -604,11 +604,10 @@ svg {
         -1px 2px 1px #cacaca,
         -1px 3px 1px #cacaca,
         -1px 4px 1px #cacaca,
-        -1px 5px 1px #cacaca,
-        -1px 6px 1px #cacaca,
+        
        
-    1px 8px 6px rgba(16, 16, 16, 0.089),
-    1px 14px 10px rgba(16, 16, 16, 0.068);
+    1px 8px 6px rgba(16, 16, 16, 0.335),
+    1px 14px 10px rgba(16, 16, 16, 0.431);
    
     
 }
@@ -756,11 +755,10 @@ svg {
         -1px 2px 1px #cacaca,
         -1px 3px 1px #cacaca,
         -1px 4px 1px #cacaca,
-        -1px 5px 1px #cacaca,
-        -1px 6px 1px #cacaca,
+        
        
-    1px 8px 6px rgba(16, 16, 16, 0.089),
-    1px 14px 10px rgba(16, 16, 16, 0.068);
+    1px 8px 6px rgba(16, 16, 16, 0.335),
+    1px 14px 10px rgba(16, 16, 16, 0.431);
 }
 .containerabouts .contentabout
 {
@@ -1038,15 +1036,14 @@ svg {
 	font-family: 'Newspaper';
     
     color: white;
-    text-shadow: -1px 1px 1px #cacaca,
-        -1px 2px 1px #cacaca,
-        -1px 3px 1px #cacaca,
-        -1px 4px 1px #cacaca,
-        -1px 5px 1px #cacaca,
-        -1px 6px 1px #cacaca,
-       
-    1px 8px 6px rgba(16, 16, 16, 0.089),
-    1px 14px 10px rgba(16, 16, 16, 0.068);
+	text-shadow: -1px 1px 1px #cacaca,
+	-1px 2px 1px #cacaca,
+	-1px 3px 1px #cacaca,
+	-1px 4px 1px #cacaca,
+	
+   
+1px 8px 6px rgba(16, 16, 16, 0.335),
+1px 14px 10px rgba(16, 16, 16, 0.431);
    
     
 }
@@ -1132,11 +1129,10 @@ svg {
         -1px 2px 1px #cacaca,
         -1px 3px 1px #cacaca,
         -1px 4px 1px #cacaca,
-        -1px 5px 1px #cacaca,
-        -1px 6px 1px #cacaca,
+        
        
-    1px 8px 6px rgba(16, 16, 16, 0.089),
-    1px 14px 10px rgba(16, 16, 16, 0.068);
+    1px 8px 6px rgba(16, 16, 16, 0.335),
+    1px 14px 10px rgba(16, 16, 16, 0.431);
 }
 .containerabouts1 .contentabout
 {

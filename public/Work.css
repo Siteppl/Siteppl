@@ -409,7 +409,7 @@ body {
   top: 32px;
   left: -30px;
   color: rgba(0,0,0,.1);
-  filter: blur(3px);
+  filter: blur(7px);
   outline: none;
   width: 100%;
   text-align: center;
