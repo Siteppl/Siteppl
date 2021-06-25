@@ -10,7 +10,8 @@ body{
 	
 	height: 100%;
 	min-height: 100vh;
-	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: hidden;
 	background: #4c6865;
 	
  
@@ -317,6 +318,9 @@ button[type="submit"]
 }
 
 @media (max-width: 1100px) {
+.body{
+	overflow-y: visible;
+}
 	.quotes{
 		display: none;
 	}
