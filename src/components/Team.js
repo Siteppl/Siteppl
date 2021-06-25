@@ -116,19 +116,19 @@ export default class Team extends Component {
       <li data-sal="fade"
                 data-sal-duration="2000"
                 data-sal-delay="500"
-                data-sal-easing="easeInBounce"><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                data-sal-easing="easeInBounce"><a href="https://www.twitter.com/gavinmhenderson"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
       <li data-sal="fade"
                 data-sal-duration="2000"
                 data-sal-delay="700"
-                data-sal-easing="easeInBounce"><a href="#"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a></li>
+                data-sal-easing="easeInBounce"><a href="https://www.henderson.onl"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a></li>
       <li data-sal="fade"
                 data-sal-duration="2000"
                 data-sal-delay="800"
-                data-sal-easing="easeInBounce"><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                data-sal-easing="easeInBounce"><a href="https://www.linkedin.com/in/gavin-henderson-8851981b1/"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
       <li data-sal="fade"
                 data-sal-duration="2000"
                 data-sal-delay="1000"
-                data-sal-easing="easeInBounce"><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                data-sal-easing="easeInBounce"><a href="https://www.instagram.com/gavinmhenderson"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
     </ul>
   </div>
   </div>
