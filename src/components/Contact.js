@@ -32,31 +32,7 @@ export default class Contact extends Component {
          <li><Link to='./contact' style={{ textDecoration: 'none' }} ><span  data-text="contact">contact</span></Link></li> 
         </ul>
                 
-                <div class="screen">
-                    <header>
-                    
-                    <a class="target-burger">
-                        <ul class="buns">
-                        <li class="bun"></li>
-                        <li class="bun"></li>
-                        </ul>
-                        
-                    </a>
-                    
-                    </header>
-                    <nav class="lil-nav" role="navigation">
-                    <ul>
-                        <li><span onclick="transitionToPage('index.html')" data-text="intro">intro</span></li>
-                        <li><span onclick="transitionToPage('work.html')" data-text="work">work</span></li>
-                        <li><span onclick="transitionToPage('team.html')" data-text="team">team</span></li>
-                        <li><span class="active" onclick="transitionToPage('contact.html')" data-text="contact">contact</span></li>
-                        <li><span onclick="transitionToPage('quote.html')">quote</span></li>
-                    </ul>
-                    </nav>
-                        
-                </div>
-                
-                </div>
+               </div>
                 
 
             

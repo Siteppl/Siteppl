@@ -40,29 +40,8 @@ export default class Work extends Component {
          <li><Link to='./contact' style={{ textDecoration: 'none' }} ><span  data-text="contact">contact</span></Link></li> 
         </ul>
             
-            <div className="screen">
-              <header>
-                
-                <a className="target-burger">
-                  <ul className="buns">
-                    <li className="bun"></li>
-                    <li className="bun"></li>
-                  </ul>
                   
-                </a>
-                
-              </header>
-              <nav className="lil-nav" role="navigation">
-                <ul>
-                  <li><span onclick="transitionToPage('index.html')" data-text="intro">intro</span></li>
-                  <li><span className="active"onclick="transitionToPage('work.html')" data-text="work">work</span></li>
-                  <li><span onclick="transitionToPage('team.html')" data-text="team">team</span></li>
-                  <li><span  onclick="transitionToPage('contact.html')" data-text="contact">contact</span></li>
-                  <li><span onclick="transitionToPage('quote.html')">quote</span></li>
-                </ul>
-              </nav>
-                  
-            </div>
+         
             
           </div>
           
