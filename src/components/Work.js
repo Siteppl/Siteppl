@@ -245,6 +245,11 @@ export default class Work extends Component {
         Quote
       </div>
       </Link>
+      <Link to="./blog" style={{ textDecoration: 'none', color: "white"}}>
+      <div >
+        Blog
+      </div>
+      </Link>
       <Link to="./team" style={{ textDecoration: 'none', color: "white"}}>
       <div >
         Newsletter
