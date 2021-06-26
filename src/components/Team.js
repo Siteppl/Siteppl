@@ -38,6 +38,7 @@ export default class Team extends Component {
          <li> <Link to='./users' style={{ textDecoration: 'none' }} ><span  data-text="work">work</span></Link></li> 
          <li><Link to='./team' style={{ textDecoration: 'none' }} ><span  data-text="team">team</span></Link></li> 
          <li><Link to='./contact' style={{ textDecoration: 'none' }} ><span  data-text="contact">contact</span></Link></li> 
+         <li><Link to='./quote' style={{ textDecoration: 'none' }} ><span  className="hiddenq"data-text="quote">quote</span></Link></li>
         </ul>
         
         
@@ -68,8 +69,8 @@ export default class Team extends Component {
           <svg height="60" width="225" xmlns="http://www.w3.org/2000/svg">
             <rect class="shape" height="60" width="225"></rect></svg>
             <div class="quotes">
-              <span onclick="transitionToPage('quote.html')">free quote
-              </span>
+            <Link to='./quote' style={{ textDecoration: 'none', color: 'white'}}><span>free quote
+              </span></Link>
             </div>
             
         </div>
@@ -87,13 +88,13 @@ export default class Team extends Component {
                 data-sal-easing="easeInBounce"
                 id="linetop"/> 
                 
-      <p class='under'><span id="sizedup">We are digital asset creators.</span>
-                  <span data-sal="fade"
+      <div class='under'><div id="sizedup">We are digital asset creators.</div>
+                  <div className="sized-down" data-sal="fade"
                 data-sal-duration="1000"
                 data-sal-delay="500"
                 data-sal-easing="easeInBounce" > This entails the creation of applications in the fields of full stack web and mobile apps, blockchain development, data science and analysis, and anything that can create wealth on the web.
-       Our team creates and manages applications built by us, and built by our clients. We work to develop value within every pocket of the web today.</span>
-      </p>
+       Our team creates and manages applications built by us, and built by our clients. We work to develop value within every pocket of the web today.</div>
+      </div>
       </div>
       
    

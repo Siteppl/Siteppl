@@ -54,7 +54,7 @@ function App() {
       color='255, 255, 255'
       outerAlpha={0.4}
       innerScale={0.7}
-      outerScale={10}
+      outerScale={5}
     />
     {/* A <Switch> looks through its children <Route>s and
         renders the first one that matches the current URL. */}
