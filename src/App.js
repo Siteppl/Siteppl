@@ -11,6 +11,9 @@ import Blog from './components/Blog'
 import './Sal.css'
 import AnimatedCursor from "react-animated-cursor"
 
+
+
+
 const pageVariants = {
     initial: {
       opacity: 0,

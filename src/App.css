@@ -1639,8 +1639,8 @@ section .wave.wave4
 	position: absolute;
 	top: 12px;
 	left: -20px;
-	color: rgba(233, 233, 233, 0.465);
-	filter: blur(50px);
+	color: rgba(233, 233, 233, 0.075);
+	filter: blur(80px);
 	outline: none;
 	width: 100%;
 	text-align: center;
