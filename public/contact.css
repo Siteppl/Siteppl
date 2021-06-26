@@ -41,6 +41,9 @@ body{
 	margin-left: 2vw;
 }
 /* start main nav */
+.hiddenq{
+		opacity: 0%;
+	}
 .topleft{
 	position: relative;
 	max-width: 100vw;
@@ -337,7 +340,9 @@ button[type="submit"]
 	.shape{
 		display: none;
 	}
-	
+	.hiddenq{
+		opacity: 100%;
+	}
 	.mainbanner{
 		
 	margin-top: 1em;

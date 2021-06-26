@@ -37,7 +37,8 @@ export default class Work extends Component {
          <li><Link to='./home' style={{ textDecoration: 'none' }} ><span className="active"  data-text="intro">intro</span></Link></li> 
          <li> <Link to='./users' style={{ textDecoration: 'none' }} ><span  data-text="work">work</span></Link></li> 
          <li><Link to='./team' style={{ textDecoration: 'none' }} ><span  data-text="team">team</span></Link></li> 
-         <li><Link to='./contact' style={{ textDecoration: 'none' }} ><span  data-text="contact">contact</span></Link></li> 
+         <li><Link to='./contact' style={{ textDecoration: 'none' }} ><span  data-text="contact">contact</span></Link></li>
+         <li><Link to='./quote' style={{ textDecoration: 'none' }} ><span  className="hiddenq"data-text="quote">quote</span></Link></li> 
         </ul>
             
                   
@@ -70,8 +71,8 @@ export default class Work extends Component {
                 <rect className="shape" height="60" width="225"></rect>
               </svg>
                 <div className="quotes">
-                  <span onclick="transitionToPage('quote.html')">free quote
-                  </span>
+                <Link to='./quote' style={{ textDecoration: 'none', color: 'white'}}><span>free quote
+              </span></Link>
                 </div>
                 
             </div>
