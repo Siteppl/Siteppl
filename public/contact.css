@@ -42,7 +42,7 @@ body{
 }
 /* start main nav */
 .hiddenq{
-		opacity: 0%;
+	display: none;
 	}
 .topleft{
 	position: relative;
@@ -341,7 +341,7 @@ button[type="submit"]
 		display: none;
 	}
 	.hiddenq{
-		opacity: 100%;
+		display: block;
 	}
 	.mainbanner{
 		

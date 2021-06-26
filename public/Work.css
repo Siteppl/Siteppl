@@ -25,7 +25,7 @@ body {
 	margin-left: 2vw;
 }
 .hiddenq{
-  opacity: 0%;
+  display: none;
 }
 .topleft{
 	position: relative;
@@ -265,7 +265,7 @@ body {
       display: none;
     }
     .hiddenq{
-      opacity: 100%;
+      display: block;
     }
   }
   @media (max-width: 768px) {

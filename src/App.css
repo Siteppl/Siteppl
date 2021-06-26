@@ -46,7 +46,7 @@ body {
 
 /* start main nav */
 .hiddenq{
-	opacity: 0%;
+	display: none;
 }
 .topleft{
 	position: relative;
@@ -2115,7 +2115,7 @@ section .wave.wave4
 		
 	}
 	.hiddenq{
-		opacity: 100%;
+		display: block;
 	}
 }
   

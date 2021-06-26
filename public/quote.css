@@ -113,7 +113,7 @@ body {
 /*form styles*/
 #msform {
 	width: 1000px;
-	margin-top: 150px;
+	margin-top: 200px;
     
 	text-align: center;
     margin-left: 200px;
@@ -291,18 +291,11 @@ button{
   }
  
 @media (max-width: 1100px) {
-	.col1{
-		width: 100vw;
-		display: flex;
-		justify-content: center;
-		
-	}
+	
 	.topleft {
-		display: flex;
-		flex-direction: row;
-		width: 100vw;
-		font-size: .5em;
-		height: 200px;
+		
+		font-size: .6em;
+		
 		
 		
 		
