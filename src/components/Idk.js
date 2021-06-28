@@ -1,11 +1,14 @@
-import React from "react";
-
+import React, {useState, useEffect} from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import {Helmet} from 'react-helmet';
-
-
+import { Button } from 'antd'
 import { content } from "./Content";
+import FadeIn from 'react-fade-in';
+
+
+
+
 
 const transition = { duration: 0.5, ease: "easeInOut" };
 
@@ -39,12 +42,61 @@ const PostPreview = ({ id, title, description, imgSrc }) => {
   );
 };
 
+
+
 const blogVariants = {
   enter: { transition: { staggerChildren: 0.1 } },
   exit: { transition: { staggerChildren: 0.1 } }
 };
 
 const Blog = () => {
+const [allData, setAllData] = useState(content);
+const [filteredData,setFilteredData] = useState(allData);
+
+
+useEffect(() => {
+  
+  
+}, [])
+
+
+
+
+const handleSearch = ( event ) =>{
+  
+  let value = event.target.value.toLowerCase();
+  let result = [];
+  console.log(value)
+  result = allData.filter((data) => {
+  return data.title.search(value) !== -1;
+
+  });
+  setFilteredData(result);
+}
+
+const handleFilter = ( data ) =>{
+  console.log(data)
+  let value = data.toLowerCase();
+  let result = [];
+  console.log(value)
+  result = allData.filter((data) => {
+  return data.title.search(value) !== -1;
+
+  });
+  setFilteredData(result);
+ 
+}
+
+const handleAll = ( ) =>{
+  
+  setFilteredData(allData);
+ 
+}
+
+
+
+
+
   return (
     <div id="wrapper">
     
@@ -63,27 +115,34 @@ const Blog = () => {
         </ul>
             
      <p className="mainbannerpfeat">Feat.</p>
+     <FadeIn delay={2000} transitionDuration={2000}>
      <div className="box">
         
         <h1 className="heading">Rational Optimism</h1>
         <p> the idea being rational and optimistic can be vital
         </p>
-        
+        <Link to={`/post/1`}>Read more</Link>
       </div>
+      </FadeIn>
+
+      <FadeIn delay={2500} transitionDuration={2000}>
       <div className="box">
         
-        <h1 className="heading">Rational Optimism</h1>
+        <h1 className="heading">Crypto Economy</h1>
         <p> the idea being rational and optimistic can be vital
         </p>
-        
+        <Link to={`/post/2`}>Read more</Link>
       </div>
+      </FadeIn>
+      <FadeIn delay={3000} transitionDuration={2000}>
       <div className="box">
         
-        <h1 className="heading">Rational Optimism</h1>
-        <p> the idea being rational and optimistic can be vital
+        <h1 className="heading">Creating a development company</h1>
+        <p> Creation and innovation 
         </p>
-        
+        <Link to={`/post/3`}>Read more</Link>
       </div>
+      </FadeIn>
           </div>
           
 
@@ -92,8 +151,9 @@ const Blog = () => {
             <h1 className="mainbanner ">Sb</h1>
             <p className="glitch">Site blogs</p>
             <div className="mainwrapper3">
-            <div id="glitchcontainer">
-         <p className=" mainbannerp">Tech,</p>
+            
+        <div id="glitchcontainer">
+         <p  className="mainbannerp">Tech,</p>
           <p className="mainbannerp">Startups,</p>
           <p className="mainbannerp">Software,</p>
           </div>
@@ -107,7 +167,11 @@ const Blog = () => {
           <p className="mainbannerp">Finance,</p>
           <p className="mainbannerp">Capital</p>
           </div>
-          <p className="mainbannerpsmall">An archive of blogs and posts on the ever-evolving digital and financial world.</p>
+        
+          <div className="descriptwrap">
+          <p className="mainbannerpsmall">An archive of blogs and posts on how the modern monkey can navigate the ever-evolving digital and financial world.</p>
+          </div>
+          <img id="monkey" src="Images/monkey.png"/>
           </div>
             
             <div id="sub">
@@ -133,9 +197,19 @@ const Blog = () => {
 
           
          
-          <p className="mainbannerp">Tech</p>
+          <p className="mainbannerplarge">The Collection</p>
+          <div id="search">
+          <label id="script">Search:</label>
+          <input type="text" className="signup" onChange={(event) =>handleSearch(event)} />
+          <div id="filter">
+          <Button className="filteroptions" onClick={() => {handleAll()}}>All Posts</Button>
+          <Button className="filteroptions" onClick={() => {handleFilter("tech")}}>Tech</Button>
+          <Button className="filteroptions" onClick={() => {handleFilter("problem")}}>Crypto</Button>
+          <Button className="filteroptions" onClick={() => {handleFilter("problem")}}>Startups</Button>
+          </div>
+          </div>
+          <div  className="page">
           
-          <div className="page">
       <motion.div
         className="blog-list"
         initial="initial"
@@ -144,15 +218,30 @@ const Blog = () => {
         variants={blogVariants}
       >
          
-        {content.map((post) => (
+        {filteredData.map((post) => (
           <PostPreview key={post.id} {...post} />
         ))}
        
       </motion.div>
 
+
+
     </div>
 
- 
+<div id="footer">
+
+  <Button id="collection">View All </Button>
+</div>
+
+    
+<section>
+      <div className="wave wave1"></div>
+      <div className="wave wave2"></div>
+      <div className="wave wave3"></div>
+      <div className="wave wave4"></div>
+    </section>
+
+    
          
         
    
