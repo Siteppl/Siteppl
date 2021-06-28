@@ -7,7 +7,8 @@ import Work from './components/Work'
 import Team from './components/Team'
 import Contact from './components/Contact'
 import Quote from './components/Quote'
-import Blog from './components/Blog'
+import Blog from './components/Idk'
+import Post from './components/Idk2'
 import './Sal.css'
 import AnimatedCursor from "react-animated-cursor"
 
@@ -47,7 +48,7 @@ function App() {
   return (
     
         
-    <AnimatePresence exitBeforeEnter>
+    <AnimatePresence exitBeforeEnter initial={false}>
     <AnimatedCursor
       innerSize={30}
       outerSize={10}
@@ -104,7 +105,9 @@ function App() {
                         <Quote/>
                     </motion.div>
       </Route>
-      <Route path="/blog">
+     
+      
+      <Route path="/blog"  >
       <motion.div
                     
                     initial="initial"
@@ -112,9 +115,10 @@ function App() {
                     exit="out"
                     variants={pageVariants}
                     transition={pageTransition}>
-                        <Blog/>
-                    </motion.div>
-      </Route>
+                      <Blog/>
+        </motion.div>
+        </Route>
+      <Route exact path="/post/:id" component={Post} />
       <Route path="/">
       <motion.div
                     
