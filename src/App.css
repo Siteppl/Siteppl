@@ -299,7 +299,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	min-height: 80vh;
-	background: #1c3666;
+	
 	max-width: 100% ;
 	
 }
@@ -2109,6 +2109,7 @@ section .wave.wave4
   @media (max-width: 1300px) {
 	.mainwrapper {
 		grid-template-columns: 0% 100%;
+		
 	  }
 	.colsvg {
 		display: none;
@@ -2243,8 +2244,12 @@ section .wave.wave4
 	
 }
 
-
-
+.mainwrapper {
+	height: 120vh;
+}
+section {
+	height: 40vh;
+}
 
 }
 
@@ -2444,6 +2449,8 @@ section .wave.wave4
 	
 	/* Phone screens for bottom 2 cards*/
 	@media (max-width: 568px){
+
+		
 		.containerdev .icondev .contentdev:before
 {
 	
@@ -2623,9 +2630,7 @@ section .wave.wave4
 
 
 @media (max-width: 568px){
-	section {
-		
-	}
+
 	.containerabouts1 .contentabout p
 	{
 		

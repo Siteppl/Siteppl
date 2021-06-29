@@ -85,7 +85,7 @@ export default class Work extends Component {
       
       <div className="sectionsnap">
         <div className="contentsnap">
-          <div id="text" data-text="Projects" data-sal="fade"
+          <div id="text"  data-sal="fade"
                   data-sal-duration="1000"
                   >Projects</div>
                   <div className="example-container">
@@ -193,8 +193,19 @@ export default class Work extends Component {
   whileHover={{ scale: 1.1 }}
   whileTap={{ scale: 0.9 }}
 >
-<div id="textA" data-text="Ordering app"><a href='https://tomsdeli.netlify.app'>Ordering app</a></div>
+<div id="textA" ><a href='https://tomsdeli.netlify.app'>Ordering app</a></div>
 </motion.div>
+<motion.div
+  
+  whileHover={{ scale: 1.1 }}
+  whileTap={{ scale: 0.9 }}
+>
+<Link to="./blog" style={{ textDecoration: 'none', color: "white"}}>
+      <div id="textA">
+        Site ppl Blog
+      </div>
+      </Link>
+      </motion.div>
           {/* <div id="textB" data-text="Appointment system"><a href='#'>Appointment system</a></div> */}
           
         </div>

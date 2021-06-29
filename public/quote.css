@@ -18,8 +18,7 @@ body {
 	grid-template-columns: 10% 90%;
 	overflow: hidden;
 	height: 150vh;
-	background: 
-		linear-gradient(#662626 70%, whitesmoke 100%);
+	background: #662626 ;
 	
 }
 .col1{
@@ -122,7 +121,7 @@ body {
 }
 @media (max-width: 1300px ) {
 	#msform {
-		margin-left: 0px;
+		margin-left: 100px;
 }
 }
 @media (max-width: 1080px ) {
@@ -138,11 +137,19 @@ body {
 		
 		width: 95%;
 }
+#msform {
+	margin-left: 0px;
+}
 }
 
-@media (max-width: 880px ) {
+@media (max-width: 680px ) {
 	
-
+	.mainwrapper2{
+		
+		
+		height: 200vh;
+		
+	}
 }
 
 

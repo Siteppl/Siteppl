@@ -697,6 +697,10 @@ a:hover {
   @media (max-width:680px) {
     #text {
       font-size: 4em;
+      text-shadow: -1px 1px #cacaca,
+  -2px 2px #cacaca,
+  -3px 3px #cacaca,
+  -4px 4px #cacaca;
     }
     #text1 {
       font-size: 4em;
@@ -1159,6 +1163,10 @@ justify-content: space-around;
     display: none;
     
 }
+#endtextwrap
+{ 
+  display: none;
+}
   .containerpro {
     margin-right: 1rem;
     transform: rotate(0deg) skew(0deg);
@@ -1167,6 +1175,27 @@ justify-content: space-around;
   .cardsprofin {
     z-index: 5;
   }
+  .cardspro .contentpro h2 
+  {
+    text-shadow: -1px 1px #cacaca,
+    -2px 2px #cacaca;
+    
+    
+  }
+  .cardspro2 .contentpro2 h2 
+{
+  text-shadow: -1px 1px #cacaca,
+  -2px 2px #cacaca;
+  
+  
+}
+.cardsprofin .contentprofin h2 
+{
+  text-shadow: -1px 1px #cacaca,
+  -2px 2px #cacaca;
+  
+  
+}
   
 }
 @media (max-width: 700px) {
@@ -1194,7 +1223,7 @@ justify-content: space-around;
 }
 .cardspro:hover .layerpro
 {
-    background: #b3b5f2;
+  background: transparent;
 }
 .cardspro:hover .contentpro
 {
@@ -1227,7 +1256,7 @@ justify-content: space-around;
 }
 .cardspro2:hover .layerpro2
 {
-    background: #b3b5f2;
+    background: transparent;
 }
 .cardspro2:hover .contentpro2
 {
@@ -1260,7 +1289,7 @@ justify-content: space-around;
 }
 .cardsprofin:hover .layerprofin
 {
-    background: #b3b5f2;
+  background: transparent;
 }
 .cardsprofin:hover .contentprofin
 {
@@ -1268,6 +1297,27 @@ justify-content: space-around;
   text-shadow: none;
     
     color: white;
+}
+
+
+.cardspro:hover .contentpro h2 
+{
+  color: white;
+  transform: translate(0px, 0px);
+  
+}
+.cardspro2:hover .contentpro2 h2 
+{
+  color: white;
+  transform: translate(0px, 0px);
+
+}
+.cardsprofin:hover .contentprofin h2 
+{
+  transform: translate(0px, 0px);
+  color: white
+
+
 }
 }
 
@@ -1615,5 +1665,14 @@ justify-content: space-around;
 		display: flex;
 		justify-content: space-around;
 		margin-left: 0rem;
+  
+	}
+}
+@media (max-width: 550px) {
+	.quotes3 {
+		display: flex;
+		justify-content: space-around;
+		margin-left: 0rem;
+  margin-top: 15rem;
 	}
 }

@@ -919,7 +919,7 @@ justify-content: flex-start;
   
 	display: flex;
 	flex-direction: row;
-	height: 80vh;
+	
 	justify-content: center;
 	align-items: center;
 	padding: 10px;
@@ -1106,7 +1106,7 @@ section .wave.wave4
 	
 }
 .container4 {
-	max-height: 80vh;
+	
 	
 }
 

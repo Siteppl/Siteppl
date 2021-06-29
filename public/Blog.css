@@ -1090,6 +1090,7 @@ section .wave.wave4
   .glitch {
     left: 25%;
   }
+}
 
   @media ( max-width: 600px) {
     .mainbannerp {

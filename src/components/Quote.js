@@ -137,40 +137,7 @@ export default class Contact extends Component {
 
         {/* {this.previousButton()}
         {this.nextButton()} */}
-        <div className="quotes2">
-      <div id='footercol1'>
-      <Link to="./users" style={{ textDecoration: 'none', color: "lightgray"}}>
-      <div > 
-        Work
-      </div>
-      </Link>
-      <Link to="./team" style={{ textDecoration: 'none', color: "lightgray"}}>
-      <div > 
-        Team
-      </div>
-      </Link>
-      <Link to="./contact" style={{ textDecoration: 'none', color: "lightgray"}}>
-      <div > 
-        Contact
-      </div>
-      </Link>
-      </div>
 
-      <div id='footercol2'>
-      <Link to="./quote" style={{ textDecoration: 'none', color: "lightgray"}}>
-      <div >
-        Quote
-      </div>
-      </Link>
-      <Link to="./team" style={{ textDecoration: 'none', color: "lightgray"}}>
-      <div >
-        Newsletter
-      </div>
-      </Link>
-      <div >&copy; Site ppl Co.
-      </div>
-      </div>
-    </div>
       </form>
   
       </div>
