@@ -231,7 +231,7 @@ const handleAll = ( ) =>{
 
 <div id="footer">
 
-  <Button className="signup">View All </Button>
+  {/* <Button className="signup">View All </Button> */}
 </div>
 
     
