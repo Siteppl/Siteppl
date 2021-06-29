@@ -98,6 +98,7 @@ const handleAll = ( ) =>{
 
 
   return (
+    <body>
     <div id="wrapper">
     
         <Helmet>
@@ -110,7 +111,7 @@ const handleAll = ( ) =>{
           <div className="col1">
             
           <ul className="topleft">
-         <li><Link to='./home' style={{ textDecoration: 'none' }} ><span className="active"  data-text="- Sp -">- Sp -</span></Link></li> 
+         <li><Link to='./home' style={{ textDecoration: 'none' }} ><span className="active"  data-text="Sp">Sp</span></Link></li> 
         
         </ul>
             
@@ -118,17 +119,17 @@ const handleAll = ( ) =>{
      <FadeIn delay={2000} transitionDuration={2000}>
      <div className="box">
         
-        <h1 className="heading">Rational Optimism</h1>
-        <p> the idea being rational and optimistic can be vital
+        <h1 className="headingfeat">Digital Agencies</h1>
+        <p> why digital agencies will be the future in the fields of design and development
         </p>
-        <Link to={`/post/1`}>Read more</Link>
+        <Link to={`/post/0`}>Read more</Link>
       </div>
       </FadeIn>
 
       <FadeIn delay={2500} transitionDuration={2000}>
       <div className="box">
         
-        <h1 className="heading">Crypto Economy</h1>
+        <h1 className="headingfeat">Crypto Economy</h1>
         <p> the idea being rational and optimistic can be vital
         </p>
         <Link to={`/post/2`}>Read more</Link>
@@ -137,7 +138,7 @@ const handleAll = ( ) =>{
       <FadeIn delay={3000} transitionDuration={2000}>
       <div className="box">
         
-        <h1 className="heading">Creating a development company</h1>
+        <h1 className="headingfeat">Creating a development company</h1>
         <p> Creation and innovation 
         </p>
         <Link to={`/post/3`}>Read more</Link>
@@ -230,7 +231,7 @@ const handleAll = ( ) =>{
 
 <div id="footer">
 
-  <Button id="collection">View All </Button>
+  <Button className="signup">View All </Button>
 </div>
 
     
@@ -246,7 +247,7 @@ const handleAll = ( ) =>{
         
    
     </div>
-    
+    </body>
   );
 };
 

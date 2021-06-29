@@ -38,8 +38,8 @@ const Post = ({ match }) => {
       <div className="post">
         <img className="post__img" src={imgSrc} alt={title} />
         <h1 className="heading">{title}</h1>
-        <p>{description}</p>
-        <p>{text}</p>
+        <p >{description}</p>
+        <p id="postdescrip">{text}</p>
       </div>
     </motion.div>
     </div>
