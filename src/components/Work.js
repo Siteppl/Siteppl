@@ -157,7 +157,7 @@ export default class Work extends Component {
                   data-sal-easing="easeInQuint">Designing and Building</p>
                   <p data-sal="slide-left"
                   data-sal-duration="2000"
-                  data-sal-easing="easeInQuint">Front-end / back-end development</p>
+                  data-sal-easing="easeInQuint">Front-end & back-end development</p>
                   <p data-sal="slide-right"
                  data-sal-duration="2000"
                   data-sal-easing="easeInQuint">Mobile app development</p>

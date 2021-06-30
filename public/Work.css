@@ -344,7 +344,7 @@ body {
 .sectionsnap:nth-child(3)
 {
 	
-  margin-top: 5rem;
+  margin-top: 10rem;
 }
 }
 
@@ -1098,6 +1098,7 @@ a:hover {
     transform: translate(30px,-30px);
     opacity: 0.5;
     transition-delay: 0.5s;
+    
 }
 .cardspro3 .layerpro3:nth-child(3)
 {
@@ -1119,7 +1120,7 @@ a:hover {
 
 .cardspro3:hover .contentpro3
 {
-    color: salmon;
+   opacity: .9;
     transition: 0.5s;
     
     transition-delay: 0s;
@@ -1147,22 +1148,88 @@ justify-content: space-around;
 /* media for all containers / cards */
 @media (max-width:968px) {
   .containerpro3 {
-    margin-right: 10rem;
-    transform: rotate(-10deg) skew(15deg);
+    margin-right: 23rem;
+    margin-top: 10rem;
+    transform: rotate(-0deg) skew(0deg);
   }
   .cardspro3
 {
     display: flex;
     position: relative;
-    width: 27.5rem;
+    width: 26.5rem;
     margin-left: 15rem;
     line-height: 4px;
     height: 15.75;
     transition: 0.5s;
     transition-delay: 0.5s;
-    display: none;
+  
     
 }
+
+.cardspro3 .layerpro3:nth-child(1)
+{
+  display: none;
+  color: white;
+    transform: translate(0,0);
+    opacity: 0.9;
+    transition-delay: 0.5s;
+    box-shadow: -15px 15px 20px rgba(0,0,0,0.5);
+}
+.cardspro3 .layerpro3:nth-child(2)
+{
+    
+    display: none;
+    opacity: 0;
+    transition-delay: 0.5s;
+}
+.cardspro3 .layerpro3:nth-child(3)
+{
+    
+    opacity: 0.8;
+    box-shadow: -15px 15px 20px rgba(0,0,0,0.5);
+    transition-delay: 0.5s;
+    border-radius: 2rem;
+}
+.cardspro3 .layerpro3:nth-child(4)
+{
+  display: none;
+   
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+.cardspro3 .layerpro3
+{
+    background: white;
+}
+
+.cardspro3:hover .contentpro3
+{
+    opacity: .8;
+    transition: 0.5s;
+    
+    transition-delay: 0s;
+}
+.cardspro3 .contentpro3
+{
+
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+.cardspro3 .contentpro3 h2
+{
+    opacity: .5;
+    margin-bottom: 2.5rem;
+    
+}
+
+.cardspro3 .contentpro3 p
+{
+    
+    margin-bottom: 1rem;
+}
+
+
 #endtextwrap
 { 
   display: none;
@@ -1319,8 +1386,24 @@ justify-content: space-around;
 
 
 }
+
 }
 
+
+@media (max-width: 750px) {
+  .containerpro3 {
+    margin-right: 22rem;
+    
+    transform: rotate(-0deg) skew(0deg);
+    margin-top: 24rem;
+  }
+  .cardspro3 .contentpro3 p
+{
+    
+    font-size: .5rem;
+    line-height: .8rem;
+}
+}
 
 
 /* Phone UI */
