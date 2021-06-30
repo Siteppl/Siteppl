@@ -19,7 +19,7 @@ export default class Contact extends Component {
             </Helmet>
 
             <main>
-            
+            <div className="color">
             <div class="mainwrapper2">
             
                 <div class="col1">
@@ -154,7 +154,7 @@ export default class Contact extends Component {
       </div>
       </div>
     </div>
-           
+    </div>
             </main>  
             </div>
             )

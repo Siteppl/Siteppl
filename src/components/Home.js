@@ -32,7 +32,7 @@ export default class Home extends Component {
 
 
     <body id="home">
-      <div id="body">
+      <div id="cover">
     <div className="mainwrapper">
       
       <div className="col1">

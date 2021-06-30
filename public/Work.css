@@ -1404,6 +1404,23 @@ justify-content: space-around;
     line-height: .8rem;
 }
 }
+@media (max-width: 600px) {
+  .containerpro3 {
+    display: none;
+  }
+  .cardspro3 .contentpro3 
+{
+    
+    font-size: .5rem;
+    line-height: .8rem;
+}
+.cardspro3 .layerpro3:nth-child(3)
+{
+    
+    display: none;
+   
+}
+}
 
 
 /* Phone UI */
