@@ -211,6 +211,23 @@ export default class Work extends Component {
         </div>
         
       </div>
+      <div className="sectionsnap">
+        <div className="contentsnap">
+          <div  id="textC" data-text="Our apps">Our Clients</div>
+          <div  id="textunder" >Teams and companies we have partnered with </div>
+          <motion.div
+  
+  whileHover={{ scale: 1.1 }}
+  whileTap={{ scale: 0.9 }}
+>
+<a href="https://shanesdiesel.netlify.app/"><img src="Images/shanesdiesellogo.png"></img></a>
+</motion.div>
+
+          {/* <div id="textB" data-text="Appointment system"><a href='#'>Appointment system</a></div> */}
+          
+        </div>
+        
+      </div>
       <div className="quotes3">
       <div id='footercol1'>
       <Link to="./home" style={{ textDecoration: 'none', color: "white"}}>
