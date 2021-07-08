@@ -20,16 +20,18 @@ body{
 	
  
 }
+
 .body {
 	
 }
 .color{
 	background: #4c6865;
+	height: 100vh;
 }
 .mainwrapper2 {
 	display: grid;
 	grid-template-columns: 20% 60% 20%;
-	
+	background: #4c6865;
 	
 	margin-right: 1rem;
 	overflow-x: hidden;
@@ -318,6 +320,7 @@ button[type="submit"]
     border-radius: 2px;
 }
 @media (max-width: 768px) {
+	
 	.mainwrapper {
 		height: 130vh;
 	}

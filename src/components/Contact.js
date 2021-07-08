@@ -12,14 +12,15 @@ export default class Contact extends Component {
       render() {
         
         return (
+            <div className="color">
             <div>
 
             <Helmet>
             <link rel="stylesheet" href="Contact.css" />
             </Helmet>
-
+            
             <main>
-            <div className="color">
+            
             <div class="mainwrapper2">
             
                 <div class="col1">
@@ -154,8 +155,9 @@ export default class Contact extends Component {
       </div>
       </div>
     </div>
-    </div>
-            </main>  
+    
+            </main> 
+            </div> 
             </div>
             )
             }}
