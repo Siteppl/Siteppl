@@ -25,6 +25,11 @@ export default class Work extends Component {
     
         <Helmet>
         <link rel="stylesheet" href="Work.css" />
+        <meta
+      name="description"
+      content="Our collection of websites, apps, and games we have built or collaborated on "
+    />
+    <title>Site ppl / Work</title>
         </Helmet>
 
         <div className="containersnap">

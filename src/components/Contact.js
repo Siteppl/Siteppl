@@ -17,6 +17,11 @@ export default class Contact extends Component {
 
             <Helmet>
             <link rel="stylesheet" href="Contact.css" />
+            <meta
+      name="description"
+      content="Contact the Site ppl team now"
+    />
+    <title>Site ppl / Contact</title>
             </Helmet>
             
             <main>

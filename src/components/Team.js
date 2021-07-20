@@ -28,6 +28,11 @@ export default class Team extends Component {
         <div>
             <Helmet>
             <link rel="stylesheet" href="Team.css" />
+            <meta
+      name="description"
+      content="The founders and team that runs Site ppl Co."
+    />
+    <title>Site ppl / Team</title>
             </Helmet>
 
     <div  class="mainwrapper">

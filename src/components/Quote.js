@@ -89,6 +89,11 @@ export default class Contact extends Component {
       <React.Fragment>
                  <Helmet>
             <link rel="stylesheet" href="Quote.css" />
+            <meta
+      name="description"
+      content="Get a quote on any service within the design, development, SEO, and marketing fields. Get the most reasonable fee with our whole pricing structure completely transparent."
+    />
+    <title>Site ppl / Quote</title>
             </Helmet>
       <div className="mainwrapper2">
      <div className="sp-wrap">

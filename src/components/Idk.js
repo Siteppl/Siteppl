@@ -103,6 +103,11 @@ const handleAll = ( ) =>{
     
         <Helmet>
     <link rel="stylesheet" href="Blog.css" />
+    <meta
+      name="description"
+      content="An archive of blogs and posts on how the modern monkey can navigate the ever-evolving digital and financial world."
+    />
+    <title>Site Blogs</title>
     </Helmet>
     <div className="containersnap">
         <div className="mainwrapper"
@@ -129,19 +134,19 @@ const handleAll = ( ) =>{
       <FadeIn delay={2500} transitionDuration={2000}>
       <div className="box">
         
-        <h1 className="headingfeat">Crypto Economy</h1>
-        <p> the idea being rational and optimistic can be vital
+        <h1 className="headingfeat">Coming soon</h1>
+        <p> 
         </p>
-        <Link to={`/post/2`}>Read more</Link>
+        <Link to={`/post/2`}></Link>
       </div>
       </FadeIn>
       <FadeIn delay={3000} transitionDuration={2000}>
       <div className="box">
         
-        <h1 className="headingfeat">Creating a development company</h1>
-        <p> Creation and innovation 
+        <h1 className="headingfeat">Coming soon</h1>
+        <p> 
         </p>
-        <Link to={`/post/3`}>Read more</Link>
+        <Link to={`/post/3`}></Link>
       </div>
       </FadeIn>
           </div>
