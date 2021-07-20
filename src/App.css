@@ -486,7 +486,7 @@ svg {
 
 .containerabout .contentabout p
 {
-	color: #aabbbd;
+	color: rgb(78, 78, 78);
 	font-family: 'Poppins', monospace;
 	
 	font-size: 1em;
@@ -497,7 +497,7 @@ svg {
 }
 .containerabout .contentabout2 p
 {
-	color: rgb(148, 148, 148);
+	color: rgb(78, 78, 78);
 	font-family: 'Poppins', monospace;
 	
 	font-size: 1em;
@@ -514,7 +514,7 @@ svg {
 }
 .containerabout .contentabout3 p
 {
-	color: rgb(148, 148, 148);
+	color: rgb(78, 78, 78);
 	font-family: 'Poppins', monospace;
 	
 	font-size: 1em;
@@ -524,14 +524,14 @@ svg {
     
 }
 #quote {
-	color: lightblue;
+	color: rgb(109, 198, 228);
 }
 #quote:hover {
 	color: rgb(198, 234, 246);
 	cursor: pointer;
 }
 #contact {
-	color: lightblue;
+	color: rgb(105, 192, 221);
 }
 #contact:hover {
 	color: rgb(198, 234, 246);
@@ -618,11 +618,11 @@ svg {
 .containerabout2 .contentabout
 {
 	position: relative;
-	width: 60%;
+	width: 65%;
 	height: 200px;
 	padding: 20px;
 	
-	color: #aabbbd;
+	color: whitesmoke;
 	text-align: center;
 }
 .containerabout2 .contentabout p
@@ -772,7 +772,7 @@ svg {
 	height: 200px;
 	padding: 30px;
 	
-	color: #aabbbd;
+	color: whitesmoke;
 	text-align: center;
 	
 }
@@ -1060,7 +1060,7 @@ svg {
 	height: 200px;
 	padding: 20px;
 	
-	color: #aabbbd;
+	color: whitesmoke;
 	text-align: center;
 }
 .containerabout21 .contentabout p
@@ -1148,7 +1148,7 @@ svg {
 	height: 200px;
 	padding: 20px;
 	
-	color: #aabbbd;
+	color: whitesmoke;
 	text-align: center;
 	
 }
@@ -1287,7 +1287,7 @@ svg {
 {
 	position: relative;
 	display: inline-block;
-	color: lightblue;
+	color: rgb(130, 193, 214);
 	font-size: 2em;
 	width: 100%;
 	height: 100%;
@@ -1352,14 +1352,14 @@ svg {
 	font-weight: 600;
 	font-size: 7em;
 	transform: translate(0%,-110%) rotate(0deg) skewX(25deg);
-  text-shadow: -1px 1px lightblue,
-				-2px 2px lightblue,
-				-3px 3px lightblue,
-				-4px 4px lightblue,
-				-5px 5px lightblue,
-				-6px 6px lightblue,
-				-7px 7px lightblue,
-				-8px 8px lightblue;
+  text-shadow: -1px 1px rgb(130, 193, 214),
+				-2px 2px rgb(130, 193, 214),
+				-3px 3px rgb(130, 193, 214),
+				-4px 4px rgb(130, 193, 214),
+				-5px 5px rgb(130, 193, 214),
+				-6px 6px rgb(130, 193, 214),
+				-7px 7px rgb(130, 193, 214),
+				-8px 8px rgb(130, 193, 214);
 	z-index: -1;
 	outline: none;
 	white-space: nowrap;
@@ -2154,9 +2154,7 @@ section .wave.wave4
 
 
 @media (max-width: 768px) {
-	.scrolltop {
-		display: none;
-	}
+	
 }
 
 
@@ -2186,6 +2184,9 @@ section .wave.wave4
 	height: 70px;
 	
 	
+}
+.scrolltop {
+	display: none;
 }
 .plussign
 {	
@@ -2286,6 +2287,21 @@ section {
 
 
 @media (max-width: 768px){
+
+	.containerabout .imgbx h3
+{
+	
+    
+    
+	text-shadow: 1px 1px 1px #cacaca,
+        1px 2px 1px #cacaca,
+        1px 3px 1px #cacaca,
+        1px 4px 1px #cacaca,
+        1px 5px 1px #cacaca,
+        1px 6px 1px #cacaca;
+        
+    
+}
 	.containerabout .contentabout p
 	{
 		
@@ -2915,3 +2931,56 @@ section {
 
 	}
   
+
+
+	
+.words {
+	color: #1c3666;
+	font-size: 0;
+	line-height: 1.5;
+	width: 100%;
+	text-align: center;
+  }
+  
+  .words span {
+	font-size: 3rem;
+	display: inline-block;
+	animation: move 3s ease-in-out;
+	animation-iteration-count: 1;
+  }
+  
+  @keyframes move {
+	0% {
+	  transform: translate(-20%, 0);
+	}
+	50% {
+	  text-shadow: 0 25px 50px rgba(0, 0, 0, 0.75);
+	}
+	100% {
+	  transform: translate(20%, 0);
+	}
+  }
+  
+  .words span:nth-child(2) {
+	animation-delay: 0.5s;
+  }
+  
+  .words span:nth-child(3) {
+	animation-delay: 1s;
+  }
+  
+  .words span:nth-child(4) {
+	animation-delay: 1.5s;
+  }
+  
+  .words span:nth-child(5) {
+	animation-delay: 2s;
+  }
+  
+  .words span:nth-child(6) {
+	animation-delay: 2.5s;
+  }
+  
+  .words span:nth-child(7) {
+	animation-delay: 3s;
+  }

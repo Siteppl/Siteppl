@@ -44,13 +44,37 @@ export default class Home extends Component {
          <li><Link to='./contact' style={{ textDecoration: 'none' }} ><span  data-text="contact">contact</span></Link></li> 
          <li><Link to='./quote' style={{ textDecoration: 'none' }} ><span  className="hiddenq"data-text="quote">quote</span></Link></li>
         </ul>
-        
+
         </div>
       
       
       <div className="col2">
        <h1  className="mainbanner"> site ppl</h1>
-        
+       <div class="words word-1">
+  
+  <span>D</span>
+  <span>i</span>
+  <span>g</span>
+  <span>i</span>
+  <span>t</span>
+  <span>a</span>
+  <span>l</span>
+</div>
+
+<div class="words word-2">
+  <span>A</span>
+  <span>s</span>
+  <span>s</span>
+  <span>e</span>
+  <span>t</span>
+</div>
+
+<div class="words word-3">
+  <span>F</span>
+  <span>i</span>
+  <span>r</span>
+  <span>m</span>
+</div>
         {/* <div className="center-con">
           <div className="round">
             <div id="cta">
@@ -149,7 +173,7 @@ export default class Home extends Component {
     <div className='body2'>
       <div  className="containerabout2">
      
-            <h3 >Designers</h3>
+            <h3 >Design</h3>
                 
             <img  data-sal="fade"
                 data-sal-duration="2000"
@@ -221,7 +245,7 @@ export default class Home extends Component {
             <h3 data-sal="fade"
                 data-sal-duration="2000"
                 data-sal-delay="500"
-                data-sal-easing="easeInBounce">Developers</h3>
+                data-sal-easing="easeInBounce">Development</h3>
             <img data-sal="fade"
                 data-sal-duration="2000"
                 data-sal-delay="500"
