@@ -197,8 +197,7 @@ export default class Team extends Component {
 
 <div id="undercontainer"> 
   <p class='underg'>A creator of code, design, and media.  
-    I am a full stack programmer, working with the JavaScript language. Along with programming, I work in the business development and marketing fields along with copywriting services.
-    I work to ensure our clients are provided with the most possible value in all fields.
+    I am a full stack programmer, working with the JavaScript and python languages. I create and maintain applications in any industry ripe for innovation, and work to ensure our clients are provided with the most possible value in all fields.
     
     </p>
   </div>
