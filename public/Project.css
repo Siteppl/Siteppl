@@ -1,0 +1,83 @@
+
+body {
+   
+	overflow: hidden;
+}
+span {
+	margin-right: 1.5rem;
+}
+
+.mainbannerproject {
+    font-size: 5em;
+    padding-top: 25vh;
+	font-family: 'Source Code Pro', monospace;
+	
+	color: #fff;
+	
+		
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	outline: none;
+	
+	user-select: none;
+	transform:  skewX(3deg);
+	text-shadow: -1px 1px #cacaca,
+				-2px 2px #cacaca,
+				-3px 3px #cacaca,
+				-4px 4px #cacaca;
+			
+				
+				
+	
+}
+
+
+.p {
+    font-size: 2em;
+    padding-top: .5rem;
+	font-family: 'Source Code Pro', monospace;
+	
+	color: #fff;
+	
+	
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	outline: none;
+	
+	user-select: none;
+	transform:  skewX(3deg);
+	text-shadow: -1px 1px #cacaca,
+				-2px 2px #cacaca;
+			
+				
+				
+	
+}
+
+#project {
+   
+    
+    
+}
+
+.topleft li span
+{
+	position: relative;
+	display: flex;
+	color: transparent;
+	-webkit-text-stroke: 1px lightgrey;
+	font-size : 3em;
+	font-weight: 900;
+	margin-left: .4rem;
+	text-decoration: none;
+	line-height: 1.2em;
+	transition: 0.5s;
+	
+}
+
+#man {
+    width: 100%;
+}

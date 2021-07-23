@@ -9,6 +9,7 @@ import Contact from './components/Contact'
 import Quote from './components/Quote'
 import Blog from './components/Idk'
 import Post from './components/Idk2'
+import Project from './components/Wesley'
 import './Sal.css'
 import AnimatedCursor from "react-animated-cursor"
 
@@ -103,6 +104,17 @@ function App() {
                     variants={pageVariants}
                     transition={pageTransition}>
                         <Quote/>
+                    </motion.div>
+      </Route>
+      <Route path="/projectwesley">
+      <motion.div
+                    
+                    initial="initial"
+                    animate="in"
+                    exit="out"
+                    variants={pageVariants}
+                    transition={pageTransition}>
+                        <Project/>
                     </motion.div>
       </Route>
      
