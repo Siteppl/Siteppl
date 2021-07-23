@@ -3268,3 +3268,8 @@ section {
 	  transform: translate(-60%, 60%) rotate(360deg);
 	}
   }
+
+
+  .topleft {
+	  z-index: 10000;
+  }

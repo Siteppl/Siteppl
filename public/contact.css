@@ -16,14 +16,12 @@ body{
 	overflow-y:scroll;
 	height:100%;
 	-webkit-overflow-scrolling:touch;
-	
+	background-color: #4c6865;
 	
  
 }
 
-.body {
-	
-}
+
 .color{
 	background: #4c6865;
 	height: 100vh;
@@ -326,7 +324,7 @@ button[type="submit"]
 	}
 	.mainbanner {
 		font-size: 4em;
-		margin-right: 75px;
+		
 		margin-bottom: -3px;
 		
 	}
@@ -386,7 +384,7 @@ button[type="submit"]
 	
 .container
 {
-    width: 80%;
+    width: 100%;
     padding: 20px;
 	
 }
