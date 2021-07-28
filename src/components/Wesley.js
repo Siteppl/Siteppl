@@ -47,7 +47,7 @@ export default class Project extends Component {
           color: "#f5f5f5"
         }}>
            <ul className="topleft">
-         <li><Link to='./home' style={{ textDecoration: 'none' }} ><span className="active"  data-text="Sp">Sp</span></Link></li> 
+         <li><Link to='./users' style={{ textDecoration: 'none' }} ><span className="active"  data-text="Sp">Sp</span></Link></li> 
         
         </ul>
         <h1  className="mainbannerproject"><span data-sal="slide-right"

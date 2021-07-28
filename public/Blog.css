@@ -818,6 +818,10 @@ body {
   .heading {
     margin-top: 1rem;
     font-size: 2rem;
+    text-align: center;
+  }
+  #description {
+    text-align: center;
   }
   .headingfeat {
     font-size: .8rem;
@@ -886,7 +890,7 @@ body {
   
   .post {
     background:white;
-    padding: 24px;
+    padding: .5rem;
     border-radius: 8px;
     box-shadow: -1px 1px #cacaca,
 				-2px 2px #cacaca,
@@ -956,6 +960,15 @@ body {
 #postdescrip:first-letter {
   font-size: 4rem;
   line-height: 0.65;
+}
+
+#postdescrip {
+  font-size: 1.3rem;
+  line-height: 3;
+  padding-right: 10rem;
+  padding-left: 10rem;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
 }
   section
 {

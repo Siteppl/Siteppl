@@ -18,7 +18,7 @@ const postVariants = {
 const Post = ({ match }) => {
   const id = Number(match.params.id);
 
-  const { title, description, text, imgSrc } = content[id];
+  const { title, description, text, text2, imgSrc } = content[id];
 
   return (
       <div id="wrapper">
@@ -38,8 +38,10 @@ const Post = ({ match }) => {
       <div className="post">
         <img className="post__img" src={imgSrc} alt={title} />
         <h1 className="heading">{title}</h1>
-        <p >{description}</p>
+        <p id="description">{description}</p>
         <p id="postdescrip">{text}</p>
+        <hr/>
+        <p id="postdescrip">{text2}</p>
       </div>
     </motion.div>
     </div>

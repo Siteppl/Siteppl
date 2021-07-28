@@ -141,8 +141,8 @@ export default class Team extends Component {
 
 
   <div id="undercontainer"> 
-    <p class='underg'>A computer programmer and data scientist, Gavin builds efficient and complex codebases and algorithms for applications and programs.
-      Working to provide out clients and applications with the best speeds and flow. An engineer geared for the digital age. 
+    <p class='underg'>A computer programmer and data scientist, Gavin builds efficient codebases and algorithms for applications and programs. Working with the python and JavaScript languages, he builds applications for the web, mobile, and IoT. He has also developed algorithms for machine learning and data science projects.
+      
 
       
       </p>
@@ -197,8 +197,8 @@ export default class Team extends Component {
 
 <div id="undercontainer"> 
   <p class='underg'>A creator of code, design, and media.  
-    I am a full stack programmer, working with the JavaScript and python languages. I create and maintain applications in any industry ripe for innovation, and work to ensure our clients are provided with the most possible value in all fields.
-    
+    I am a full stack programmer, working with the JavaScript and python languages. I create and maintain applications in any industry open for innovation, and work to ensure our applications are built intuitively and securely.
+  
     </p>
   </div>
   </div>
