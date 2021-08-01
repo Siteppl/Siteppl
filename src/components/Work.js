@@ -238,13 +238,23 @@ export default class Work extends Component {
         <div className="contentsnap">
           <div  id="textC" data-text="Our apps">Our Clients</div>
           <div  id="textunder" >Teams and companies we have partnered with </div>
-          <motion.div
+      
+
+  <p id="textA2">Coming Soon:</p>
+  <motion.div
   
   whileHover={{ scale: 1.1 }}
   whileTap={{ scale: 0.9 }}
 >
-<a href="https://shanesdiesel.netlify.app/"><img src="Images/shanesdiesellogo.png"></img></a>
-</motion.div>
+  
+<div id="textA3" data-sal="slide-right"
+                  data-sal-duration="2000"
+                  data-sal-delay="700"
+                  data-sal-easing="easeInQuint"><a>Shane's diesel LLC</a></div>
+                  
+                  </motion.div>         
+  
+
 
           {/* <div id="textB" data-text="Appointment system"><a href='#'>Appointment system</a></div> */}
           

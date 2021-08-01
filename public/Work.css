@@ -432,7 +432,7 @@ body {
   line-height: 0.9em;
   letter-spacing: 2px;
   margin-right: 8rem;
-  margin-top: 8rem;
+  margin-top: 7rem;
   text-align: center;
   transform: rotate(-25deg) skew(25deg);
   text-shadow: -1px 1px #cacaca,
@@ -445,7 +445,46 @@ body {
   -8px 8px #cacaca;
   
 }
-#textA:hover {
+#textA2 {
+  position: relative;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.5em;
+  outline: none;
+  width: 100%;
+  line-height: 0.9em;
+  letter-spacing: 2px;
+  margin-right: 8rem;
+  margin-top: 8rem;
+  text-align: center;
+  transform: rotate(-25deg) skew(25deg);
+  text-shadow: -1px 1px #cacaca,
+  -2px 2px #cacaca,
+  -3px 3px #cacaca,
+  -4px 4px #cacaca,
+  -5px 5px #cacaca;
+}
+#textA3
+{
+  position: relative;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 3em;
+  outline: none;
+  width: 100%;
+  line-height: 0.9em;
+  letter-spacing: 2px;
+  margin-right: 8rem;
+  margin-top: 2rem;
+  text-align: center;
+  transform: rotate(-25deg) skew(25deg);
+  text-shadow: -1px 1px #cacaca,
+  -2px 2px #cacaca,
+  -3px 3px #cacaca,
+  -4px 4px #cacaca,
+  -5px 5px #cacaca,
+  -6px 6px #cacaca,
+  -7px 7px #cacaca;
   
 }
 

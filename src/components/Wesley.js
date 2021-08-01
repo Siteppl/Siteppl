@@ -25,7 +25,17 @@ export default class Project extends Component {
 
     render() {
     return(
-        <div>
+        <div  >
+          <body style={{
+          backgroundImage: 'url(./manwalking.jpg)',
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "bottom",
+         
+          height: "100vh",
+          
+          color: "#f5f5f5"
+        }}>
             <Helmet>
             <link rel="stylesheet" href="Project.css" />
             <meta
@@ -37,15 +47,7 @@ export default class Project extends Component {
 
 
         <div id="project" 
-         style={{
-          backgroundImage: 'url(./manwalking.jpg)',
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "bottom",
-          height: "150vh",
-          width: "100%",
-          color: "#f5f5f5"
-        }}>
+        >
            <ul className="topleft">
          <li><Link to='./users' style={{ textDecoration: 'none' }} ><span className="active"  data-text="Sp">Sp</span></Link></li> 
         
@@ -71,7 +73,8 @@ export default class Project extends Component {
 
 
 
-
+      </body>
 
 </div> 
+
     )}}
