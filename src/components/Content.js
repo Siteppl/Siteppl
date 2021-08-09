@@ -3,6 +3,8 @@ export const content = [
       id: 0,
       title:"Digital Agencies",
       description:"The power of a digital agency, and why it is important for your online business",
+      date: "2021-08-01",
+      author: "Tyler Smith",
       category: "Tech",
       text:
         "Digital agencies and the future - Let's start with what a digital agency entails. Digital agencies are any company that delivers creative and technology based solutions to their clients. This can include anything from development and programming, design solutions, SEO and page rankings, and digital marketing + conversion increases. Each digital agency can handle a plethora of web services for clients in every industry. This allows companies to create an entire online presence without having to jump from company to company or freelancer to freelancer. It smooths out the complex process that awaits when building any sort of application on the web.",

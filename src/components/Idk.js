@@ -26,7 +26,7 @@ const postPreviewVariants = {
   exit: { x: "-100%", opacity: 0, transition }
 };
 
-const PostPreview = ({ id, title, description, imgSrc }) => {
+const PostPreview = ({ id, title, description, imgSrc, author, date }) => {
   return (
 
     
@@ -34,6 +34,10 @@ const PostPreview = ({ id, title, description, imgSrc }) => {
       <img className="post-preview__img" src={imgSrc} alt={title} />
       <div className="post-preview__text">
         <h2 className="posttitle">{title}</h2>
+        <div className="post-preview__row">
+        <p className="post-preview__author">{author}</p>
+        <p className="post-preview__date">{date}</p>
+        </div>
         <p>{description}</p>
         <Link to={`/post/${id}`}>Learn more</Link>
       </div>
