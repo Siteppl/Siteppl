@@ -250,7 +250,11 @@ export default class Work extends Component {
 <div id="textA3" data-sal="slide-right"
                   data-sal-duration="2000"
                   data-sal-delay="700"
-                  data-sal-easing="easeInQuint"><a>Shane's diesel LLC</a></div>
+                  data-sal-easing="easeInQuint"><a>Reclaim Construction</a></div>
+                  <div id="textA3" data-sal="slide-right"
+                  data-sal-duration="2000"
+                  data-sal-delay="700"
+                  data-sal-easing="easeInQuint"><a>Trident Restoration</a></div>
                   
                   </motion.div>         
   
