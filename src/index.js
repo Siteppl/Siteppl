@@ -4,7 +4,16 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
 import reportWebVitals from './tests/reportWebVitals';
 import { ParallaxProvider } from 'react-scroll-parallax';
+import ReactGA from 'react-ga';
+import auth from './auth.ts'; // Sample authentication provider
 
+const trackingId = "G-SLJCC9GTPS"; // Replace with your Google Analytics tracking ID
+ReactGA.initialize(trackingId);
+// ReactGA.set({
+//   userId: auth.currentUserId(),
+//   // any data that is relevant to the user session
+//   // that you would like to track with google analytics
+// })
 ReactDOM.render(
   <React.StrictMode>
     <Router>

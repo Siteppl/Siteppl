@@ -12,9 +12,15 @@ import Post from './components/Idk2'
 import Project from './components/Wesley'
 import './Sal.css'
 import AnimatedCursor from "react-animated-cursor"
+import { createBrowserHistory } from 'history';
+
+const history = createBrowserHistory();
 
 
-
+history.listen(location => {
+  ReactGA.set({ page: location.pathname }); // Update the user's current page
+  ReactGA.pageview(location.pathname); // Record a pageview for the given page
+});
 
 const pageVariants = {
     initial: {
