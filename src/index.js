@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './tests/reportWebVitals';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import ReactGA from 'react-ga';
-import auth from './auth.ts'; // Sample authentication provider
+// Sample authentication provider
 
 const trackingId = "G-SLJCC9GTPS"; // Replace with your Google Analytics tracking ID
 ReactGA.initialize(trackingId);
