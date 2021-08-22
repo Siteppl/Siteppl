@@ -7,5 +7,5 @@ Creating and building web apps, mobile apps, dapps, gsames, data science systems
 Our site is built with React and hosted on Netliys CDN. 
 Our Data store is netlifys provided identity tracker
 
-![alt text](https://img.shields.io/travis/USER/REPO.svg)
+![alt text](https://img.shields.io/tps1147/Siteppl/REPO.svg)
 
