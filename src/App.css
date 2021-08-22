@@ -2951,7 +2951,7 @@ section {
   
   @keyframes move {
 	0% {
-	  transform: translate(-20%, 0);
+	  transform: translate(-40%, 0);
 	}
 	50% {
 	  text-shadow: 0 25px 50px rgba(0, 0, 0, 0.75);

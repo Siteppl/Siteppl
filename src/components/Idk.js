@@ -29,7 +29,7 @@ const postPreviewVariants = {
 const PostPreview = ({ id, title, description, imgSrc, author, date }) => {
   return (
 
-    
+    <Link id='postlink'  to={`/post/${id}`}>
     <motion.div className="post-preview" variants={postPreviewVariants}>
       <img className="post-preview__img" src={imgSrc} alt={title} />
       <div className="post-preview__text">
@@ -39,10 +39,10 @@ const PostPreview = ({ id, title, description, imgSrc, author, date }) => {
         <p className="post-preview__date">{date}</p>
         </div>
         <p>{description}</p>
-        <Link to={`/post/${id}`}>Learn more</Link>
+        <Link id='postlink' to={`/post/${id}`}>Learn more</Link>
       </div>
     </motion.div>
-    
+    </Link>
   );
 };
 
@@ -162,21 +162,7 @@ const handleAll = ( ) =>{
             <p className="glitch">Site blogs</p>
             <div className="mainwrapper3">
             
-        <div id="glitchcontainer">
-         <p  className="mainbannerp">Tech,</p>
-          <p className="mainbannerp">Startups,</p>
-          <p className="mainbannerp">Software,</p>
-          </div>
-          <div id="glitchcontainer2">
-         <p className="mainbannerp">Growth,</p>
-          <p className="mainbannerp">Innovation,</p>
-          <p className="mainbannerp">Creation,</p>
-          </div>
-          <div id="glitchcontainer2">
-         <p className="mainbannerp">Business,</p>
-          <p className="mainbannerp">Finance,</p>
-          <p className="mainbannerp">Capital</p>
-          </div>
+        
         
           <div className="descriptwrap">
           <p className="mainbannerpsmall">An archive of blogs and posts on how the modern monkey can navigate the ever-evolving digital and financial world.</p>
@@ -209,8 +195,8 @@ const handleAll = ( ) =>{
          
           <p className="mainbannerplarge">The Collection</p>
           <div id="search">
-          <label id="script">Search:</label>
-          <input type="text" className="signup" onChange={(event) =>handleSearch(event)} />
+          <label id="">Search:</label>
+          <input type="text" placeholder='search' className="signup" onChange={(event) =>handleSearch(event)} />
           <div id="filter">
           <Button className="filteroptions" onClick={() => {handleAll()}}>All Posts</Button>
           <Button className="filteroptions" onClick={() => {handleFilter("tech")}}>Tech</Button>
@@ -229,9 +215,9 @@ const handleAll = ( ) =>{
       >
          
         {filteredData.map((post) => (
-          <PostPreview key={post.id} {...post} />
+        <PostPreview key={post.id} {...post} />  
         ))}
-       
+      
       </motion.div>
 
 

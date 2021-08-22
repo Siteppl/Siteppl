@@ -67,29 +67,16 @@ export default class Home extends Component {
        <h1  className="mainbanner"> site ppl</h1>
        <div class="words word-1">
   
-  <span>D</span>
-  <span>i</span>
-  <span>g</span>
-  <span>i</span>
-  <span>t</span>
-  <span>a</span>
-  <span>l</span>
-</div>
-
-<div class="words word-2">
-  <span>A</span>
-  <span>s</span>
-  <span>s</span>
-  <span>e</span>
-  <span>t</span>
-</div>
-
-<div class="words word-3">
-  <span>F</span>
-  <span>i</span>
+  <span>C</span>
   <span>r</span>
-  <span>m</span>
+  <span>e</span>
+  <span>a</span>
+  <span>t</span>
+  <span>e</span>
+  
 </div>
+
+
         {/* <div className="center-con">
           <div className="round">
             <div id="cta">

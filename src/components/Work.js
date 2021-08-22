@@ -171,7 +171,7 @@ export default class Work extends Component {
                   data-sal-duration="2000"
                   data-sal-easing="easeInQuint"> Marketing + Branding</p>
                   
-                </div>
+                </div> 
               </div>
             </div>
           </div>
@@ -214,7 +214,7 @@ export default class Work extends Component {
                   data-sal-duration="2000"
                   data-sal-delay="700"
                   data-sal-easing="easeInQuint">
-        Site ppl Blog
+        Sb
       </div>
       </Link>
       </motion.div>

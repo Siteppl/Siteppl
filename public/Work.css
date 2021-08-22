@@ -290,7 +290,7 @@ body {
 /* snap scrolling css */
 .containersnap
 {
-	height: 100vh;
+  height: 100vh;
 	width: 100vw;
 	background: #491355;
 	overflow-x: hidden;
@@ -308,7 +308,7 @@ body {
 	background: #491355;
 	bottom: 50px;
 	left: 50px;
-	height: 100vh;
+	height: 130vh;
 	width: 100%;
 	display: flex; 
 	flex-direction: column;
@@ -323,30 +323,19 @@ body {
 	background-color: #491355;
 	background-size: cover;
 	
-  margin-bottom: 10rem;
+  margin-bottom: 25rem;
   
 }
 .sectionsnap:nth-child(3)
 {
 	background-color: #491355;
 	background-size: cover;
-  
-  
-}
-}
-@media (max-width: 600px) {
-  .sectionsnap:nth-child(2)
-{
-	
-  margin-bottom: 15rem;
+  	
+  margin-top: 30rem;
   
 }
-.sectionsnap:nth-child(3)
-{
-	
-  margin-top: 20rem;
 }
-}
+
 
 
 
@@ -361,7 +350,7 @@ body {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	background: #491355;
-	margin-top: 10rem;
+
 }
 
 
@@ -475,7 +464,7 @@ body {
   line-height: 0.9em;
   letter-spacing: 2px;
   margin-right: 8rem;
-  margin-top: 2rem;
+  margin-top: 7rem;
   text-align: center;
   transform: rotate(-25deg) skew(25deg);
   text-shadow: -1px 1px #cacaca,
@@ -881,7 +870,7 @@ a:hover {
 .containerpro2 {
   display: flex;
   justify-content: flex-end;
- 
+
   width: 50%;
 }
 
@@ -1088,7 +1077,7 @@ a:hover {
   
   transform: rotate(-25deg) skew(25deg);
   width: 100%;
-  height: 30%;
+  height: 100%;
 }
 .cardspro3
 {
@@ -1435,10 +1424,24 @@ justify-content: space-around;
     margin-right: 22rem;
     
     transform: rotate(-0deg) skew(0deg);
-    margin-top: 24rem;
+  
   }
+  .cardspro3
+{
+    display: none;
+    position: relative;
+    width: 500px;
+    margin-left: 35rem;
+    
+    height: 300px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    
+    
+}
   .cardspro3 .contentpro3 p
 {
+
     
     font-size: .7rem;
     line-height: .8rem;
