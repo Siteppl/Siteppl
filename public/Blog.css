@@ -822,15 +822,16 @@ body {
   }
   #description {
     text-align: center;
+    
   }
   .headingfeat {
     font-size: .8rem;
   }
   
   .page {
-    margin: 0 auto;
+   
     padding: 48px 24px;
-    max-width: 90vw;
+    width: 100vw;
   }
   
   .blog-list {
@@ -906,8 +907,9 @@ body {
   
   .post {
     background:white;
-    padding: .5rem;
+    padding: .1rem;
     border-radius: 8px;
+    text-align: center;
     box-shadow: -1px 1px #cacaca,
 				-2px 2px #cacaca,
 				-3px 3px #cacaca,
@@ -962,7 +964,7 @@ body {
 .descriptwrap {
   width: 65%;
   text-align: center;
-  max-width: 90vw;
+  max-width: 100vw;
 }
   #footer {
     display: flex;
@@ -1067,6 +1069,13 @@ section .wave.wave4
   #monkey {
     left: 60%;
   }
+  #postdescrip {
+    font-size: 1rem;
+    line-height: 2.2;
+   padding: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+  }
 }
 
 
@@ -1127,6 +1136,13 @@ section .wave.wave4
       text-shadow: -1px 1px #cacaca,
 				-2px 2px #cacaca;
 			
+    }
+    #postdescrip {
+      font-size: 1rem;
+      line-height: 1.5;
+     padding: 1rem;
+      padding-top: 3rem;
+      padding-bottom: 5rem;
     }
     .mainbannerpsmall {
       font-size: .9em;

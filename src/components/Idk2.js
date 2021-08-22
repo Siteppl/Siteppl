@@ -38,6 +38,7 @@ const Post = ({ match }) => {
       <div className="post">
         <img className="post__img" src={imgSrc} alt={title} />
         <h1 className="heading">{title}</h1>
+        <div id='date '>8 / 1 / 21</div>
         <p id="description">{description}</p>
         <p id="postdescrip">{text}</p>
         <hr/>
