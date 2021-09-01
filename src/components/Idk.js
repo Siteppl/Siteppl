@@ -103,8 +103,6 @@ const handleAll = ( ) =>{
 
   return (
     <body>
-    <div id="wrapper">
-    
         <Helmet>
     <link rel="stylesheet" href="Blog.css" />
     <meta
@@ -113,6 +111,9 @@ const handleAll = ( ) =>{
     />
     <title>Site Blogs / Content for the Modern Monkey</title>
     </Helmet>
+    <div id="wrapper">
+    
+      
     <div className="containersnap">
         <div className="mainwrapper"
         >

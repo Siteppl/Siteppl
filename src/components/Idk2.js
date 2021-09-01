@@ -26,7 +26,7 @@ const Post = ({ match }) => {
         <Helmet>
     <link rel="stylesheet" href="Blog.css" />
    
-    <title>Site Blogs / {title}</title>
+    
     </Helmet>
     <motion.div
       className="page"
