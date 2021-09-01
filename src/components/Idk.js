@@ -111,7 +111,7 @@ const handleAll = ( ) =>{
       name="description"
       content="An archive of blogs and posts on how the modern monkey can navigate the ever-evolving digital and financial world."
     />
-    <title>Site Blogs</title>
+    <title>Site Blogs / Content for the Modern Monkey</title>
     </Helmet>
     <div className="containersnap">
         <div className="mainwrapper"

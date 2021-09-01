@@ -21,7 +21,13 @@ const Post = ({ match }) => {
   const { title, description, text, text2, imgSrc } = content[id];
 
   return (
+    
       <div id="wrapper">
+        <Helmet>
+    <link rel="stylesheet" href="Blog.css" />
+   
+    <title>Site Blogs / {title}</title>
+    </Helmet>
     <motion.div
       className="page"
       initial="exit"
@@ -29,9 +35,7 @@ const Post = ({ match }) => {
       exit="exit"
       variants={postVariants}
     >
-         <Helmet>
-    <link rel="stylesheet" href="Blog.css" />
-    </Helmet>
+          
       <div className="link-wrapper">
         <Link to="/blog">Back to Home page</Link>
       </div>
