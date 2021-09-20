@@ -230,6 +230,21 @@ export default class Work extends Component {
                   data-sal-easing="easeInQuint"><a >Project Wesley</a></div>
                   </Link>
 </motion.div>
+
+
+
+<motion.div
+  
+  whileHover={{ scale: 1.1 }}
+  whileTap={{ scale: 0.9 }}
+>
+<Link to="./projectwesley" style={{ textDecoration: 'none', color: "white"}}>
+<div id="textA" data-sal="slide-right"
+                  data-sal-duration="2000"
+                  data-sal-delay="700"
+                  data-sal-easing="easeInQuint"><a href='https://trade-commerce.herokuapp.com/'>Trade</a></div>
+                  </Link>
+</motion.div>
           {/* <div id="textB" data-text="Appointment system"><a href='#'>Appointment system</a></div> */}
           
         </div>
@@ -240,8 +255,6 @@ export default class Work extends Component {
           <div  id="textC" data-text="Our apps">Our Clients</div>
           <div  id="textunder" >Teams and companies we have partnered with </div>
       
-
-  <p id="textA2">Coming Soon:</p>
   <motion.div
   
   whileHover={{ scale: 1.1 }}
@@ -251,7 +264,7 @@ export default class Work extends Component {
 <div id="textA3" data-sal="slide-right"
                   data-sal-duration="2000"
                   data-sal-delay="700"
-                  data-sal-easing="easeInQuint"><a>Trident Restoration</a></div>
+                  data-sal-easing="easeInQuint"><a href='https://tridentrestorationnj.com'>Trident Restoration</a></div>
                   
                   </motion.div>         
                   <motion.div
@@ -263,9 +276,22 @@ export default class Work extends Component {
 <div id="textA3" data-sal="slide-right"
                   data-sal-duration="2000"
                   data-sal-delay="700"
-                  data-sal-easing="easeInQuint"><a>Reclaim Construction</a></div>
+                  data-sal-easing="easeInQuint"><a href='https://reclaimrepairs.com'>Reclaim Construction</a></div>
                   
                   </motion.div>      
+
+                  <motion.div
+  
+  whileHover={{ scale: 1.1 }}
+  whileTap={{ scale: 0.9 }}
+>
+  
+<div id="textA3" data-sal="slide-right"
+                  data-sal-duration="2000"
+                  data-sal-delay="700"
+                  data-sal-easing="easeInQuint"><a href='https://jerseyrestoration.net'>Jersey Restoration</a></div>
+                  
+                  </motion.div>     
   
 
 
