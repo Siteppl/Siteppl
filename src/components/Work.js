@@ -238,12 +238,12 @@ export default class Work extends Component {
   whileHover={{ scale: 1.1 }}
   whileTap={{ scale: 0.9 }}
 >
-<Link to="./projectwesley" style={{ textDecoration: 'none', color: "white"}}>
+
 <div id="textA" data-sal="slide-right"
                   data-sal-duration="2000"
                   data-sal-delay="700"
                   data-sal-easing="easeInQuint"><a href='https://trade-commerce.herokuapp.com/'>Trade</a></div>
-                  </Link>
+                  
 </motion.div>
           {/* <div id="textB" data-text="Appointment system"><a href='#'>Appointment system</a></div> */}
           
