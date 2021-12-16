@@ -233,18 +233,6 @@ export default class Work extends Component {
 
 
 
-<motion.div
-  
-  whileHover={{ scale: 1.1 }}
-  whileTap={{ scale: 0.9 }}
->
-
-<div id="textA" data-sal="slide-right"
-                  data-sal-duration="2000"
-                  data-sal-delay="700"
-                  data-sal-easing="easeInQuint">Coming soon: Restore it pro</div>
-                  
-</motion.div> 
           {/* <div id="textB" data-text="Appointment system"><a href='#'>Appointment system</a></div> */}
           
         </div>
